@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>VIFA - Vila Franceza Colibita</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+</head>
+
+<body onload="myFunction()">
+    <script>
+        function myFunction() {
+          const proprietate = {
+            'nume' : "Vila Franceza",
+            'Capacitate' : 10,
+            'Amenitati' : ["gratar", "jacuzzi","asdasdsa"]
+          }
+
+          const html = "<table><tr>";
+          
+            
+          html += "<td>" + proprietate.Amenitati[0] + "</td>";
+          html += "<td>" + proprietate.Amenitati[1] + "</td>";
+          html += "<td>" + proprietate.Amenitati[2] + "</td>";
+          html +="</tr></table>";
+
+          document.getElementById("demo").innerHTML = html; 
+        
+        /*
+          <div class="container">
+          <div class="row">
+           <div class="col-md-12">
+              <script type="text/html" id="template">
+                var properietate = $('#template').render({
+                  id = '1',
+                  content: 'content'
+                })
+            <img src="img/" alt="">
+            </script>
+           </div>
+  
+              
+          </div>
+        </div>
+        */
+        }
+    </script>
+    <p id="demo">afara</p>
+        
+</body>
+
+</html>
