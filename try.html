@@ -21,45 +21,47 @@
 
 </head>
 
-<body onload="myFunction()">
+<body>
+    <p id="demo">afara</p>
     <script>
-        function myFunction() {
-          const proprietate = {
-            'nume' : "Vila Franceza",
-            'Capacitate' : 10,
-            'Amenitati' : ["gratar", "jacuzzi","asdasdsa"]
-          }
+    document.addEventListener("DOMContentLoaded", function() {
+          alert('bla');
+          // const proprietate = {
+          //   'nume' : "Parasa",
+          //   'Capacitate' : 12312312,
+          //   'Varze' : ["sadsa", "asda","asdasdsa"]
+          // }
 
-          const html = "<table><tr>";
+          // const html = "<table><tr>";
           
             
-          html += "<td>" + proprietate.Amenitati[0] + "</td>";
-          html += "<td>" + proprietate.Amenitati[1] + "</td>";
-          html += "<td>" + proprietate.Amenitati[2] + "</td>";
-          html +="</tr></table>";
+          // html += "<td>" + proprietate.Varze[0] + "</td>";
+          // html += "<td>" + proprietate.Varze[1] + "</td>";
+          // html += "<td>" + proprietate.Varze[2] + "</td>";
+          // html +="</tr></table>";
 
-          document.getElementById("demo").innerHTML = html; 
+          // document.getElementById("demo").innerHTML = "sa schimbat"; 
         
-        /*
-          <div class="container">
-          <div class="row">
-           <div class="col-md-12">
-              <script type="text/html" id="template">
-                var properietate = $('#template').render({
-                  id = '1',
-                  content: 'content'
-                })
-            <img src="img/" alt="">
-            </script>
-           </div>
+       
+        //   <div class="container">
+        //   <div class="row">
+        //    <div class="col-md-12">
+        //       <script type="text/html" id="template">
+        //         var properietate = $('#template').render({
+        //           id = '1',
+        //           content: 'content'
+        //         })
+        //     <img src="img/" alt="">
+        //     </script>
+        //    </div>
   
               
-          </div>
-        </div>
-        */
+        //   </div>
+        // </div>
+
         }
     </script>
-    <p id="demo">afara</p>
+
         
 </body>
 
