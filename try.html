@@ -22,43 +22,23 @@
 </head>
 
 <body>
-    <p id="demo">afara</p>
+    <p id="demo" onclick="myfunction()">afara</p>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
           alert('bla');
-          // const proprietate = {
-          //   'nume' : "Parasa",
-          //   'Capacitate' : 12312312,
-          //   'Varze' : ["sadsa", "asda","asdasdsa"]
-          // }
+        document.getElementById('demo').addEventListener("click",function(){
+          console.log("demoasda");
+        });
+         const proprietate = {
+            'nume' : "Parasa",
+            'Capacitate' : 12312312,
+            'Varze' : ["sadsa", "asda","asdasdsa"]
+          }
 
-          // const html = "<table><tr>";
-          
-            
-          // html += "<td>" + proprietate.Varze[0] + "</td>";
-          // html += "<td>" + proprietate.Varze[1] + "</td>";
-          // html += "<td>" + proprietate.Varze[2] + "</td>";
-          // html +="</tr></table>";
+        });
 
-          // document.getElementById("demo").innerHTML = "sa schimbat"; 
-        
-       
-        //   <div class="container">
-        //   <div class="row">
-        //    <div class="col-md-12">
-        //       <script type="text/html" id="template">
-        //         var properietate = $('#template').render({
-        //           id = '1',
-        //           content: 'content'
-        //         })
-        //     <img src="img/" alt="">
-        //     </script>
-        //    </div>
-  
-              
-        //   </div>
-        // </div>
-
+       function myfunction(){
+          alert("myfunction");
         }
     </script>
 
@@ -66,3 +46,4 @@
 </body>
 
 </html>
+    
