@@ -2,9 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-const Listing2 = ({listing}) => {
+const ListingsAll = () => {
   const data = useStaticQuery(graphql`
-    query ListingQuery2 {
+    query ListingQueryAll {
       allDataJson {
         nodes {
           name
@@ -57,7 +57,9 @@ const Listing2 = ({listing}) => {
 
   return (
     <div className="container">
-      
+      {
+        // map through all the data, query formed from the graphql
+        data.allDataJson.nodes.map(listing => (
         <div className="jumbotron">
           <h2>{listing.name}</h2>
           <div className="row">
@@ -78,8 +80,8 @@ const Listing2 = ({listing}) => {
             </div>
           </div>
         </div>
-      
+      ))}
     </div>
   )
 }
-export default Listing2;
+export default ListingsAll

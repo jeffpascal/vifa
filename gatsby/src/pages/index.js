@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image2 from "../components/image2"
 import SEO from "../components/seo"
 import logo from "../images/gatsby-icon.png"
-import Listing2 from "../components/listing2"
+import ListingAll from "../components/listingall"
 
 const IndexPage = () => (
   <Layout>
@@ -26,7 +26,7 @@ const IndexPage = () => (
       <img src={logo} alt="" />
       <p>Second icon:</p>
     </div>
-    <Listing2 />
+    <ListingAll />
   </Layout>
 )
 
