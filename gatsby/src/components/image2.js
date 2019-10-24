@@ -1,6 +1,10 @@
 import { useStaticQuery, graphql } from "gatsby"
 import React, { useState } from "react"
 import Img from "gatsby-image"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.min.js"
+
+
 function Image2() {
   const [index, setIndex] = useState(0)
   const { allFile } = useStaticQuery(
@@ -40,11 +44,7 @@ function Image2() {
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            className="active"
-          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
@@ -68,16 +68,9 @@ function Image2() {
             </div>
           ))}
         </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
+        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
           <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+            className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="sr-only">Previous</span>
         </a>
         <a
