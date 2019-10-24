@@ -376,6 +376,11 @@ dd {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
+p .bold {
+  color: #ff0;
+}
+
 p {
   margin-left: 0;
   margin-right: 0;

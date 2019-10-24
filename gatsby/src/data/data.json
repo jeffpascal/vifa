@@ -1,6 +1,7 @@
 [ 
     { 
        "name":"Vila Franceza",
+       "slug" : "vila-franceza",
        "detaliipret":{ 
           "pret":"3000lei",
           "perioada":"iunie - iulie",
@@ -10,7 +11,7 @@
        "detaliidescriere":[ 
           { 
              "text":"Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
-             "type":"normal"
+             "type":"bold"
           },
           { 
              "text":"La apă se ajunge prin intermediul debarcaderului situat la doar câțiva metri.",
@@ -135,6 +136,7 @@
     },
     { 
        "name":"Casa Pescarilor",
+       "slug" : "casa-pescarilor",
        "detaliipret":{ 
           "pret":"800lei",
           "perioada":"iunie - iulie",
@@ -269,6 +271,7 @@
     },
     { 
        "name":"Modern Rooms Resort Colibita",
+       "slug" : "modern-rooms-resort",
        "detaliipret":{ 
           "pret":"450lei",
           "perioada":"iunie - iulie",

@@ -1,19 +1,48 @@
 import React from 'react';
+import { useStaticQuery, graphql } from "gatsby";
 
+const Listing = () => {
+  const data = useStaticQuery(graphql`
+  query ListingQuery {
+    allDataJson {
+      nodes {
+        camere {
+          name
+          amount
+        }
+        name
+      }
+    }
+  }
+  
+`);
 
-const PageTemplate = props => {
-  const { title = null, paragraphs = null } = props.pageContext;
+const getNames = (camere) => (camere.map(camera => (
+  <div>
+    <p>{camera.name} {camera.amount}</p>
+  </div>
+)))
+
   return (
-    <React.Fragment>
-      {title && <h1>{name}</h1>}
-      {paragraphs &&
-        paragraphs.map(para => (
+    <div>
+      {data.allDataJson.nodes.map(listing => (
           <div>
-            <h2>{detaliipret.pret}</h2>
-            <p>{detaliipret.periodata}</p>
+            <h2>{listing.name}</h2>
+            {listing.camere.map(camera => (
+              <div>
+                <p>{camera.amount}</p>
+              </div>
+            ))}
+
+            {
+              
+              listing.camere &&
+              listing.camere.length > 0 &&
+              getNames(listing.camere)
+            }
           </div>
         ))}
-    </React.Fragment>
+    </div>
   );
 };
-export default PageTemplate;
+export default Listing;

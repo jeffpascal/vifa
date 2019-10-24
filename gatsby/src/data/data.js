@@ -1,6 +1,7 @@
 const data = [
     {
         name: "Vila Franceza",
+        slug: "vila-franceza",
         detaliipret: {
             pret: "3000lei",
             perioada: "iunie - iulie",
@@ -135,6 +136,7 @@ const data = [
     },
     {
         name: "Casa Pescarilor",
+        slug: "fishermans-house",
         detaliipret: {
             pret: "800lei",
             perioada: "iunie - iulie",
@@ -269,6 +271,7 @@ const data = [
     },
     {
         name: "Modern Rooms Resort Colibita",
+        slug: "modern-rooms-resort",
         detaliipret: {
             pret: "450lei",
             perioada: "iunie - iulie",

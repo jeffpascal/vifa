@@ -2,10 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Image2 from "../components/image2"
 import SEO from "../components/seo"
 import logo from "../images/gatsby-icon.png"
-import logo2 from "../../static/secondicon.png"
+import Listing2 from "../components/listing2"
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +14,7 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <Image2 />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
     
@@ -25,8 +25,8 @@ const IndexPage = () => (
       <p>What a word</p>
       <img src={logo} alt="" />
       <p>Second icon:</p>
-      <img src={logo2} alt="" />
     </div>
+    <Listing2 />
   </Layout>
 )
 
