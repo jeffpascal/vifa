@@ -44,27 +44,14 @@ function Image2() {
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          {allFile.edges.map((image, index) => (
+            <li data-target="#carouselExampleIndicators" data-slide-to={{index}} className={index===0 ? "active" : ""}></li>
+          ))}
         </ol>
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <Img
-              fluid={node.childImageSharp.fluid}
-              key={node.id}
-              alt={node.name.replace(/-/g, " ").substring(2)}
-              className="d-block w-100"
-            />
-          </div>
-          {allFile.edges.map(image => (
-            <div className="carousel-item">
+          
+          {allFile.edges.map((image , index) => (
+            <div className={index===0 ? "carousel-item active" : "carousel-item"}>
               <Img
                 fluid={image.node.childImageSharp.fluid}
                 key={image.id}
