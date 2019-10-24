@@ -1,32 +1,7 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const Listing2 = ({listing}) => {
-  const data = useStaticQuery(graphql`
-    query ListingQuery2 {
-      allDataJson {
-        nodes {
-          name
-          dotari
-          detaliipret {
-            pret
-            perioada
-            detaliu1
-            detaliu2
-          }
-          detaliidescriere {
-            text
-            type
-          }
-          camere {
-            name
-            amount
-          }
-        }
-      }
-    }
-  `)
 
   const getCamere = camere =>
     camere.map(camera => (

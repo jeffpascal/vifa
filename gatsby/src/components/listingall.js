@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import { Link } from "gatsby"
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
     query ListingQueryAll {
@@ -9,6 +9,7 @@ const ListingsAll = () => {
         nodes {
           name
           dotari
+          slug
           detaliipret {
             pret
             perioada
@@ -57,10 +58,10 @@ const ListingsAll = () => {
 
   return (
     <div className="container">
-      {
-        // map through all the data, query formed from the graphql
-        data.allDataJson.nodes.map(listing => (
+      {// map through all the data, query formed from the graphql
+      data.allDataJson.nodes.map(listing => (
         <div className="jumbotron">
+          <Link to= {`/${listing.slug}/`} >Visit {`${listing.name}`}</Link>
           <h2>{listing.name}</h2>
           <div className="row">
             <div className="card col-md-4">
