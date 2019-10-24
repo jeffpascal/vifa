@@ -377,10 +377,14 @@ dd {
   margin-bottom: 1.45rem;
 }
 
-p .bold {
-  color: #ff0;
-}
-
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
+  }
+  .carousel-item img {
+  width: 100%;
+  }
 p {
   margin-left: 0;
   margin-right: 0;
