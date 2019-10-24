@@ -1,4 +1,4 @@
-export const data = [
+const data = [
     {
         name: "Vila Franceza",
         detaliipret: {
@@ -403,3 +403,5 @@ export const data = [
     }
 
 ]
+
+console.log(JSON.stringify(data));
