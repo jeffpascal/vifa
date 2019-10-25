@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Slick from "../components/slickgallery"
 import { Link } from "gatsby"
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
@@ -57,11 +58,15 @@ const ListingsAll = () => {
     ))
 
   return (
-    <div className="container">
+    <div className="container row">
       {// map through all the data, query formed from the graphql
+      
       data.allDataJson.nodes.map(listing => (
+        <div className= "col-md-9">
         <div className="jumbotron">
+          
           <Link to= {`/${listing.slug}/`} >Visit {`${listing.name}`}</Link>
+          <Slick />
           <h2>{listing.name}</h2>
           <div className="row">
             <div className="card col-md-4">
@@ -80,6 +85,7 @@ const ListingsAll = () => {
               getDescriere(listing.detaliidescriere)}
             </div>
           </div>
+        </div>
         </div>
       ))}
     </div>
