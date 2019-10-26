@@ -1,30 +1,8 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useStaticQuery, graphql } from "gatsby"
+
 const Listing2 = ({listing}) => {
-  
-  const { casape } = useStaticQuery(
-    graphql`
-      query {
-        allFile(
-          sort: { fields: name, order: DESC }
-          filter: { relativeDirectory: { eq: "casape" } }
-        ) {
-          edges {
-            node {
-              id
-              name
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  )
 
   const getCamere = camere =>
     camere.map(camera => (
@@ -55,7 +33,6 @@ const Listing2 = ({listing}) => {
 
   return (
     <div className="container">
-
 
         <div className="jumbotron">
           <h2>{listing.name}</h2>

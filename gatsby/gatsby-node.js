@@ -8,13 +8,14 @@
 
 
 exports.createPages = ({ actions }) => {
-    const data = require("./src/data/data.json")
+    const jsonData = require("./src/data/data.json")
     const { createPage } = actions
-    data.forEach(data => {
+    jsonData.forEach(item => {
         createPage({
-            path: `/${data.slug}/`,
+            path: `/${item.slug}/`,
             component: require.resolve('./src/templates/listing-template.js'),
-            context:{data},
+            context:{item,
+            slug: item.slug},
         })
     })
     

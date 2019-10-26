@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 
-function Slick({ data }) {
+function Slick({images}) {
   const setting = {
     dots: true,
     infinite: true,
@@ -15,38 +15,24 @@ function Slick({ data }) {
     draggable: true,
     arrows: true,
   }
-  const { allFile } = useStaticQuery(
-    graphql`
-      query {
-        allFile(
-          sort: { fields: name, order: DESC }
-          filter: { relativeDirectory: { eq: "casape" } }
-        ) {
-          edges {
-            node {
-              id
-              name
-              childImageSharp {
-                fluid(maxWidth: 350, maxHeight: 250) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  )
+  
+  
   //Minus 1 for array offset from 0
 
   return (
+    <div>
     <Slider {...setting}>
-      {allFile.edges.map(image => (
+      
+    
+     
+      {images.allFile.edges.map(image => (
         <div className="imageContainer">
+          
           <Img fluid={image.node.childImageSharp.fluid} />
         </div>
       ))}
     </Slider>
+    </div>
   )
 }
 export default Slick
