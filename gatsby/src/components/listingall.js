@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
-import Slick from "../components/slickgallery"
 import { Link } from "gatsby"
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
@@ -52,42 +51,41 @@ const ListingsAll = () => {
         {descriere.type === "normal" ? (
           <p style={{ color: "red" }}>{descriere.text}</p>
         ) : (
-          <p style={{ color: "purple" }}>{descriere.text}</p>
-        )}
+            <p style={{ color: "purple" }}>{descriere.text}</p>
+          )}
       </div>
     ))
 
   return (
     <div className="container row">
       {// map through all the data, query formed from the graphql
-      
-      data.allDataJson.nodes.map(listing => (
-        <div className= "col-md-9">
-        <div className="jumbotron">
-          
-          <Link to= {`/${listing.slug}/`} >Visit {`${listing.name}`}</Link>
-          <Slick />
-          <h2>{listing.name}</h2>
-          <div className="row">
-            <div className="card col-md-4">
-              {//dotari
-              getDotari(listing.dotari)}
-            </div>
 
-            <div className="card col-md-4">
-              {//camere
-              listing.camere &&
-                listing.camere.length > 0 &&
-                getCamere(listing.camere)}
-            </div>
-            <div className="card col-md-3">
-              {//descriere
-              getDescriere(listing.detaliidescriere)}
+        data.allDataJson.nodes.map(listing => (
+          <div className="col-md-4 card">
+            <div className="">
+
+              <Link to={`/${listing.slug}/`} >Visit {`${listing.name}`}</Link>
+              <h2>{listing.name}</h2>
+              <div className="row">
+                <div className="card col-md-4">
+                  {//dotari
+                    getDotari(listing.dotari)}
+                </div>
+
+                <div className="card col-md-4">
+                  {//camere
+                    listing.camere &&
+                    listing.camere.length > 0 &&
+                    getCamere(listing.camere)}
+                </div>
+                <div className="card col-md-4">
+                  {//descriere
+                    getDescriere(listing.detaliidescriere)}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        </div>
-      ))}
+        ))}
     </div>
   )
 }

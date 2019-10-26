@@ -5,14 +5,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/gatsby-icon.png"
 import ListingAll from "../components/listingall"
-import Slick from "../components/slickgallery"
+import SlickAll from "../components/slickgalleryall"
+
 const IndexPage = () => (
   <Layout>
-    <Slick />
+    <SlickAll />
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
     
     <Link to="about">Go to about</Link>
