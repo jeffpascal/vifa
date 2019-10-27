@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
+import Listing2 from "./listing2";
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
     query ListingQueryAll {
@@ -61,28 +62,11 @@ const ListingsAll = () => {
       {// map through all the data, query formed from the graphql
 
         data.allDataJson.nodes.map(listing => (
-          <div className="col-md-4 card">
+          <div className="col-md-12">
             <div className="">
-
+              
               <Link to={`/${listing.slug}/`} >Visit {`${listing.name}`}</Link>
-              <h2>{listing.name}</h2>
-              <div className="row">
-                <div className="card col-md-4">
-                  {//dotari
-                    getDotari(listing.dotari)}
-                </div>
-
-                <div className="card col-md-4">
-                  {//camere
-                    listing.camere &&
-                    listing.camere.length > 0 &&
-                    getCamere(listing.camere)}
-                </div>
-                <div className="card col-md-4">
-                  {//descriere
-                    getDescriere(listing.detaliidescriere)}
-                </div>
-              </div>
+              <Listing2 listing={listing}/>
             </div>
           </div>
         ))}

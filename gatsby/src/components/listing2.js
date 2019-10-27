@@ -1,59 +1,61 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.min.js"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Listing2 = ({listing}) => {
 
   const getCamere = camere =>
     camere.map(camera => (
-      <div>
-        <p>
-          {camera.name} {camera.amount}
-        </p>
-      </div>
+      <li className = "list-group-item d-flex justify-content-between align-items-cente">
+          {camera.name}
+          <p>
+          <span class="badge badge-primary badge-pill">{camera.amount}</span>
+          </p>
+      </li>
     ))
 
   const getDotari = dotari =>
     dotari.map(dotare => (
-      <div>
+      <li className = "list-group-item">
         <p>{dotare}</p>
-      </div>
+      </li>
     ))
 
   const getDescriere = descriere =>
     descriere.map(descriere => (
-      <div>
+      <li className = "list-group-item">
         {descriere.type === "normal" ? (
           <p style={{ color: "red" }}>{descriere.text}</p>
         ) : (
           <p style={{ color: "purple" }}>{descriere.text}</p>
         )}
-      </div>
+      </li>
     ))
 
   return (
     <div className="container">
 
-        <div className="jumbotron">
+        
           <h2>{listing.name}</h2>
           <div className="row">
-            <div className="card col-md-4">
+            <ul className="col-sm-12 col-md-4 list-group">
               {//dotari
               getDotari(listing.dotari)}
-            </div>
+            </ul>
 
-            <div className="card col-md-4">
+            <ul className="col-sm-12 col-md-4 list-group">
               {//camere
               listing.camere &&
                 listing.camere.length > 0 &&
                 getCamere(listing.camere)}
-            </div>
-            <div className="card col-md-3">
+            </ul>
+            <ul className="col-sm-12 col-md-4 list-group" >
               {//descriere
               getDescriere(listing.detaliidescriere)}
-            </div>
+            </ul>
           </div>
-        </div>
+        
       
     </div>
   )
