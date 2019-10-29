@@ -1,30 +1,28 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.min.js"
-import { useStaticQuery, graphql } from "gatsby"
+import SlickAll from "./slickgalleryall"
 
-const Listing2 = ({listing}) => {
-
+const Listing2 = ({ listing }) => {
   const getCamere = camere =>
     camere.map(camera => (
-      <li className = "list-group-item d-flex justify-content-between align-items-cente">
-          {camera.name}
-          <p>
+      <li className="list-group-item d-flex justify-content-between align-items-center">
+        {camera.name}
+        <p>
           <span class="badge badge-primary badge-pill">{camera.amount}</span>
-          </p>
+        </p>
       </li>
     ))
 
   const getDotari = dotari =>
     dotari.map(dotare => (
-      <li className = "list-group-item">
+      <li className="list-group-item">
         <p>{dotare}</p>
       </li>
     ))
 
   const getDescriere = descriere =>
     descriere.map(descriere => (
-      <li className = "list-group-item">
+      <li className="list-group-item">
         {descriere.type === "normal" ? (
           <p style={{ color: "red" }}>{descriere.text}</p>
         ) : (
@@ -35,29 +33,36 @@ const Listing2 = ({listing}) => {
 
   return (
     <div className="container">
+      <h2>{listing.name}</h2>
 
-        
-          <h2>{listing.name}</h2>
-          <div className="row">
-            <ul className="col-sm-12 col-md-4 list-group">
-              {//dotari
-              getDotari(listing.dotari)}
-            </ul>
+      <div className="row my-3 mx-auto">
+        <div className="col-md-6">
+          <SlickAll />
+          {//descriere
+          getDescriere(listing.detaliidescriere)}
+        </div>
 
-            <ul className="col-sm-12 col-md-4 list-group">
+        <div class="col-md">
+          <div class="position-absolute w-100 h-100">
+          <h1>Camere</h1>
+            <ul
+              className="list-group d-flex flex-column flex-wrap mh-md-100"
+              style={{ padding: 50 }}
+            >
+              
               {//camere
+
               listing.camere &&
                 listing.camere.length > 0 &&
                 getCamere(listing.camere)}
-            </ul>
-            <ul className="col-sm-12 col-md-4 list-group" >
-              {//descriere
-              getDescriere(listing.detaliidescriere)}
+              <h1>Dotari</h1>
+              {//dotari
+              getDotari(listing.dotari)}
             </ul>
           </div>
-        
-      
+        </div>
+      </div>
     </div>
   )
 }
-export default Listing2;
+export default Listing2

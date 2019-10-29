@@ -35,7 +35,6 @@ const getNames = (camere) => (camere.map(camera => (
             ))}
 
             {
-              
               listing.camere &&
               listing.camere.length > 0 &&
               getNames(listing.camere)

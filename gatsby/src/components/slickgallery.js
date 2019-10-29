@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 
 function Slick({images}) {
+ 
   const setting = {
     dots: true,
     infinite: true,
@@ -14,23 +15,23 @@ function Slick({images}) {
     slidesToScroll: 1,
     draggable: true,
     arrows: true,
+
   }
-  
-  
+
   //Minus 1 for array offset from 0
 
   return (
     <div>
-    <Slider {...setting}>
-      
-    
-     
+    <Slider {...setting}
+>
       {images.allFile.edges.map(image => (
         <div className="imageContainer">
           
           <Img fluid={image.node.childImageSharp.fluid} />
         </div>
+        
       ))}
+      
     </Slider>
     </div>
   )
