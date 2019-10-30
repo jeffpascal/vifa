@@ -20,7 +20,7 @@ function SlickAll() {
             name
             childImageSharp {
               fluid(maxWidth: 350, maxHeight: 250) {
-                ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid
               }
             }
           }
