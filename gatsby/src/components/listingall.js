@@ -37,7 +37,7 @@ const ListingsAll = () => {
             id
             name
             childImageSharp {
-              fluid(maxWidth: 350, maxHeight: 250) {
+              fluid(maxWidth: 350, maxHeight: 250, quality: 90) {
                 ...GatsbyImageSharpFluid
               }
             }
