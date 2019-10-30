@@ -38,18 +38,16 @@ p{
   font-size: 30px;
 }
 
-
 .slick-next:before {
-
   color: red;
   font-size: 30px;
-
 }
+
 .slick-prev { 
   z-index:10;
   left:10px;
  }
+
 .slick-next { 
   right: 20px 
-  
 }
