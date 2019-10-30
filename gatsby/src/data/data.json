@@ -9,6 +9,18 @@
           "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
        },
        "detaliidescriere":[ 
+          {
+            "text" : "Vila se inchiriaza numai in intregime.",
+            "type" : "card"
+          },
+          {
+            "text" : "Vila Franceza va ofera liniste, confort si discretie pentru o vacanta sau o luna de miere perfecta.",
+            "type" : "card"
+          },
+          {
+            "text" : "Vedeti aici imagini si oferta noastra de cazare",
+            "type" : "card"
+          },
           { 
              "text":"Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
              "type":"bold"
@@ -144,6 +156,18 @@
           "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
        },
        "detaliidescriere":[ 
+          {
+            "text" : "Casa Pescarului se inchiriaza numai in intregime.",
+            "type" : "card"
+          },
+          {
+            "text" : "Casa pescarului va ofera traditia Colibitei combinat cu izolare",
+            "type" : "card"
+          },
+          {
+            "text" : "Vedeti aici imagini si oferta noastra de cazare",
+            "type" : "card"
+          },
           { 
              "text":"Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
              "type":"normal"
@@ -279,6 +303,18 @@
           "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
        },
        "detaliidescriere":[ 
+          {
+            "text" : "3 camere de inchiriat intr-o zona de minune",
+            "type" : "card"
+          },
+          {
+            "text" : "Modern rooms resort va ofera pretul accesibil al unui apartament si peisajul de vis combinat cu locatie ideala pentru orice activitate, langa lac",
+            "type" : "card"
+          },
+          {
+            "text" : "Vedeti aici imagini si oferta noastra de cazare",
+            "type" : "card"
+          },
           { 
              "text":"Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
              "type":"normal"

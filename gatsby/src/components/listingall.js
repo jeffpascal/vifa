@@ -66,11 +66,13 @@ const ListingsAll = () => {
   const getDescriere = descriere =>
     descriere.map(descriere => (
       <div>
-        {descriere.type === "normal" ? (
+        {
+          descriere.type === "card" ? (
           <p style={{ color: "red" }}>{descriere.text}</p>
         ) : (
-          <p style={{ color: "purple" }}>{descriere.text}</p>
-        )}
+          <p style={{ color: "purple" }}></p>
+        )
+        }
       </div>
     ))
 
@@ -99,8 +101,7 @@ const ListingsAll = () => {
             <div className="card-body">
               <h5 className="card-title">{listing.name}</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                {getDescriere(listing.detaliidescriere)}
               </p>
             </div>
             <Link to={`/${listing.slug}/`}>Visit {`${listing.name}`}</Link>
