@@ -1,4 +1,3 @@
-import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import Img from "gatsby-image"
 import "slick-carousel/slick/slick.css"
