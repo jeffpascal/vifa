@@ -3,6 +3,24 @@ module.exports = {
     title: `Manastirea vlasiosa`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@jeffpascals`,
+    menuLinks:[
+    {
+       name:'home',
+       link:'/'
+    },
+    {
+       name:'Vila Franceza',
+       link:'/vila-franceza'
+    },
+    {
+       name:'Casa Pescarului',
+       link:'/casa-pescarilor'
+    },
+    {
+       name:'Modern Rooms Resort',
+       link:'/modern-rooms-resort'
+    }
+  ]
   },
   plugins: [
     {
