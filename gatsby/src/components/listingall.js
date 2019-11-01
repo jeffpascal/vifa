@@ -6,8 +6,8 @@ import {Img} from "gatsby"
 import Listing2 from "./listing2"
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
-    query ListingQueryAll {
-      allDataJson {
+  query query1{
+    allDataRoJson {
         nodes {
           name
           dotari
@@ -45,6 +45,7 @@ const ListingsAll = () => {
         }
       }
     }
+    
   `)
 
   const getCamere = camere =>
@@ -87,7 +88,7 @@ const ListingsAll = () => {
       {// map through all the data, query formed from the graphql
       
       
-      data.allDataJson.nodes.map(listing => (
+      data.allDataRoJson.nodes.map(listing => (
         
         <div className="col-md-4">
           <div className="card">
@@ -103,7 +104,8 @@ const ListingsAll = () => {
                 the bulk of the card's content.
               </p>
             </div>
-            <Link to={`/${listing.slug}/`}>Visit {`${listing.name}`}</Link>
+            <Link type="button" className="btn btn-primary btn-lg btn-block" to={`/ro/${listing.slug}/`}>Vizitati {`${listing.name}`} Romana</Link>
+            <Link type="button" className="btn btn-secondary btn-lg btn-block" to={`/en/${listing.slug}/`}>Visit {`${listing.name}`} English</Link>
           </div>
         </div>
       ))}

@@ -1,6 +1,6 @@
 [ 
     { 
-       "name":"Vila Franceza",
+      "name": "Vila Franceza",
        "slug" : "vila-franceza",
        "detaliipret":{ 
           "pret":"3000lei",
@@ -135,7 +135,7 @@
        ]
     },
     { 
-       "name":"Casa Pescarilor",
+      "name": "Casa Pescarilor",
        "slug" : "casa-pescarilor",
        "detaliipret":{ 
           "pret":"800lei",
@@ -270,7 +270,7 @@
        ]
     },
     { 
-       "name":"Modern Rooms Resort Colibita",
+      "name": "Modern",
        "slug" : "modern-rooms-resort",
        "detaliipret":{ 
           "pret":"450lei",

@@ -1,0 +1,410 @@
+[ 
+    { 
+      "name": "Vila Franceza",
+       "slug" : "vila-franceza",
+       "detaliipret":{ 
+          "pret":"3000lei",
+          "perioada":"iunie - iulie",
+          "detaliu1":"Vila se inchiriaza exclusiv integral.",
+          "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
+       },
+       "detaliidescriere":[ 
+          {
+            "text" : "1111111111",
+            "type" : "card"
+          },
+          {
+            "text" : "2222222222222222 222222222222222222222",
+            "type" : "card"
+          },
+          {
+            "text" : " 33333333333333 3333333333 33333333333333333333333",
+            "type" : "card"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"bold"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          }
+       ],
+       "camere":[ 
+          { 
+             "name":"asd asd asd asd as",
+             "amount":1
+          },
+          { 
+             "name":" asd asd asdasd as",
+             "amount":1
+          },
+          { 
+             "name":"asdas das dasd asd ",
+             "amount":1
+          },
+          { 
+             "name":"asd sad asd ad ad as",
+             "amount":1
+          },
+          { 
+             "name":"asdas dasd sad asdsa dasd ",
+             "amount":1
+          },
+          { 
+             "name":"asd asd asda12d 21d21",
+             "amount":1
+          },
+          { 
+             "name":"asdsa dasd 12312 3 asd asd ",
+             "amount":1
+          },
+          { 
+             "name":"asd asd1 2 213123 asd asd as",
+             "amount":5
+          },
+          { 
+             "name":"asd asd123 1231 dasd asda sdas",
+             "amount":1
+          },
+          { 
+             "name":"sad asd123 123 asd asd asdas",
+             "amount":5
+          }
+       ],
+       "dotari":[ 
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1",
+          "MAdja psod 1"
+       ]
+    },
+    { 
+      "name": "Casa Pescarilor",
+       "slug" : "casa-pescarilor",
+       "detaliipret":{ 
+          "pret":"800lei",
+          "perioada":"iunie - iulie",
+          "detaliu1":"Vila se inchiriaza exclusiv integral.",
+          "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
+       },
+       "detaliidescriere":[ 
+          {
+            "text" : "das das das dsad asdasdasd",
+            "type" : "card"
+          },
+          {
+            "text" : "asd a12e 1d12 d321 dasd cxz",
+            "type" : "card"
+          },
+          {
+            "text" : "asd das dasd 12314512 asd asdsa",
+            "type" : "card"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          }
+       ],
+       "camere":[ 
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"dormitoare cu pat dublu",
+             "amount":5
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          }
+       ],
+       "dotari":[ 
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1"
+       ]
+    },
+    { 
+      "name": "Modern",
+       "slug" : "modern-rooms-resort",
+       "detaliipret":{ 
+          "pret":"450lei",
+          "perioada":"iunie - iulie",
+          "detaliu1":"Vila se inchiriaza exclusiv integral.",
+          "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
+       },
+       "detaliidescriere":[ 
+          {
+            "text" : "123 1das das zxczasd qwd",
+            "type" : "card"
+          },
+          {
+            "text" : "asd asd asdasd 12e qwddas ",
+            "type" : "card"
+          },
+          {
+            "text" : "213w 1e zsdc ac qwsd qad",
+            "type" : "card"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          },
+          { 
+             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "type":"normal"
+          }
+       ],
+       "camere":[ 
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"dormitoare cu pat dublu",
+             "amount":5
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          },
+          { 
+             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
+             "amount":1
+          }
+       ],
+       "dotari":[ 
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1",
+         "MAdja psod 1"
+       ]
+    }
+ ]
