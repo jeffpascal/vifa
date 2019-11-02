@@ -13,9 +13,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.img-wrap {
+  float:left;
+}
 
-.ul {
-  padding:10px;
+
+ul {
+  margin : 0;
+  padding: 0;
 }
 
 .jumbotron{
@@ -50,4 +55,8 @@ p{
 
 .slick-next { 
   right: 20px 
+}
+
+.card{
+  margin-bottom: 40px;
 }

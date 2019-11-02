@@ -1,7 +1,11 @@
 [ 
     { 
-      "name": "Vila Franceza",
+       "name": "Vila Franceza",
        "slug" : "vila-franceza",
+       "names":{ 
+         "en":"French Villa",
+         "ro":"Vila Franceza"
+       },
        "detaliipret":{ 
           "pret":"3000lei",
           "perioada":"iunie - iulie",
@@ -138,6 +142,10 @@
     { 
       "name": "Casa Pescarilor",
        "slug" : "casa-pescarilor",
+       "names":{ 
+         "en":"French Villa",
+         "ro":"Vila Franceza"
+       },
        "detaliipret":{ 
           "pret":"800lei",
           "perioada":"iunie - iulie",
@@ -274,6 +282,10 @@
     { 
       "name": "Modern",
        "slug" : "modern-rooms-resort",
+       "names":{ 
+         "en":"Modern Rooms Resort",
+         "ro":"Apartamente moderne"
+       },
        "detaliipret":{ 
           "pret":"450lei",
           "perioada":"iunie - iulie",

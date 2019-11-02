@@ -15,51 +15,53 @@ const Listing2 = ({ listing }) => {
 
   const getDotari = dotari =>
     dotari.map(dotare => (
-      <li className="list-group-item">
-        <p>{dotare}</p>
-      </li>
+
+      <p className="list-group-item-heading">{dotare}</p>
     ))
 
   const getDescriere = descriere =>
     descriere.map(descriere => (
-      <li className="list-group-item">
+      <div>
         {descriere.type === "normal" ? (
-          <p style={{ color: "red" }}>{descriere.text}</p>
+          <p className="list-group-item-heading" style={{ color: "red" }}>{descriere.text}</p>
         ) : (
-          <p style={{ color: "purple" }}>{descriere.text}</p>
-        )}
-      </li>
+            <p className="list-group-item-heading" style={{ color: "purple" }}>{descriere.text}</p>
+          )}
+      </div>
     ))
 
   return (
     <div className="container">
       <h2>{listing.name}</h2>
 
-      <div className="row my-3 mx-auto">
-        <div className="col-md-6">
+      <div className="row">
+        <div className="col-md-5">
           <SlickAll />
+          
+          <li className="list-group-item">
+          <h3 className="list-group-item-heading">Descriere</h3>
           {//descriere
-          getDescriere(listing.detaliidescriere)}
+            getDescriere(listing.detaliidescriere)}
+            </li>
         </div>
-
-        <div class="col-md">
-          <div class="position-absolute w-100 h-100">
-          <h1>Camere</h1>
-            <ul
-              className="list-group d-flex flex-column flex-wrap mh-md-100"
-              style={{ padding: 50 }}
-            >
-              
+        
+        <div className="col-md-3">
+          <div className="ul">
+            <h1>Camere</h1>
+            <ul className="list-group" >
               {//camere
-
-              listing.camere &&
+                listing.camere &&
                 listing.camere.length > 0 &&
                 getCamere(listing.camere)}
-              <h1>Dotari</h1>
-              {//dotari
-              getDotari(listing.dotari)}
             </ul>
           </div>
+        </div>
+        <div className="col-md-4">
+          <li className="list-group-item">
+              <h3 className="list-group-item-heading">Dotari</h3>
+              {//dotari
+                  getDotari(listing.dotari)}
+          </li> 
         </div>
       </div>
     </div>

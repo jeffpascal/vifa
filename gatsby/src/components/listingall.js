@@ -6,45 +6,62 @@ import {Img} from "gatsby"
 import Listing2 from "./listing2"
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
-  query query1{
+  query query1 {
     allDataRoJson {
-        nodes {
-          name
-          dotari
-          slug
-          detaliipret {
-            pret
-            perioada
-            detaliu1
-            detaliu2
-          }
-          detaliidescriere {
-            text
-            type
-          }
-          camere {
-            name
-            amount
-          }
+      nodes {
+        name
+        dotari
+        slug
+        detaliipret {
+          pret
+          perioada
+          detaliu1
+          detaliu2
         }
-      }
-      allFile(
-        sort: { fields: name, order: DESC }
-        filter: { relativeDirectory: { eq: "main-page-card-images" } }
-      ) {
-        edges {
-          node {
-            id
-            name
-            childImageSharp {
-              fluid(maxWidth: 350, maxHeight: 250, quality: 90) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+        detaliidescriere {
+          text
+          type
+        }
+        camere {
+          name
+          amount
+        }
+        names {
+          en
+          ro
         }
       }
     }
+    images: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "main-page-card-images"}}) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(maxWidth: 350, maxHeight: 250, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          
+        }
+      }
+    }
+    flags: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "flags"}}) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(maxWidth: 50, maxHeight: 25, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  
     
   `)
 
@@ -75,11 +92,16 @@ const ListingsAll = () => {
       </div>
     ))
 
-    const imageLinks = data.allFile.edges;
+    const imageLinks = data.images.edges;
+    const flagLinks = data.flags.edges;
     const newImages={};
+    const newFlags={};
     //create a map. newimages["vila"] will have the image i need to print
     for(var index = 0 ; index < imageLinks.length ; index++){
       newImages[imageLinks[index].node.name] = imageLinks[index];
+    }
+    for(var index = 0 ; index < flagLinks.length ; index++){
+      newFlags[flagLinks[index].node.name] = flagLinks[index];
     }
     
   return (
@@ -104,8 +126,24 @@ const ListingsAll = () => {
                 the bulk of the card's content.
               </p>
             </div>
-            <Link type="button" className="btn btn-primary btn-lg btn-block" to={`/ro/${listing.slug}/`}>Vizitati {`${listing.name}`} Romana</Link>
-            <Link type="button" className="btn btn-secondary btn-lg btn-block" to={`/en/${listing.slug}/`}>Visit {`${listing.name}`} English</Link>
+            <Link type="button" className="btn btn-primary btn-md btn-block" to={`/ro/${listing.slug}/`}>
+            <div className="img-wrap"><img
+              src={newFlags["ro"].node.childImageSharp.fluid.src}
+              className="img-fluid"
+              alt="Logo"
+              style={{"padding-right": 10}}
+            /></div>
+              Vizitati {`${listing.names.ro}`} Romana</Link>
+
+            <Link type="button" className="btn btn-secondary btn-md btn-block" to={`/en/${listing.slug}/`}>
+            <div className="img-wrap"><img
+              src={newFlags["en"].node.childImageSharp.fluid.src}
+              className="img-fluid"
+              alt="Logo"
+              style={{"padding-right": 10}}
+            /></div>
+              Visit {`${listing.names.en}`} English</Link>
+              
           </div>
         </div>
       ))}
