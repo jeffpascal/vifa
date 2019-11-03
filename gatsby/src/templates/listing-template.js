@@ -8,8 +8,8 @@ export default ({ pageContext, data }) => {
   return (
 
     <Layout>
-      <Slick images={data} />
-      <Listing2 listing={pageContext.item} />
+      <Slick galleryImages={data.allFile.edges} />
+      <Listing2 listing={pageContext.item} images={data}/>
     </Layout>
   )
 }

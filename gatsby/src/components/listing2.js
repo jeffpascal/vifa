@@ -1,8 +1,15 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
 import SlickAll from "./slickgalleryall"
+import Slick from "./slickgallery"
+import "react-fontawesome"
 
-const Listing2 = ({ listing }) => {
+
+
+
+const Listing2 = ({ listing, images }) => {
+
+  const camereImages = images.allFile.edges.filter(image => image.node.name.includes("camera"));
+
   const getCamere = camere =>
     camere.map(camera => (
       <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -15,8 +22,9 @@ const Listing2 = ({ listing }) => {
 
   const getDotari = dotari =>
     dotari.map(dotare => (
-
-      <p className="list-group-item-heading">{dotare}</p>
+      <li className="list-group-item">
+        {dotare}
+      </li>
     ))
 
   const getDescriere = descriere =>
@@ -30,38 +38,42 @@ const Listing2 = ({ listing }) => {
       </div>
     ))
 
+
   return (
     <div className="container">
       <h2>{listing.name}</h2>
 
+      
       <div className="row">
-        <div className="col-md-5">
-          <SlickAll />
-          
+        <div className="col-md-6">
           <li className="list-group-item">
-          <h3 className="list-group-item-heading">Descriere</h3>
-          {//descriere
-            getDescriere(listing.detaliidescriere)}
-            </li>
+            <h3 className="list-group-item-heading">Descriere</h3>
+            {//descriere
+              getDescriere(listing.detaliidescriere)}
+          </li>
         </div>
+
+        <div className="col-md-6">
         
-        <div className="col-md-3">
-          <div className="ul">
+          
             <h1>Camere</h1>
             <ul className="list-group" >
+            <Slick galleryImages={camereImages} />
               {//camere
                 listing.camere &&
                 listing.camere.length > 0 &&
                 getCamere(listing.camere)}
             </ul>
-          </div>
+          
         </div>
-        <div className="col-md-4">
-          <li className="list-group-item">
-              <h3 className="list-group-item-heading">Dotari</h3>
-              {//dotari
-                  getDotari(listing.dotari)}
-          </li> 
+        <ul class="list-group">
+        </ul>
+        <div className="col-md-12 div_top_hypers">
+          <ul className="d-flex flex-wrap">
+            <h3 className="list-group-item-heading">Dotari</h3>
+            {//dotari
+              getDotari(listing.dotari)}
+          </ul>
         </div>
       </div>
     </div>

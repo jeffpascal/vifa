@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 
-function Slick({images}) {
- 
+function Slick({ galleryImages }) {
+
   const setting = {
     dots: true,
     infinite: true,
@@ -21,17 +21,18 @@ function Slick({images}) {
 
   return (
     <div>
-    <Slider {...setting}
->
-      {images.allFile.edges.map(image => (
-        <div className="imageContainer">
-          
-          <Img fluid={image.node.childImageSharp.fluid} />
-        </div>
-        
-      ))}
-      
-    </Slider>
+
+      <Slider {...setting}
+      >
+        {galleryImages.map(image => (
+          <div className="imageContainer">
+
+            <Img fluid={image.node.childImageSharp.fluid} />
+          </div>
+
+        ))}
+
+      </Slider>
     </div>
   )
 }

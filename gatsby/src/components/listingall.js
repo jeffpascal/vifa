@@ -126,23 +126,25 @@ const ListingsAll = () => {
                 the bulk of the card's content.
               </p>
             </div>
-            <Link type="button" className="btn btn-primary btn-md btn-block" to={`/ro/${listing.slug}/`}>
-            <div className="img-wrap"><img
+            <Link type="button" className="btn btn-default btn-sm" to={`/ro/${listing.slug}/`}>
+            <div className="img-wrap">
+              <img
               src={newFlags["ro"].node.childImageSharp.fluid.src}
               className="img-fluid"
               alt="Logo"
               style={{"padding-right": 10}}
             /></div>
-              Vizitati {`${listing.names.ro}`} Romana</Link>
+               <h6>{`${listing.names.ro}`}</h6></Link>
 
-            <Link type="button" className="btn btn-secondary btn-md btn-block" to={`/en/${listing.slug}/`}>
-            <div className="img-wrap"><img
+            <Link type="button" className="btn btn-default btn-sm" to={`/en/${listing.slug}/`}>
+            <div className="img-wrap">
+              <img
               src={newFlags["en"].node.childImageSharp.fluid.src}
               className="img-fluid"
               alt="Logo"
-              style={{"padding-right": 10}}
+              style={{"padding-right": 10, "vertical-align": "middle"}}
             /></div>
-              Visit {`${listing.names.en}`} English</Link>
+              <h6> {`${listing.names.en}`}</h6></Link>
               
           </div>
         </div>
