@@ -22,7 +22,7 @@ const Listing2 = ({ listing, images }) => {
 
   const getDotari = dotari =>
     dotari.map(dotare => (
-      <li className="list-group-item">
+      <li className="list-group-item  flex-fill">
         {dotare}
       </li>
     ))
