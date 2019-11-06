@@ -3,6 +3,36 @@ module.exports = {
     title: `Vila Franceza`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@jeffpascals`,
+    menuLinks: [
+      {
+        name: "home",
+        link: "/",
+      },
+      {
+        name: "Vila Franceza",
+        link: "/ro/vila-franceza",
+      },
+      {
+        name: "Casa Pescarului",
+        link: "/ro/casa-pescarilor",
+      },
+      {
+        name: "Modern Rooms Resort",
+        link: "/ro/modern-rooms-resort",
+      },
+      {
+        name: "Vila Franceza",
+        link: "/en/vila-franceza",
+      },
+      {
+        name: "Casa Pescarului",
+        link: "/en/casa-pescarilor",
+      },
+      {
+        name: "Modern Rooms Resort",
+        link: "/en/modern-rooms-resort",
+      }
+    ],
   },
   plugins: [
     {
@@ -40,7 +70,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

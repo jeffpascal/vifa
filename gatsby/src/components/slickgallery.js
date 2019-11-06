@@ -8,7 +8,7 @@ import Slider from "react-slick"
 function Slick({ galleryImages }) {
 
   const setting = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

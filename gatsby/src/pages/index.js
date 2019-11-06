@@ -10,8 +10,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <SlickAll />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
 
       {/* <img src={logo} alt="" /> */}
     <ListingAll />
