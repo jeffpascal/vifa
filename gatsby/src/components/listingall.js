@@ -2,8 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
-import {Img} from "gatsby"
-import Listing2 from "./listing2"
+
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
   query query1 {

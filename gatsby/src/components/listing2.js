@@ -1,7 +1,6 @@
 import React from "react"
 import SlickAll from "./slickgalleryall"
 import Slick from "./slickgallery"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Listing2 = ({ listing, images }) => {
   const camereImages = images.allFile.edges.filter(image =>

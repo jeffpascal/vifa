@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "./layout.css"
 import Slider from "react-slick"
 
 function Slick({ galleryImages }) {
