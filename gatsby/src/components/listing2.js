@@ -30,7 +30,7 @@ const Listing2 = ({ listing, images }) => {
 
   const getDescriere = descriere =>
     descriere.map(descriere => (
-      <div>
+      <p>
         {descriere.type === "normal" ? (
           <p className="list-group-item-heading" style={{ color: "red" }}>
             {descriere.text}
@@ -40,7 +40,7 @@ const Listing2 = ({ listing, images }) => {
             {descriere.text}
           </p>
         )}
-      </div>
+      </p>
     ))
 
   return (

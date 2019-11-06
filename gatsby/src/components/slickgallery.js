@@ -8,7 +8,7 @@ import Slider from "react-slick"
 function Slick({ galleryImages }) {
 
   const setting = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -21,7 +21,7 @@ function Slick({ galleryImages }) {
   //Minus 1 for array offset from 0
 
   return (
-    <div>
+    <div className="jumbotron" style={{"background-color": "#09b3d9"}}>
 
       <Slider {...setting}
       >

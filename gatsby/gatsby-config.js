@@ -21,15 +21,15 @@ module.exports = {
         link: "/ro/modern-rooms-resort",
       },
       {
-        name: "Vila Franceza",
+        name: "EN Vila Franceza",
         link: "/en/vila-franceza",
       },
       {
-        name: "Casa Pescarului",
+        name: "EN Casa Pescarului",
         link: "/en/casa-pescarilor",
       },
       {
-        name: "Modern Rooms Resort",
+        name: "EN Modern Rooms Resort",
         link: "/en/modern-rooms-resort",
       }
     ],

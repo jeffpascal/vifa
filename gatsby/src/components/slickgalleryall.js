@@ -32,7 +32,7 @@ function SlickAll() {
   )
 
   const setting = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -45,7 +45,7 @@ function SlickAll() {
   //Minus 1 for array offset from 0
 
   return (
-    <div>
+    <div className="jumbotron">
       
     <Slider {...setting}>
       {query.allFile.edges.map(image => (
