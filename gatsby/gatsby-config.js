@@ -5,10 +5,6 @@ module.exports = {
     author: `@jeffpascals`,
     menuLinks: [
       {
-        name: "home",
-        link: "/",
-      },
-      {
         name: "Vila Franceza",
         link: "/ro/vila-franceza",
       },

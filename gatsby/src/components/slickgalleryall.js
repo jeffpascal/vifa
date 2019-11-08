@@ -3,7 +3,7 @@ import React from "react"
 import Img from "gatsby-image"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import "./layout.css"
+import "./css/gallery.css"
 import Slider from "react-slick"
 
 function SlickAll() {
@@ -45,7 +45,7 @@ function SlickAll() {
   //Minus 1 for array offset from 0
 
   return (
-    <div className="jumbotron">
+    <div className="galleryDiv">
       
     <Slider {...setting}>
       {query.allFile.edges.map(image => (

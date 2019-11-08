@@ -9,6 +9,46 @@ const Header = ({ siteTitle, menuLinks }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <nav className="navbar navbar-expand-lg navbar-dark indigo " >
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <Link className="navbar-brand" to="/">
+          <img
+            src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+            height="30"
+            alt="mdb logo"
+          ></img>
+          Vila Franceza
+        </Link>
+        <ul
+          className="navbar-nav mr-auto mt-lg-0"
+          style={{ display: "flex", flex: 1 }}
+        >
+          {menuLinks.map(link => (
+            <button class="btn align-middle btn-primary" type="button">
+            <li
+              className="nav-item"
+              key={link.name}
+            >
+              <Link className="nav-link" style={{ color: `white` }} to={link.link}>
+                {link.name}
+              </Link>
+            </li>
+            </button>
+          ))}
+        </ul>
+      </div>
+    </nav>
     <div
       style={{
         margin: `0 auto`,
@@ -26,27 +66,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         >
           {siteTitle}
         </Link>
-        
       </h1>
-      <div>
-          <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `1rem`,
-                  }}
-                >
-                  <Link style={{ color: `white` }} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
     </div>
   </header>
 )

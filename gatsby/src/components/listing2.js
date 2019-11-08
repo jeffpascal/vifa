@@ -1,5 +1,4 @@
 import React from "react"
-import SlickAll from "./slickgalleryall"
 import Slick from "./slickgallery"
 
 const Listing2 = ({ listing, images }) => {
