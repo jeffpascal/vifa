@@ -48,8 +48,8 @@ function SlickAll() {
     <div className="galleryDiv">
       
     <Slider {...setting}>
-      {query.allFile.edges.map(image => (
-        <div className="imageContainer">
+      {query.allFile.edges.map((image, index) => (
+        <div key={index} className="imageContainer">
           <Img fluid={image.node.childImageSharp.fluid} />
         </div>
       ))}

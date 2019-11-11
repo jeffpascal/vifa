@@ -9,4 +9,3 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'mdbreact/dist/css/mdb.css'
 import 'mdbootstrap/js/bootstrap.min.js'
 import "bootstrap/dist/css/bootstrap.min.css"
-import $ from 'jquery';

@@ -95,11 +95,11 @@ const ListingsAll = () => {
     const newImages={};
     const newFlags={};
     //create a map. newimages["vila"] will have the image i need to print
-    for(var index = 0 ; index < imageLinks.length ; index++){
-      newImages[imageLinks[index].node.name] = imageLinks[index];
+    for(var i = 0 ; i < imageLinks.length ; i++){
+      newImages[imageLinks[i].node.name] = imageLinks[i];
     }
-    for(var index = 0 ; index < flagLinks.length ; index++){
-      newFlags[flagLinks[index].node.name] = flagLinks[index];
+    for(var j = 0 ; j < flagLinks.length ; j++){
+      newFlags[flagLinks[j].node.name] = flagLinks[j];
     }
     
   return (
@@ -108,9 +108,9 @@ const ListingsAll = () => {
       {// map through all the data, query formed from the graphql
       
       
-      data.allDataRoJson.nodes.map(listing => (
+      data.allDataRoJson.nodes.map((listing, index) => (
         
-        <div className="col-md-4">
+        <div key={index} className="col-md-4">
           <div className="card">
             <img
               src={newImages[listing.slug].node.childImageSharp.fluid.src}

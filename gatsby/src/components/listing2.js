@@ -7,8 +7,8 @@ const Listing2 = ({ listing, images }) => {
   )
 
   const getCamere = camere =>
-    camere.map(camera => (
-      <li className="list-group-item d-flex justify-content-between align-items-center">
+    camere.map((camera, index) => (
+      <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
         {camera.name}
         <p>
           <span className="badge badge-primary badge-pill">{camera.amount}</span>
@@ -17,8 +17,8 @@ const Listing2 = ({ listing, images }) => {
     ))
 
   const getDotari = dotari =>
-    dotari.map(dotare => (
-      <li className="list-group-item w-50 list-group-item-action">
+    dotari.map((dotare, index)=> (
+      <li key={index} className="list-group-item w-50 list-group-item-action">
         <i
           className="far fa-check-square fa-lg"
           style={{ color: "green", padding: 4}}
@@ -28,8 +28,8 @@ const Listing2 = ({ listing, images }) => {
     ))
 
   const getDescriere = descriere =>
-    descriere.map(descriere => (
-      <div>
+    descriere.map((descriere, index) => (
+      <div key={index}>
         {descriere.type === "normal" ? (
           <p className="list-group-item-heading" style={{ color: "red" }}>
             {descriere.text}

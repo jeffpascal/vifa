@@ -29,15 +29,14 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle } ) => (
             height="30"
             alt="mdb logo"
           ></img>
-          <pre>{JSON.stringify(local, null, 2)}</pre>
-          <pre>{JSON.stringify(pageTitle, null, 2)}</pre>
+
         </Link>
         <ul
           className="navbar-nav mr-auto mt-lg-0"
           style={{ display: "flex", flex: 1 }}
         >
-          {menuLinks.map(link => (
-            <button className="btn align-middle btn-primary" type="button">
+          {menuLinks.map((link, index) => (
+            <button key={index} className="btn align-middle btn-primary" type="button">
             <li
               className="nav-item"
               key={link.name}
@@ -60,7 +59,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle } ) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <h1
+        <Link to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
@@ -68,7 +67,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle } ) => (
         >
           {local === undefined ?  siteTitle : local==="en" ? pageTitle.en : pageTitle.ro }
         </Link>
-      </h1>
+        </h1>
     </div>
   </header>
 )
