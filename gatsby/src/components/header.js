@@ -66,7 +66,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle } ) => (
             textDecoration: `none`,
           }}
         >
-          {local==="en" ? pageTitle.en : pageTitle.ro}
+          {local === undefined ?  siteTitle : local==="en" ? pageTitle.en : pageTitle.ro }
         </Link>
       </h1>
     </div>
