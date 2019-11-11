@@ -26,7 +26,7 @@ function Slick({ galleryImages }) {
       <Slider {...setting}
       >
         {galleryImages.map(image => (
-          <div className="imageContainer">
+          <div className="">
 
             <Img fluid={image.node.childImageSharp.fluid} />
           </div>

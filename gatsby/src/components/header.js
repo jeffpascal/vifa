@@ -20,7 +20,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
         <Link className="navbar-brand" to="/">
@@ -36,7 +36,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           style={{ display: "flex", flex: 1 }}
         >
           {menuLinks.map(link => (
-            <button class="btn align-middle btn-primary" type="button">
+            <button className="btn align-middle btn-primary" type="button">
             <li
               className="nav-item"
               key={link.name}
@@ -50,6 +50,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         </ul>
       </div>
     </nav>
+    
     <div
       style={{
         margin: `0 auto`,
@@ -58,15 +59,14 @@ const Header = ({ siteTitle, menuLinks }) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+        <h1
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
-        </Link>
+        </h1>
       </h1>
     </div>
   </header>

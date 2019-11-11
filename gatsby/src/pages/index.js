@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import ListingAll from "../components/listingall"
 import SlickAll from "../components/slickgalleryall"
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle={'VIFA'}>
     <SEO title="Home" />
     <SlickAll />
 

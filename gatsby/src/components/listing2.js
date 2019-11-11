@@ -11,7 +11,7 @@ const Listing2 = ({ listing, images }) => {
       <li className="list-group-item d-flex justify-content-between align-items-center">
         {camera.name}
         <p>
-          <span class="badge badge-primary badge-pill">{camera.amount}</span>
+          <span className="badge badge-primary badge-pill">{camera.amount}</span>
         </p>
       </li>
     ))
@@ -20,7 +20,7 @@ const Listing2 = ({ listing, images }) => {
     dotari.map(dotare => (
       <li className="list-group-item w-50 list-group-item-action">
         <i
-          class="far fa-check-square fa-lg"
+          className="far fa-check-square fa-lg"
           style={{ color: "green", padding: 4}}
         ></i>
         {dotare}
@@ -29,17 +29,17 @@ const Listing2 = ({ listing, images }) => {
 
   const getDescriere = descriere =>
     descriere.map(descriere => (
-      <p>
+      <div>
         {descriere.type === "normal" ? (
           <p className="list-group-item-heading" style={{ color: "red" }}>
             {descriere.text}
           </p>
         ) : (
-          <p className="list-group-item-heading" style={{ color: "purple" }}>
+          <p className="h6" style={{ color: "purple" }}>
             {descriere.text}
           </p>
         )}
-      </p>
+      </div>
     ))
 
   return (
@@ -65,7 +65,7 @@ const Listing2 = ({ listing, images }) => {
               getCamere(listing.camere)}
           </ul>
         </div>
-        <ul class="list-group"></ul>
+        <ul className="list-group"></ul>
         <div className="col-md-12">
           <h3 className="list-group-item-heading">Dotari</h3>
           <div className="list-group d-flex flex-row flex-wrap">

@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
 
 const ListingsAll = () => {
@@ -131,7 +130,7 @@ const ListingsAll = () => {
               src={newFlags["ro"].node.childImageSharp.fluid.src}
               className="img-fluid"
               alt="Logo"
-              style={{"padding-right": 10}}
+              style={{"paddingRight": 10}}
             /></div>
                <h6>{`${listing.names.ro}`}</h6></Link>
 
@@ -141,7 +140,7 @@ const ListingsAll = () => {
               src={newFlags["en"].node.childImageSharp.fluid.src}
               className="img-fluid"
               alt="Logo"
-              style={{"padding-right": 10, "vertical-align": "middle"}}
+              style={{"paddingRight": 10, "verticalAlign": "middle"}}
             /></div>
               <h6> {`${listing.names.en}`}</h6></Link>
               

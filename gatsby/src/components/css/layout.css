@@ -13,7 +13,9 @@ body {
   float: left;
 }
 
-
+ul{
+  padding:0;
+}
 .card {
   margin-bottom: 20px;
   
