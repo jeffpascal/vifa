@@ -16,7 +16,8 @@ exports.createPages = ({ actions }) => {
             path: `/ro/${item.slug}/`,
             component: require.resolve('./src/templates/listing-template.js'),
             context:{item,
-            slug: item.slug},
+            slug: item.slug,
+            locale: "ro"},
         })
     })
     jsonDataEn.forEach(item => {
@@ -24,7 +25,8 @@ exports.createPages = ({ actions }) => {
             path: `/en/${item.slug}/`,
             component: require.resolve('./src/templates/listing-template.js'),
             context:{item,
-            slug: item.slug},
+            slug: item.slug,
+            locale: "en"},
         })
     })
   }

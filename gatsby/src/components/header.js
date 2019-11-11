@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 
 
-const Header = ({ siteTitle, menuLinks }) => (
+const Header = ({ siteTitle, menuLinks, local, pageTitle } ) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#3333cc`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -29,7 +29,8 @@ const Header = ({ siteTitle, menuLinks }) => (
             height="30"
             alt="mdb logo"
           ></img>
-          Vila Franceza
+          <pre>{JSON.stringify(local, null, 2)}</pre>
+          <pre>{JSON.stringify(pageTitle, null, 2)}</pre>
         </Link>
         <ul
           className="navbar-nav mr-auto mt-lg-0"
@@ -65,8 +66,8 @@ const Header = ({ siteTitle, menuLinks }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
-        </h1>
+          {local === undefined ?  siteTitle : local==="en" ? pageTitle.en : pageTitle.ro }
+        </Link>
       </h1>
     </div>
   </header>

@@ -8,7 +8,7 @@ export default ({ pageContext, data }) => {
 
   return (
 
-    <Layout>
+    <Layout currentPageTitle={pageContext.item.names} locale = {pageContext.locale}>
       <Slick galleryImages={data.allFile.edges} />
       <Listing2 listing={pageContext.item} images={data}/>
     </Layout>
