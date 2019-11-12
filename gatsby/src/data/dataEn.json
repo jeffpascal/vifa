@@ -1,422 +1,339 @@
-[ 
-    { 
-       "name": "Vila Franceza",
-       "slug" : "vila-franceza",
-       "names":{ 
-         "en":"French Villa",
-         "ro":"Vila Franceza"
-       },
-       "detaliipret":{ 
-          "pret":"3000lei",
-          "perioada":"iunie - iulie",
-          "detaliu1":"Vila se inchiriaza exclusiv integral.",
-          "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
-       },
-       "detaliidescriere":[ 
-          {
-            "text" : "1111111111",
-            "type" : "card"
-          },
-          {
-            "text" : "2222222222222222 222222222222222222222",
-            "type" : "card"
-          },
-          {
-            "text" : " 33333333333333 3333333333 33333333333333333333333",
-            "type" : "card"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"bold"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          }
-       ],
-       "camere":[ 
-          { 
-             "name":"asd asd asd asd as",
-             "amount":1
-          },
-          { 
-             "name":" asd asd asdasd as",
-             "amount":1
-          },
-          { 
-             "name":"asdas das dasd asd ",
-             "amount":1
-          },
-          { 
-             "name":"asd sad asd ad ad as",
-             "amount":1
-          },
-          { 
-             "name":"asdas dasd sad asdsa dasd ",
-             "amount":1
-          },
-          { 
-             "name":"asd asd asda12d 21d21",
-             "amount":1
-          },
-          { 
-             "name":"asdsa dasd 12312 3 asd asd ",
-             "amount":1
-          },
-          { 
-             "name":"asd asd1 2 213123 asd asd as",
-             "amount":5
-          },
-          { 
-             "name":"asd asd123 1231 dasd asda sdas",
-             "amount":1
-          },
-          { 
-             "name":"sad asd123 123 asd asd asdas",
-             "amount":5
-          }
-       ],
-       "dotari":[ 
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1",
-          "MAdja psod 1"
-       ]
-    },
-    { 
+[
+   {
+      "name": "Vila Franceza",
+      "slug": "vila-franceza",
+      "names": {
+         "en": "French Villa",
+         "ro": "Vila Franceza"
+      },
+      "detaliipret": {
+         "pret": "3000lei",
+         "perioada": "iunie - iulie",
+         "detaliu1": "Vila se inchiriaza exclusiv integral.",
+         "detaliu2": "Vila se poate inchiria de persoane juridice sau de persoane fizice."
+      },
+      "detaliidescriere": [
+         {
+            "text": "The French villa is located on the northern shore of Lake Colibița, in a position that provides a unique perspective on the lake but also the Călimani mountains.",
+            "type": "bold"
+         },
+         {
+            "text": "The water is reached via the jetty located just a few meters away.",
+            "type": "normal"
+         },
+         {
+            "text": "Access to the villa keeps you from unwanted visitors.",
+            "type": "normal"
+         },
+         {
+            "text": "There are several restaurants and trout shops near the villa.",
+            "type": "normal"
+         },
+         {
+            "text": "For hikers there are tourist routes for visiting the surroundings and the Călimani Mountains. The area is very happy with regard to forest mushrooms.",
+            "type": "normal"
+         },
+         {
+            "text": "There are also routes for mountain bike enthusiasts.",
+            "type": "normal"
+         },
+         {
+            "text": "To ensure the discretion, tranquility and comfort you need, no single rooms are rented.",
+            "type": "normal"
+         },
+         {
+            "text": "French Villa provides an ideal accommodation space for 15 people.",
+            "type": "normal"
+         },
+         {
+            "text": "French Villa offers peace, comfort and discretion for a perfect holiday or honeymoon.",
+            "type": "normal"
+         },
+         {
+            "text": "The construction is modern and the glass walls allow natural lighting most of the day. The lake and mountain ridges can be easily admired, but with discretion, from the inside.",
+            "type": "normal"
+         },
+         {
+            "text": "The villa can be rented for any period of one week for a minimum of two days. Out of respect for your comfort, the French Villa is rented exclusively in its entirety.",
+            "type": "normal"
+         },
+         {
+            "text": "Inside the villa there is no smoking! Pets are allowed.",
+            "type": "normal"
+         }
+      ],
+      "camere": [
+         {
+            "name": "Open livingroom",
+            "Amount": 1
+         },
+         {
+            "name": "American kitchen",
+            "Amount": 1
+         },
+         {
+            "name": "Dining room",
+            "Amount": 1
+         },
+         {
+            "name": "Direct exit to the terrace",
+            "Amount": 1
+         },
+         {
+            "name": "Open terrace for beach, sports, with covered place for dining",
+            "Amount": 1
+         },
+         {
+            "name": "Jacuzzi bedroom",
+            "Amount": 1
+         },
+         {
+            "name": "VIP bedroom with jacuzzi and king size bed",
+            "Amount": 1
+         },
+         {
+            "name": "double bed rooms",
+            "Amount": 5
+         },
+         {
+            "name": "living room with double sofa bed",
+            "Amount": 1
+         },
+         {
+            "name": "Playground for children",
+            "Amount": 5
+         }
+      ],
+      "dotari": [
+         "Satellite TV",
+         "Wi-Fi",
+         "Professional stereo sound system",
+         "Pool table",
+         "Babyfoot table football game",
+         "Two kayaks for riding enthusiasts",
+         "Snow for the winter season",
+         "Wood burning fireplace in the living room, with heated chairs",
+         "Central heating (electric, wood, gas)",
+         "Washing machine",
+         "Dryer",
+         "Iron and ironing board",
+         "Hair dryers",
+         "XXL exterior grille",
+         "Grill disc",
+         "Outdoor spa with ionized water, warm, yours, capacity 10 people",
+         "Sauna",
+         "Private jetty for water sports",
+         "Beach furniture",
+         "Private parking",
+         "Video surveillance system",
+         "Gas stove",
+         "Microwave",
+         "Toaster",
+         "Electric cutter",
+         "Kitchen robot",
+         "Dishes and accessories for 20 people",
+         "Dishwasher",
+         "Double fridge",
+         "Pizza oven for 15 people. It can be used in pastry, steak etc",
+         "Coffee maker and filter"
+      ]
+   },
+   {
       "name": "Casa Pescarilor",
-       "slug" : "casa-pescarilor",
-       "names":{ 
-         "en":"French Villa",
-         "ro":"Vila Franceza"
-       },
-       "detaliipret":{ 
-          "pret":"800lei",
-          "perioada":"iunie - iulie",
-          "detaliu1":"Vila se inchiriaza exclusiv integral.",
-          "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
-       },
-       "detaliidescriere":[ 
-          {
-            "text" : "das das das dsad asdasdasd",
-            "type" : "card"
-          },
-          {
-            "text" : "asd a12e 1d12 d321 dasd cxz",
-            "type" : "card"
-          },
-          {
-            "text" : "asd das dasd 12314512 asd asdsa",
-            "type" : "card"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          }
-       ],
-       "camere":[ 
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"dormitoare cu pat dublu",
-             "amount":5
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          }
-       ],
-       "dotari":[ 
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1"
-       ]
-    },
-    { 
+      "slug": "casa-pescarilor",
+      "names": {
+         "en": "Traditional fishermans house",
+         "ro": "Casa Pescarului"
+      },
+      "detaliipret": {
+         "pret": "800lei",
+         "perioada": "iunie - iulie",
+         "detaliu1": "Vila se inchiriaza exclusiv integral.",
+         "detaliu2": "Vila se poate inchiria de persoane juridice sau de persoane fizice."
+      },
+      "detaliidescriere": [
+         {
+            "text": "Casa Pescarului is an old, peasant family house, reconditioned to preserve the traditional look but also to provide all the necessary comfort. The Pescarului house is located right on the shore of Lake Colibita.",
+            "type": "normal"
+         },
+         {
+            "text": "The access to the Fisherman's House can be done by car.",
+            "type": "normal"
+         },
+         {
+            "text": "The house provides an ideal accommodation space for 6 adults and 2 children (there is a 160 cm bed for children).",
+            "type": "normal"
+         },
+         {
+            "text": "The villa can be rented for any period of one week for a minimum of three days. Out of respect for your comfort, Pescarului House is rented exclusively in full.",
+            "type": "normal"
+         },
+         {
+            "text": "No smoking inside the house! Pets allowed.",
+            "type": "normal"
+         }
+      ],
+      "camere": [
+         {
+            "name": "Livingroom",
+            "amount": 1
+         },
+         {
+            "name": "Kitchen",
+            "amount": 1
+         },
+         {
+            "name": "Dining room",
+            "amount": 1
+         },
+         {
+            "name": "Direct exit to the terrace",
+            "amount": 1
+         },
+         {
+            "name": "Open terrace for beach, sports, with covered place for dining",
+            "amount": 1
+         },
+         {
+            "name": "Bedroom downstairs",
+            "amount": 1
+         },
+         {
+            "name": "Attic bedrooms",
+            "amount": 2
+         },
+         {
+            "name": "the toilet",
+            "amount": 1
+         },
+         {
+            "name": "Take it down",
+            "amount": 1
+         }
+      ],
+      "dotari": [
+         "TV satelit",
+         "Wi-Fi",
+         "Microwave"
+      ]
+   },
+   {
       "name": "Modern",
-       "slug" : "modern-rooms-resort",
-       "names":{ 
-         "en":"Modern Rooms Resort",
-         "ro":"Apartamente moderne"
-       },
-       "detaliipret":{ 
-          "pret":"450lei",
-          "perioada":"iunie - iulie",
-          "detaliu1":"Vila se inchiriaza exclusiv integral.",
-          "detaliu2":"Vila se poate inchiria de persoane juridice sau de persoane fizice."
-       },
-       "detaliidescriere":[ 
-          {
-            "text" : "123 1das das zxczasd qwd",
-            "type" : "card"
-          },
-          {
-            "text" : "asd asd asdasd 12e qwddas ",
-            "type" : "card"
-          },
-          {
-            "text" : "213w 1e zsdc ac qwsd qad",
-            "type" : "card"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asdbuik andoa kmsdlam dosamdp asmdp adm, asda s",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          },
-          { 
-             "text":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "type":"normal"
-          }
-       ],
-       "camere":[ 
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"dormitoare cu pat dublu",
-             "amount":5
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          },
-          { 
-             "name":"asd aldna d,msadokdm1 l, d12ld 12 12lk;3 123",
-             "amount":1
-          }
-       ],
-       "dotari":[ 
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1",
-         "MAdja psod 1"
-       ]
-    }
- ]
+      "slug": "modern-rooms-resort",
+      "names": {
+         "en": "Modern Rooms Lakeside",
+         "ro": "Apartamente Moderne Langa Lac"
+      },
+      "detaliipret": {
+         "pret": "450lei",
+         "perioada": "iunie - iulie",
+         "detaliu1": "Vila se inchiriaza exclusiv integral.",
+         "detaliu2": "Vila se poate inchiria de persoane juridice sau de persoane fizice."
+      },
+      "detaliidescriere": [
+         {
+            "text": "Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
+            "type": "normal"
+         },
+         {
+            "text": "La apă se ajunge prin intermediul debarcaderului situat la doar câțiva metri.",
+            "type": "normal"
+         },
+         {
+            "text": "Accesul la vilă vă ferește de vizitatori nedoriți.",
+            "type": "normal"
+         },
+         {
+            "text": "În apropierea vilei există mai multe restaurante și păstrăvării.",
+            "type": "normal"
+         },
+         {
+            "text": "Pentru amatorii de drumeții există trasee turistice pentru vizitarea împrejurimilor și a Munților Călimani. Zona este foarte darnică în privința ciupercilor de pădure.",
+            "type": "normal"
+         },
+         {
+            "text": "Există, de asemenea, rute pentru amatorii de mountain bike.",
+            "type": "normal"
+         },
+         {
+            "text": "Pentru a vă asigura discreția, liniștea și confortul de care aveți nevoie, nu se inchiriază camere individuale.",
+            "type": "normal"
+         }
+      ],
+      "camere": [
+         {
+            "name": "Livingroom deschis",
+            "amount": 1
+         },
+         {
+            "name": "Bucătărie americană",
+            "amount": 1
+         },
+         {
+            "name": "Sală pentru servirea mesei",
+            "amount": 1
+         },
+         {
+            "name": "Ieșire directă pe terasă",
+            "amount": 1
+         },
+         {
+            "name": "Terasă deschisă pentru plajă, sport, cu loc acoperit pentru servirea mesei",
+            "amount": 1
+         },
+         {
+            "name": "Dormitor cu jacuzzi",
+            "amount": 1
+         },
+         {
+            "name": "Dormitor VIP cu jacuzzi și pat king size",
+            "amount": 1
+         },
+         {
+            "name": "dormitoare cu pat dublu",
+            "amount": 5
+         },
+         {
+            "name": "salon cu canapea extensibilă dublă",
+            "amount": 1
+         },
+         {
+            "name": "Spațiu de joacă pentru copii",
+            "amount": 1
+         }
+      ],
+      "dotari": [
+         "TV satelit",
+         "Wi-Fi",
+         "Sistem de sonorizare stereo profesional",
+         "Masa de biliard",
+         "Joc fotbal de masa Babyfoot",
+         "Doua caiace pentru amatorii de vaslit",
+         "Saniute pentru sezonul de iarna",
+         "Semineu cu lemne in living, cu scaune incalzite",
+         "Incalzire centrala (electrica, pe lemne, pe gaz )",
+         "Masina de spalat rufe",
+         "Masina de uscat rufe",
+         "Fier si masa de calcat",
+         "Uscatoare de par",
+         "Gril exterior XXL",
+         "Disc pentru grătar",
+         "Spa exterior cu apa ionizata, incalzi,ta, capacitate 10 persoane",
+         "Sauna",
+         "Debarcader privat pentru sporturi nautice",
+         "Mobilier de plaja",
+         "Parcare privată",
+         "Sistem de supraveghere video",
+         "Plita pe gaz",
+         "Microunde",
+         "Prajitor paine",
+         "Taietor electric",
+         "Robot de bucatarie",
+         "Vesela si accesorii pentru 20 de persoane",
+         "Masina de spalat vase",
+         "Frigider dublu",
+         "Cuptor pizza pentru 15 persoane. Se poate folosi si la patiserie, friptura etc",
+         "Expresor și filtru cafea"
+      ]
+   }
+]

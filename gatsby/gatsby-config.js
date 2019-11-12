@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vila Franceza`,
+    title: `VIFA`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@jeffpascals`,
     menuLinks: [
@@ -13,19 +13,19 @@ module.exports = {
         link: "/ro/casa-pescarilor",
       },
       {
-        name: "Modern Rooms Resort",
+        name: "Apartamente moderne langa lac",
         link: "/ro/modern-rooms-resort",
       },
       {
-        name: "EN Vila Franceza",
+        name: "French Villa",
         link: "/en/vila-franceza",
       },
       {
-        name: "EN Casa Pescarului",
+        name: "Traditional fishermans house",
         link: "/en/casa-pescarilor",
       },
       {
-        name: "EN Modern Rooms Resort",
+        name: "Modern Rooms Lakeside",
         link: "/en/modern-rooms-resort",
       }
     ],

@@ -34,11 +34,16 @@ function SlickAll() {
   const setting = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4400,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
   }
   
   
