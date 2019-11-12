@@ -35,18 +35,57 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle } ) => (
           className="navbar-nav mr-auto mt-lg-0"
           style={{ display: "flex", flex: 1 }}
         >
-          {menuLinks.map((link, index) => (
-            <button key={index} className="btn align-middle btn-primary" type="button">
-            <li
-              className="nav-item"
-              key={link.name}
-            >
-              <Link className="nav-link" style={{ color: `white` }} to={link.link}>
-                {link.name}
-              </Link>
-            </li>
-            </button>
-          ))}
+          {menuLinks.map((link, index) => {
+
+            if(link.locale==="en" ){
+              return  (
+
+
+                <button key={index} className="btn align-middle btn-primary" type="button">
+                    <img
+            src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+            height="30"
+            alt="mdb logo"
+          ></img>
+                <li
+                  className="nav-item"
+                  key={link.name}
+                >
+                  <Link className="nav-link" style={{ color: `white` }} to={link.link}>
+                    {link.name}
+                  </Link>
+                </li>
+                </button>
+    
+              )
+            }
+            else{
+              return  (
+
+
+                <button key={index} className="btn align-middle btn-primary" type="button">
+                   <img
+            src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+            height="30"
+            alt="mdb logo"
+          ></img>
+                <li
+                  className="nav-item"
+                  key={link.name}
+                >
+                  <Link className="nav-link" style={{ color: `white` }} to={link.link}>
+                    {link.name}
+                  </Link>
+                </li>
+                </button>
+    
+              )
+            }
+
+
+           
+
+          })}
         </ul>
       </div>
     </nav>

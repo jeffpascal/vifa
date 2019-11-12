@@ -21,6 +21,7 @@ const Layout = ({ children, currentPageTitle, locale}) => {
           menuLinks {
             name
             link
+            locale
           }
         }
       }
