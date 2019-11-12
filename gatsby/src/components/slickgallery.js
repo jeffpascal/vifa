@@ -39,7 +39,7 @@ export default class AsNavFor extends Component {
       infinite: this.props.galleryImages.length > 5,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       swipe: true,
       arrows: true,
       centerMode: true,
@@ -48,7 +48,6 @@ export default class AsNavFor extends Component {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
           }
         }
       ]
@@ -79,7 +78,7 @@ export default class AsNavFor extends Component {
             {this.props.galleryImages.map((image, index) => (
               <div key={index} className="">
 
-                <Img style={{"margin-right": 7}} fluid={image.node.childImageSharp.fluid} />
+                <Img style={{"marginRight": 7}} fluid={image.node.childImageSharp.fluid} />
               </div>
 
             ))}
