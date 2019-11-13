@@ -3,38 +3,36 @@ module.exports = {
     title: `VIFA`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@jeffpascals`,
-    menuLinks: [
-      {
-        name: "Vila Franceza",
-        link: "/ro/vila-franceza",
-        locale: "ro"
-      },
-      {
-        name: "Casa Pescarului",
-        link: "/ro/casa-pescarilor",
-        locale: "ro"
-      },
-      {
-        name: "Apartamente moderne langa lac",
-        link: "/ro/modern-rooms-resort",
-        locale: "ro"
-      },
-      {
-        name: "French Villa",
-        link: "/en/vila-franceza",
-        locale: "en"
-      },
-      {
-        name: "Traditional fishermans house",
-        link: "/en/casa-pescarilor",
-        locale: "en"
-      },
-      {
-        name: "Modern Rooms Lakeside",
-        link: "/en/modern-rooms-resort",
-        locale: "en"
-      }
-    ],
+    menuLinks: {
+      romanian: [
+        {
+          name: "Vila Franceza",
+          link: "/ro/vila-franceza",
+        },
+        {
+          name: "Casa Pescarului",
+          link: "/ro/casa-pescarilor",
+        },
+        {
+          name: "Apartamente moderne langa lac",
+          link: "/ro/modern-rooms-resort",
+        },
+      ],
+      english: [
+        {
+          name: "French Villa",
+          link: "/en/vila-franceza",
+        },
+        {
+          name: "Traditional fishermans house",
+          link: "/en/casa-pescarilor",
+        },
+        {
+          name: "Modern Rooms Lakeside",
+          link: "/en/modern-rooms-resort",
+        },
+      ],
+    },
   },
   plugins: [
     {

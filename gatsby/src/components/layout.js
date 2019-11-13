@@ -11,17 +11,21 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./css/layout.css"
 import Header from "./header"
 
-
-const Layout = ({ children, currentPageTitle, locale}) => {
+const Layout = ({ children, currentPageTitle, locale }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
           menuLinks {
-            name
-            link
-            locale
+            english {
+              link
+              name
+            }
+            romanian {
+              link
+              name
+            }
           }
         }
       }
@@ -30,7 +34,12 @@ const Layout = ({ children, currentPageTitle, locale}) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} pageTitle={currentPageTitle}  local = {locale} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        menuLinks={data.site.siteMetadata.menuLinks}
+        pageTitle={currentPageTitle}
+        local={locale}
+      />
       <div
         style={{
           margin: `0 auto`,
