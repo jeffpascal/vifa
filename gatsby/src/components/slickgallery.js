@@ -41,7 +41,6 @@ export default class AsNavFor extends Component {
       slidesToShow: 5,
       slidesToScroll: 1,
       swipe: true,
-      arrows: true,
       centerMode: true,
       responsive: [
         {
