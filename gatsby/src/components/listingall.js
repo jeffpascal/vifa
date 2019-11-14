@@ -1,50 +1,66 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
-import {Img} from "gatsby"
-import Listing2 from "./listing2"
+
 const ListingsAll = () => {
   const data = useStaticQuery(graphql`
-    query ListingQueryAll {
-      allDataJson {
-        nodes {
-          name
-          dotari
-          slug
-          detaliipret {
-            pret
-            perioada
-            detaliu1
-            detaliu2
-          }
-          detaliidescriere {
-            text
-            type
-          }
-          camere {
-            name
-            amount
-          }
+  query query1 {
+    allDataRoJson {
+      nodes {
+        name
+        dotari
+        slug
+        detaliipret {
+          pret
+          perioada
+          detaliu1
+          detaliu2
         }
-      }
-      allFile(
-        sort: { fields: name, order: DESC }
-        filter: { relativeDirectory: { eq: "main-page-card-images" } }
-      ) {
-        edges {
-          node {
-            id
-            name
-            childImageSharp {
-              fluid(maxWidth: 350, maxHeight: 250) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+        detaliidescriere {
+          text
+          type
+        }
+        camere {
+          name
+          amount
+        }
+        names {
+          en
+          ro
         }
       }
     }
+    images: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "main-page-card-images"}}) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(maxWidth: 350, maxHeight: 250, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          
+        }
+      }
+    }
+    flags: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "flags"}}) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(maxWidth: 50, maxHeight: 25, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  
+    
   `)
 
   const getCamere = camere =>
@@ -74,11 +90,16 @@ const ListingsAll = () => {
       </div>
     ))
 
-    const imageLinks = data.allFile.edges;
+    const imageLinks = data.images.edges;
+    const flagLinks = data.flags.edges;
     const newImages={};
+    const newFlags={};
     //create a map. newimages["vila"] will have the image i need to print
-    for(var index = 0 ; index < imageLinks.length ; index++){
-      newImages[imageLinks[index].node.name] = imageLinks[index];
+    for(var i = 0 ; i < imageLinks.length ; i++){
+      newImages[imageLinks[i].node.name] = imageLinks[i];
+    }
+    for(var j = 0 ; j < flagLinks.length ; j++){
+      newFlags[flagLinks[j].node.name] = flagLinks[j];
     }
     
   return (
@@ -87,9 +108,9 @@ const ListingsAll = () => {
       {// map through all the data, query formed from the graphql
       
       
-      data.allDataJson.nodes.map(listing => (
+      data.allDataRoJson.nodes.map((listing, index) => (
         
-        <div className="col-md-4">
+        <div key={index} className="col-md-4">
           <div className="card">
             <img
               src={newImages[listing.slug].node.childImageSharp.fluid.src}
@@ -103,7 +124,26 @@ const ListingsAll = () => {
                 the bulk of the card's content.
               </p>
             </div>
-            <Link to={`/${listing.slug}/`}>Visit {`${listing.name}`}</Link>
+            <Link type="button" className="btn btn-default btn-sm" to={`/ro/${listing.slug}/`}>
+            <div className="img-wrap">
+              <img
+              src={newFlags["ro"].node.childImageSharp.fluid.src}
+              className="img-fluid"
+              alt="Logo"
+              style={{"paddingRight": 10}}
+            /></div>
+               <h6>{`${listing.names.ro}`}</h6></Link>
+
+            <Link type="button" className="btn btn-default btn-sm" to={`/en/${listing.slug}/`}>
+            <div className="img-wrap">
+              <img
+              src={newFlags["en"].node.childImageSharp.fluid.src}
+              className="img-fluid"
+              alt="Logo"
+              style={{"paddingRight": 10, "verticalAlign": "middle"}}
+            /></div>
+              <h6> {`${listing.names.en}`}</h6></Link>
+              
           </div>
         </div>
       ))}

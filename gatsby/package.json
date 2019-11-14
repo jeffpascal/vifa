@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
@@ -21,16 +24,20 @@
     "i18next-browser-languagedetector": "^4.0.0",
     "i18next-xhr-backend": "^3.2.0",
     "jquery": "^3.4.1",
+    "mdbootstrap": "^4.8.11",
+    "mdbreact": "^4.22.0",
     "popper.js": "^1.16.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.0.0",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -38,7 +45,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby-plugin-s3 deploy",
+    "deploy": "gatsby-plugin-s3 deploy -y",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

@@ -3,6 +3,7 @@ import React from "react"
 import Img from "gatsby-image"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "./css/gallery.css"
 import Slider from "react-slick"
 
 function SlickAll() {
@@ -19,7 +20,7 @@ function SlickAll() {
             id
             name
             childImageSharp {
-              fluid(maxWidth: 350, maxHeight: 250) {
+              fluid(maxWidth: 1920, maxHeight: 1080, quality: 90) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -33,22 +34,27 @@ function SlickAll() {
   const setting = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4400,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
   }
   
   
   //Minus 1 for array offset from 0
 
   return (
-    <div>
+    <div className="galleryDiv">
       
     <Slider {...setting}>
-      {query.allFile.edges.map(image => (
-        <div className="imageContainer">
+      {query.allFile.edges.map((image, index) => (
+        <div key={index} className="imageContainer">
           <Img fluid={image.node.childImageSharp.fluid} />
         </div>
       ))}

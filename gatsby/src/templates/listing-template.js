@@ -1,26 +1,23 @@
 import React from "react"
 import Listing2 from "../components/listing2"
 import Slick from "../components/slickgallery"
-
-export default  ({ pageContext, data }) => {
-
-
-    return (
-
-      
-        <div className="jumbotron">
-        
-        
-        <Slick images = {data}/>
-        <Listing2 listing = {pageContext.item}/>
-        </div>
-        
-    )
-  }
+import { graphql } from 'gatsby'
+import Layout from "../components/layout"
+export default ({ pageContext, data }) => {
 
 
-export const  query  = 
-    graphql`
+  return (
+
+    <Layout currentPageTitle={pageContext.item.names} locale = {pageContext.locale}>
+      <Slick galleryImages={data.allFile.edges} />
+      <Listing2 listing={pageContext.item} images={data}/>
+    </Layout>
+  )
+}
+
+
+export const query =
+  graphql`
       query queryone($slug: String!) {
         allFile(
           sort: { fields: name, order: DESC }
@@ -31,7 +28,7 @@ export const  query  =
               id
               name
               childImageSharp {
-                fluid(maxWidth: 350, maxHeight: 250) {
+                fluid(maxWidth: 1920, maxHeight:1080 , quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
