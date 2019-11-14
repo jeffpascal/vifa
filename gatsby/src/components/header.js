@@ -15,7 +15,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
             id
             name
             childImageSharp {
-              fluid(maxWidth: 50, maxHeight: 25, quality: 90) {
+              fluid(maxWidth: 60, maxHeight: 35, quality: 90) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -62,9 +62,10 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
             className="navbar-nav mr-auto mt-lg-0"
             style={{ display: "flex", flex: 1 }}
           >
+            <div>
             <div
-              className="romanianMenu"
-              style={{ backgroundColor: "black", marginRight: 10 }}
+              className="romanianMenu col-md-12"
+              style={{ backgroundColor: "teal", marginBottom: 10 }}
             >
               <img
                 src={newFlags["ro"].node.childImageSharp.fluid.src}
@@ -76,7 +77,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
                 return (
                   <button
                     key={index}
-                    className="btn align-middle btn-primary"
+                    className="btn btn-primary"
                     type="button"
                   >
                     <li className="nav-item" key={link.name}>
@@ -93,8 +94,8 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
               })}
             </div>
             <div
-              className="englishMenu"
-              style={{ backgroundColor: "black", marginRight: 10 }}
+              className="englishMenu col-md-12"
+              style={{ backgroundColor: "teal", marginBottom: 10 }}
             >
               <img
                 src={newFlags["en"].node.childImageSharp.fluid.src}
@@ -121,6 +122,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
                   </button>
                 )
               })}
+            </div>
             </div>
           </ul>
         </div>
