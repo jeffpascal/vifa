@@ -14,9 +14,13 @@ const Listing2 = ({ listing }) => {
     ))
 
   const getDotari = dotari =>
-    dotari.map(dotare => (
-      <li className="list-group-item">
-        <p>{dotare}</p>
+    dotari.map((dotare, index) => (
+      <li key={index} className="list-group-item w-50 list-group-item-action">
+        <i
+          className="far fa-check-square fa-lg"
+          style={{ color: "green", padding: 4 }}
+        ></i>
+        {dotare}
       </li>
     ))
 
@@ -24,40 +28,46 @@ const Listing2 = ({ listing }) => {
     descriere.map(descriere => (
       <li className="list-group-item">
         {descriere.type === "normal" ? (
-          <p style={{ color: "red" }}>{descriere.text}</p>
+          <p className="list-group-item-heading" style={{ color: "red" }}
+            dangerouslySetInnerHTML={{ __html: descriere.text }}>
+          </p>
         ) : (
-          <p style={{ color: "purple" }}>{descriere.text}</p>
-        )}
-      </li>
+            <p className="h6" style={{  }}
+              dangerouslySetInnerHTML={{ __html: descriere.text }}>
+            </p>
+          )}
+      </div>
     ))
 
   return (
-    <div className="container">
-      <h2>{listing.name}</h2>
-
-      <div className="row my-3 mx-auto">
+    <div className="">
+      <div className="row">
         <div className="col-md-6">
-          <SlickAll />
-          {//descriere
-          getDescriere(listing.detaliidescriere)}
+          <div className="">
+            <h1 className="" style={{ "borderBottom":" 1px solid #000000", "borderTop":" 1px solid #000000"}}>Details</h1>
+            {//descriere
+              getDescriere(listing.detaliidescriere)}
+          </div>
         </div>
 
         <div class="col-md">
           <div class="position-absolute w-100 h-100">
           <h1>Camere</h1>
-            <ul
-              className="list-group d-flex flex-column flex-wrap mh-md-100"
-              style={{ padding: 50 }}
-            >
-              
-              {//camere
-
+          <ul className="list-group">
+            <Slick galleryImages={camereImages} />
+            {//camere
               listing.camere &&
-                listing.camere.length > 0 &&
-                getCamere(listing.camere)}
-              <h1>Dotari</h1>
+              listing.camere.length > 0 &&
+              getCamere(listing.camere)}
+          </ul>
+        </div>
+        
+        <div className="col-md-12">
+          <h3 className="list-group-item-heading">Dotari</h3>
+          <div className="list-group d-flex flex-row flex-wrap">
+            <ul className="d-flex flex-wrap">
               {//dotari
-              getDotari(listing.dotari)}
+                getDotari(listing.dotari)}
             </ul>
           </div>
         </div>

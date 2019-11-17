@@ -5,7 +5,16 @@ import Slick from "../components/slickgallery"
 export default  ({ pageContext, data }) => {
 
 
-    return (
+  return (
+
+    pageContext.all.map(item => (
+      <div>
+        <Slick galleryImages={data.allFile.edges} />
+        <Listing2 listing={item} images={data} />
+        </div>
+    ))
+  )
+}
 
       
         <div className="jumbotron">
