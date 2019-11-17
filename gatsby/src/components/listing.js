@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 const Listing = () => {
   const data = useStaticQuery(graphql`
   query ListingQuery {
-    allDataJson {
+    allDataRoJson {
       nodes {
         camere {
           name
@@ -25,7 +25,7 @@ const getNames = (camere) => (camere.map(camera => (
 
   return (
     <div>
-      {data.allDataJson.nodes.map(listing => (
+      {data.allDataRoJson.nodes.map(listing => (
           <div>
             <h2>{listing.name}</h2>
             {listing.camere.map(camera => (

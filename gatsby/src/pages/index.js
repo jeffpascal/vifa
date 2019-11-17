@@ -7,11 +7,9 @@ import SEO from "../components/seo"
 import ListingAll from "../components/listingall"
 import SlickAll from "../components/slickgalleryall"
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle={'VIFA'}>
     <SEO title="Home" />
     <SlickAll />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
 
       {/* <img src={logo} alt="" /> */}
     <ListingAll />

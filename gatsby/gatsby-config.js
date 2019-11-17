@@ -1,8 +1,38 @@
 module.exports = {
   siteMetadata: {
-    title: `Vila Franceza`,
+    title: `VIFA`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@jeffpascals`,
+    menuLinks: {
+      romanian: [
+        {
+          name: "Vila Franceza",
+          link: "/ro/vila-franceza",
+        },
+        {
+          name: "Casa Pescarului",
+          link: "/ro/casa-pescarilor",
+        },
+        {
+          name: "Apartamente moderne langa lac",
+          link: "/ro/modern-rooms-resort",
+        },
+      ],
+      english: [
+        {
+          name: "French Villa",
+          link: "/en/vila-franceza",
+        },
+        {
+          name: "Traditional fishermans house",
+          link: "/en/casa-pescarilor",
+        },
+        {
+          name: "Modern Rooms Lakeside",
+          link: "/en/modern-rooms-resort",
+        },
+      ],
+    },
   },
   plugins: [
     {
@@ -40,7 +70,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

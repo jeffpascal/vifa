@@ -1,38 +1,94 @@
-import React from "react"
+import React, { Component } from "react";
 import Img from "gatsby-image"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "./css/gallery.css"
 import Slider from "react-slick"
 
-function Slick({images}) {
- 
-  const setting = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-    arrows: true,
 
+export default class AsNavFor extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav1: null,
+      nav2: null
+    };
   }
 
-  //Minus 1 for array offset from 0
+  componentDidMount() {
+    this.setState({
+      nav1: this.slider1,
+      nav2: this.slider2
+    });
+  }
 
-  return (
-    <div>
-    <Slider {...setting}
->
-      {images.allFile.edges.map(image => (
-        <div className="imageContainer">
-          
-          <Img fluid={image.node.childImageSharp.fluid} />
+
+  render() {
+    const settingLargeGallery = {
+
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      arrows: true,
+      adaptiveHeight: true,
+    }
+
+    const settingPreviewGallery = {
+      dots: true,
+      infinite: this.props.galleryImages.length > 5,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      swipe: true,
+      arrows: true,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
+    }
+    return (
+      <div style={{"backgroundColor":"#333a"}}>
+        <div className="galleryDiv">
+          <Slider
+            asNavFor={this.state.nav2}
+            ref={slider => (this.slider1 = slider)}
+            {...settingLargeGallery}
+          >
+            {this.props.galleryImages.map((image, index) => (
+              <div key={index} className="">
+
+                <Img fluid={image.node.childImageSharp.fluid} />
+              </div>
+
+            ))}
+
+          </Slider>
+          <Slider
+            asNavFor={this.state.nav1}
+            ref={slider => (this.slider2 = slider)}
+            focusOnSelect={true}
+            {...settingPreviewGallery}
+          >
+            {this.props.galleryImages.map((image, index) => (
+              <div key={index} className="">
+
+                <Img style={{"marginRight": 7}} fluid={image.node.childImageSharp.fluid} />
+              </div>
+
+            ))}
+
+          </Slider>
         </div>
-        
-      ))}
-      
-    </Slider>
-    </div>
-  )
+
+      </div>
+    )
+  }
 }
-export default Slick
+
+

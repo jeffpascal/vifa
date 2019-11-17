@@ -8,11 +8,12 @@
 
 
 exports.createPages = ({ actions }) => {
-    const jsonData = require("./src/data/data.json")
+    const jsonDataRo = require("./src/data/dataRo.json")
+    const jsonDataEn = require("./src/data/dataEn.json")
     const { createPage } = actions
-    jsonData.forEach(item => {
+    jsonDataRo.forEach(item => {
         createPage({
-            path: `/${item.slug}/`,
+            path: `/ro/${item.slug}/`,
             component: require.resolve('./src/templates/listing-template.js'),
             context:{item,
             slug: item.slug,
@@ -30,5 +31,4 @@ exports.createPages = ({ actions }) => {
             all: jsonDataRo},
         })
     })
-    
   }

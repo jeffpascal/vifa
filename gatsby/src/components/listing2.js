@@ -1,32 +1,35 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import SlickAll from "./slickgalleryall"
+import Slick from "./slickgallery"
 
-const Listing2 = ({ listing }) => {
+const Listing2 = ({ listing, images }) => {
+  const camereImages = images.allFile.edges.filter(image =>
+    image.node.name.includes("camera")
+  )
+
   const getCamere = camere =>
-    camere.map(camera => (
-      <li className="list-group-item d-flex justify-content-between align-items-center">
+    camere.map((camera, index) => (
+      <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
         {camera.name}
         <p>
-          <span class="badge badge-primary badge-pill">{camera.amount}</span>
+          <span className="badge badge-primary badge-pill">{camera.amount}</span>
         </p>
       </li>
     ))
 
   const getDotari = dotari =>
-    dotari.map((dotare, index) => (
+    dotari.map((dotare, index)=> (
       <li key={index} className="list-group-item w-50 list-group-item-action">
         <i
           className="far fa-check-square fa-lg"
-          style={{ color: "green", padding: 4 }}
+          style={{ color: "green", padding: 4}}
         ></i>
         {dotare}
       </li>
     ))
 
   const getDescriere = descriere =>
-    descriere.map(descriere => (
-      <li className="list-group-item">
+    descriere.map((descriere, index) => (
+      <div key={index}>
         {descriere.type === "normal" ? (
           <p className="list-group-item-heading" style={{ color: "red" }}
             dangerouslySetInnerHTML={{ __html: descriere.text }}>
@@ -50,8 +53,7 @@ const Listing2 = ({ listing }) => {
           </div>
         </div>
 
-        <div class="col-md">
-          <div class="position-absolute w-100 h-100">
+        <div className="col-md-6">
           <h1>Camere</h1>
           <ul className="list-group">
             <Slick galleryImages={camereImages} />
