@@ -10,12 +10,6 @@ const ListingsAll = () => {
         name
         dotari
         slug
-        detaliipret {
-          pret
-          perioada
-          detaliu1
-          detaliu2
-        }
         detaliidescriere {
           text
           type
