@@ -3,22 +3,23 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
 const ListingsAll = () => {
-  const data = useStaticQuery(graphql`
+  const querrydata = useStaticQuery(graphql`
   query query1 {
     allDataRoJson {
       nodes {
         name
         dotari
         slug
-        detaliipret {
-          pret
-          perioada
-          detaliu1
-          detaliu2
+        cardimages {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
         }
-        detaliidescriere {
-          text
-          type
+        descriere {
+          card
+          page
         }
         camere {
           name
@@ -30,7 +31,7 @@ const ListingsAll = () => {
         }
       }
     }
-    images: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "main-page-card-images"}}) {
+    images: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "relimages/main-page-card-images"}}) {
       edges {
         node {
           id
@@ -44,7 +45,7 @@ const ListingsAll = () => {
         }
       }
     }
-    flags: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "flags"}}) {
+    flags: allFile(sort: {fields: name, order: DESC}, filter: {relativeDirectory: {eq: "relimages/flags"}}) {
       edges {
         node {
           id
@@ -63,43 +64,11 @@ const ListingsAll = () => {
     
   `)
 
-  const getCamere = camere =>
-    camere.map(camera => (
-      <div>
-        <p>
-          {camera.name} {camera.amount}
-        </p>
-      </div>
-    ))
-
-  const getDotari = dotari =>
-    dotari.map(dotare => (
-      <div>
-        <p>{dotare}</p>
-      </div>
-    ))
-
-  const getDescriere = descriere =>
-    descriere.map(descriere => (
-      <div>
-        {descriere.type === "normal" ? (
-          <p style={{ color: "red" }}>{descriere.text}</p>
-        ) : (
-          <p style={{ color: "purple" }}>{descriere.text}</p>
-        )}
-      </div>
-    ))
-
-    const imageLinks = data.images.edges;
-    const flagLinks = data.flags.edges;
-    const newImages={};
+    // const imageLinks = data.images.edges;
+    const flagLinks = querrydata.flags.edges;
     const newFlags={};
-    //create a map. newimages["vila"] will have the image i need to print
-    for(var i = 0 ; i < imageLinks.length ; i++){
-      newImages[imageLinks[i].node.name] = imageLinks[i];
-    }
-    for(var j = 0 ; j < flagLinks.length ; j++){
-      newFlags[flagLinks[j].node.name] = flagLinks[j];
+     for(var j = 0 ; j < flagLinks.length ; j++){
+       newFlags[flagLinks[j].node.name] = flagLinks[j];
     }
     
   return (
@@ -108,20 +77,19 @@ const ListingsAll = () => {
       {// map through all the data, query formed from the graphql
       
       
-      data.allDataRoJson.nodes.map((listing, index) => (
+      querrydata.allDataRoJson.nodes.map((listing, index) => (
         
         <div key={index} className="col-md-4">
           <div className="card">
             <img
-              src={newImages[listing.slug].node.childImageSharp.fluid.src}
+              src={listing.cardimages.childImageSharp.fluid.src}
               className="card-img-top"
               alt="Logo"
             />
             <div className="card-body">
               <h5 className="card-title">{listing.name}</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                {listing.descriere.card}
               </p>
             </div>
             <Link type="button" className="btn btn-default btn-sm" to={`/ro/${listing.slug}/`}>

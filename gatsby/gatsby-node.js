@@ -20,13 +20,13 @@ exports.createPages = ({ actions }) => {
             locale: "ro"},
         })
     })
-    jsonDataEn.forEach(item => {
-        createPage({
-            path: `/en/${item.slug}/`,
-            component: require.resolve('./src/templates/listing-template.js'),
-            context:{item,
-            slug: item.slug,
-            locale: "en"},
-        })
-    })
+    // jsonDataEn.forEach(item => {
+    //     createPage({
+    //         path: `/en/${item.slug}/`,
+    //         component: require.resolve('./src/templates/listing-template.js'),
+    //         context:{item,
+    //         slug: item.slug,
+    //         locale: "en"},
+    //     })
+    // })
   }

@@ -13,7 +13,7 @@ function SlickAll() {
     query {
       allFile(
         sort: { fields: name, order: DESC }
-        filter: { relativeDirectory: { eq: "main-page-images" } }
+        filter: { relativeDirectory: { eq: "relimages/main-page-images" } }
       ) {
         edges {
           node {

@@ -8,7 +8,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
     query flagquery {
       flags: allFile(
         sort: { fields: name, order: DESC }
-        filter: { relativeDirectory: { eq: "flags" } }
+        filter: { relativeDirectory: { eq: "relimages/flags" } }
       ) {
         edges {
           node {
