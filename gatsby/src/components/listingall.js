@@ -88,8 +88,7 @@ const ListingsAll = () => {
             />
             <div className="card-body">
               <h5 className="card-title">{listing.name}</h5>
-              <p className="card-text">
-                {listing.descriere.card}
+              <p className="card-text" dangerouslySetInnerHTML={{ __html: listing.descriere.card }}>
               </p>
             </div>
             <Link type="button" className="btn btn-default btn-sm" to={`/ro/${listing.slug}/`}>
