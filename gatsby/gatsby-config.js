@@ -11,11 +11,11 @@ module.exports = {
         },
         {
           name: "Casa Pescarului",
-          link: "/ro/casa-pescarilor",
+          link: "/ro/casa-pescarului",
         },
         {
           name: "Apartamente moderne langa lac",
-          link: "/ro/modern-rooms-resort",
+          link: "/ro/apartamente-moderne",
         },
       ],
       english: [
@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `indeximages`,
         path: `${__dirname}/src/data`,
       },
     },

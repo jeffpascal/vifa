@@ -11,14 +11,13 @@ exports.createPages = ({ actions }) => {
     const jsonDataRo = require("./src/data/dataRo.json")
     const jsonDataEn = require("./src/data/dataEn.json")
     const { createPage } = actions
-    jsonDataRo.forEach(item => {
-        createPage({
-            path: `/ro/${item.slug}/`,
-            component: require.resolve('./src/templates/listing-template.js'),
-            context:{item,
-            slug: item.slug,
-            locale: "ro"},
-        })
+    
+    createPage({
+        path: `/ro/cazare-colibita/`,
+        component: require.resolve('./src/templates/listing-template.js'),
+        context:{jsonDataRo,
+        slug:"relimages/listings",
+        locale: "ro"},
     })
     // jsonDataEn.forEach(item => {
     //     createPage({

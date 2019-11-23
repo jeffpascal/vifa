@@ -27,21 +27,9 @@ const Listing2 = ({ listing, images }) => {
       </li>
     ))
 
-  const getDescriere = descriere =>
-    descriere.map((descriere, index) => (
-      <div key={index}>
-        {descriere.type === "normal" ? (
-          <p className="list-group-item-heading" style={{ color: "red" }}>
-            {descriere.text}
-          </p>
-        ) : (
-          <p className="h6" style={{ color: "purple" }}>
-            {descriere.text}
-          </p>
-        )}
-      </div>
-    ))
-
+  const getDescriere = descriere =>{
+     return (<p className="card-text" dangerouslySetInnerHTML={{ __html: listing.descriere.card }}></p>)
+}
   return (
     <div className="container">
       <h2>{listing.name}</h2>
