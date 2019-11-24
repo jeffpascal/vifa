@@ -12,13 +12,14 @@ exports.createPages = ({ actions }) => {
     const jsonDataEn = require("./src/data/dataEn.json")
     const { createPage } = actions
     
-    createPage({
-        path: `/ro/cazare-colibita/`,
-        component: require.resolve('./src/templates/listing-template.js'),
-        context:{jsonDataRo,
-        slug:"relimages/listings",
-        locale: "ro"},
-    })
+    // createPage({
+    //     path: `/ro/cazare-colibita/`,
+    //     component: require.resolve('./src/templates/listing-template.js'),
+    //     context:{
+    //         jsonDataRo,
+    //         locale: "ro"
+    //     },
+    // })
     // jsonDataEn.forEach(item => {
     //     createPage({
     //         path: `/en/${item.slug}/`,

@@ -7,15 +7,15 @@ module.exports = {
       romanian: [
         {
           name: "Vila Franceza",
-          link: "/ro/vila-franceza",
+          link: "vila-franceza",
         },
         {
           name: "Casa Pescarului",
-          link: "/ro/casa-pescarului",
+          link: "casa-pescarului",
         },
         {
           name: "Apartamente moderne langa lac",
-          link: "/ro/apartamente-moderne",
+          link: "apartamente-moderne",
         },
       ],
       english: [

@@ -38,6 +38,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
         marginBottom: `1.45rem`,
       }}
     >
+      
       <nav className="navbar navbar-expand-lg navbar-dark indigo ">
         <button
           className="navbar-toggler"
@@ -81,13 +82,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
                     type="button"
                   >
                     <li className="nav-item" key={link.name}>
-                      <Link
-                        className="nav-link"
-                        style={{ color: `white` }}
-                        to={link.link}
-                      >
-                        {link.name}
-                      </Link>
+                      <a href={`#${link.link}`}>{link.name}</a>
                     </li>
                   </button>
                 )

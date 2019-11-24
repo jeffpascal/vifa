@@ -47,12 +47,12 @@ const SecondPage = () => {
     <Layout>
     
     {listingquery.allDataRoJson.nodes.map(currentlisting => (
-      <>
+      <div id={currentlisting.slug}>
         <hr></hr>
         <Listing2 listing = {currentlisting} ></Listing2>
         <SEO title="Page two" />
         <Link to="/">Inapoi la pagina principala</Link>
-      </>
+      </div>
     ))}
     </Layout>
 
