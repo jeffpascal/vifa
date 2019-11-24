@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { useStaticQuery, graphql } from "gatsby"
 
 const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
@@ -38,7 +39,6 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
         marginBottom: `1.45rem`,
       }}
     >
-      
       <nav className="navbar navbar-expand-lg navbar-dark indigo ">
         <button
           className="navbar-toggler"
@@ -82,7 +82,13 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
                     type="button"
                   >
                     <li className="nav-item" key={link.name}>
-                      <a href={`#${link.link}`}>{link.name}</a>
+                      <Link
+                        className="nav-link"
+                        style={{ color: `white` }}
+                        to={`/page-2#${link.link}`}
+                      >
+                        {link.name}
+                      </Link>
                     </li>
                   </button>
                 )
