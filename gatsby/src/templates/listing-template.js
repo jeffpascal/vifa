@@ -8,9 +8,10 @@ export default ({ pageContext, data }) => {
 
   return (
 
-    <Layout currentPageTitle={pageContext.item.names} locale = {pageContext.locale}>
-      <Slick galleryImages={data.allFile.edges} />
-      <Listing2 listing={pageContext.item} images={data}/>
+    <Layout>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <Slick galleryImages={data.allDataRoJson.listingimages} />
+
     </Layout>
   )
 }
@@ -18,22 +19,34 @@ export default ({ pageContext, data }) => {
 
 export const query =
   graphql`
-      query queryone($slug: String!) {
-        allFile(
-          sort: { fields: name, order: DESC }
-          filter: { relativeDirectory: { eq: $slug } }
-        ) {
-          edges {
-            node {
-              id
-              name
-              childImageSharp {
-                fluid(maxWidth: 1920, maxHeight:1080 , quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
+  query listingquery {
+    allDataRoJson {
+      nodes {
+        name
+        dotari
+        slug
+        descriere {
+          page
+        }
+        camere {
+          name
+          amount
+        }
+        names {
+          en
+          ro
+        }
+        listingimages {
+          image {
+            childImageSharp {
+              fluid{
+                src
               }
             }
           }
         }
       }
+    }
+  }
+  
     `

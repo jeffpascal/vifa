@@ -2,15 +2,43 @@
    {
       "name": "Vila Franceza",
       "slug": "vila-franceza",
-      "images" : "./relimages/vila-franceza",
-      "cardimages" : "./relimages/main-page-card-images/vila-franceza.jpg",
+      "listingimages": [
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         }
+      ],
+      "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
       "names": {
          "en": "French Villa",
          "ro": "Vila Franceza"
       },
-      "content":{
-         "dotariname" : "Dotari",
-         "camerename" : "Camere"
+      "content": {
+         "dotariname": "Dotari",
+         "camerename": "Camere"
       },
       "descriere": {
          "card": "<h1>sale</h1>Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
@@ -95,15 +123,43 @@
    {
       "name": "Vila Franceza",
       "slug": "casa-pescarului",
-      "images" : "./relimages/casa-pescarului",
-      "cardimages" : "./relimages/main-page-card-images/vila-franceza.jpg",
+      "listingimages": [
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         }
+      ],
+      "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
       "names": {
          "en": "French Villa",
          "ro": "Vila Franceza"
       },
-      "content":{
-         "dotariname" : "Dotari",
-         "camerename" : "Camere"
+      "content": {
+         "dotariname": "Dotari",
+         "camerename": "Camere"
       },
       "descriere": {
          "card": "<h1>sale</h1>Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
@@ -188,15 +244,43 @@
    {
       "name": "Vila Franceza",
       "slug": "apartamente-moderne",
-      "images" : "./relimages/vila-franceza",
-      "cardimages" : "./relimages/main-page-card-images/vila-franceza.jpg",
+      "listingimages": [
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         }
+      ],
+      "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
       "names": {
          "en": "French Villa",
          "ro": "Vila Franceza"
       },
-      "content":{
-         "dotariname" : "Dotari",
-         "camerename" : "Camere"
+      "content": {
+         "dotariname": "Dotari",
+         "camerename": "Camere"
       },
       "descriere": {
          "card": "<h1>sale</h1>Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",

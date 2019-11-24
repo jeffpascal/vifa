@@ -1,9 +1,9 @@
 import React from "react"
 import Slick from "./slickgallery"
 
-const Listing2 = ({ listing, images }) => {
-  const camereImages = images.allFile.edges.filter(image =>
-    image.node.name.includes("camera")
+const Listing2 = ({ listing}) => {
+  const camereImages = listing.listingimages.filter(currentimage =>
+    currentimage.image.childImageSharp.fluid.originalName.includes("camera")
   )
 
   const getCamere = camere =>
@@ -28,18 +28,20 @@ const Listing2 = ({ listing, images }) => {
     ))
 
   const getDescriere = descriere =>{
-     return (<p className="card-text" dangerouslySetInnerHTML={{ __html: listing.descriere.card }}></p>)
+     return (<p className="card-text" dangerouslySetInnerHTML={{ __html: descriere }}></p>)
 }
   return (
     <div className="container">
-      <h2>{listing.name}</h2>
-
+      <h1>{listing.name}</h1>
+      <Slick galleryImages={listing.listingimages} />
+      
+      
       <div className="row">
         <div className="col-md-6">
           <li className="list-group-item">
             <h3 className="list-group-item-heading">Descriere</h3>
             {//descriere
-            getDescriere(listing.detaliidescriere)}
+            getDescriere(listing.descriere.page)}
           </li>
         </div>
 

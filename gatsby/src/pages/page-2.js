@@ -3,14 +3,63 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { useStaticQuery, graphql } from "gatsby"
+import Slick from "../components/slickgallery"
+import Listing2 from "../components/listing2";
 
-const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+const SecondPage = () => {
+  const listingquery = useStaticQuery(
+    graphql`
+    query querylistings {
+      allDataRoJson {
+        nodes {
+          name
+          dotari
+          slug
+          descriere {
+            page
+          }
+          camere {
+            name
+            amount
+          }
+          names {
+            en
+            ro
+          }
+          listingimages {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1920, maxHeight: 1080, quality: 90) {
+                  ...GatsbyImageSharpFluid
+                  originalName
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+ `)
+
+
+  return (
+    <Layout>
+    
+    {listingquery.allDataRoJson.nodes.map(currentlisting => (
+      <>
+        <hr></hr>
+        <Listing2 listing = {currentlisting} ></Listing2>
+        <SEO title="Page two" />
+        <Link to="/">Inapoi la pagina principala</Link>
+      </>
+    ))}
+    </Layout>
+
+  )
+  
+
+
+}
 
 export default SecondPage
