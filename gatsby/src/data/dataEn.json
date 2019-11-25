@@ -4,7 +4,25 @@
       "slug": "vila-franceza",
       "listingimages": [
          {
-            "image": "./relimages/listings/vila-franceza/0.jpg"
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
          },
          {
             "image": "./relimages/main-page-card-images/vila-franceza.jpg"
@@ -105,7 +123,25 @@
    {
       "name": "Vila Franceza",
       "slug": "casa-pescarului",
-      "images": [
+      "listingimages": [
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
          {
             "image": "./relimages/main-page-card-images/vila-franceza.jpg"
          },
@@ -208,7 +244,25 @@
    {
       "name": "Vila Franceza",
       "slug": "apartamente-moderne",
-      "images": [
+      "listingimages": [
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
+         {
+            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+         },
          {
             "image": "./relimages/main-page-card-images/vila-franceza.jpg"
          },
