@@ -2,8 +2,13 @@ import React from "react"
 import Slick from "./slickgallery"
 
 const Listing2 = ({ listing}) => {
-  const camereImages = listing.listingimages.filter(currentimage =>
-    currentimage.image.childImageSharp.fluid.originalName.includes("camera")
+  const camereImages = listing.listingimages.filter(currentimage => 
+    // actually it first checks if currentimage.image is null then it does the second check
+    currentimage.image && currentimage.image.childImageSharp.fluid.originalName.includes("camera") 
+  )
+
+  const filteredlistingimages = listing.listingimages.filter(currentimage => 
+    currentimage.image != null
   )
 
   const getCamere = camere =>
@@ -33,8 +38,7 @@ const Listing2 = ({ listing}) => {
   return (
     <div className="container">
       <h1>{listing.name}</h1>
-      <Slick galleryImages={listing.listingimages} />
-      
+      <Slick galleryImages={filteredlistingimages} />
       
       <div className="row">
         <div className="col-md-6">

@@ -4,45 +4,48 @@
       "slug": "vila-franceza",
       "listingimages": [
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/vila-franceza/1.jpg"
          },
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/vila-franceza/2.jpg"
          },
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/vila-franceza/3.jpg"
          },
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/vila-franceza/4.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/vila-franceza/camera.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/vila-franceza/camera2.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/vila-franceza/camera3.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/vila-franceza/camera4.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/vila-franceza/camera5.jpg"
+         },
+         {
+            "image": "./relimages/listings/vila-franceza/camera6.jpg"
          }
       ],
       "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
       "names": {
-         "en": "French Villa",
-         "ro": "Vila Franceza"
+         "en": "Fishermans house",
+         "ro": "Casa Pescarului"
       },
       "content": {
          "dotariname": "Dotari",
          "camerename": "Camere"
       },
       "descriere": {
-         "card": "<h1>sale</h1>Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.",
-         "page": "<h1>sale</h1>normal"
+         "card": "<h6>Din respect pentru confortul dumneavoastră, Vila Franceză se inchiriază exclusiv integral.</h6><p>Vila Franceza asigura un spatiu de cazare ideal pentru 15 persoane.   Constructia este moderna iar peretii de sticla permit iluminarea naturala in cea mai parte a zilei.  Lacul si crestele muntoase pot fi admirate cu usurinta, dar cu discretie, din interior.</p>                                                                                        <p>Vila Franceza va ofera liniste, confort si discretie pentru o vacanta sau o luna de miere perfecta.</p>                                                                                        <p>Lacul si crestele muntoase pot fi admirate cu usurinta, dar cu discretie, din interior.</p>",
+         "page": "<h1>Vila Franceza</h1>                                                 <p>Vila Franceza este situată pe malul nordic al lacului Colibița, într-o poziție care asigură o perspectivă unică asupra lacului dar și a munților Călimani.</p>                                                                                        <p>La apă se ajunge prin intermediul debarcaderului situat la doar câțiva metri. Accesul la vilă vă ferește de vizitatori nedoriți. În apropierea vilei există mai multe restaurante și păstrăvării. Pentru amatorii de drumeții există trasee turistice pentru vizitarea împrejurimilor și a Munților Călimani. Zona este foarte darnică în privința ciupercilor de pădure. Există, de asemenea, rute pentru amatorii de mountain bike.</p>                                                                                                                                                                 <p>Pentru a vă asigura discreția, liniștea și confortul de care aveți nevoie, nu se inchiriază camere individuale.</p>                                                                                                                                         <p>Vila Franceza asigura un spatiu de cazare ideal pentru 15 persoane. Vila Franceza va ofera liniste, confort si discretie pentru o vacanta sau o luna de miere perfecta.  Constructia este moderna iar peretii de sticla permit iluminarea naturala in cea mai parte a zilei.  Lacul si crestele muntoase pot fi admirate cu usurinta, dar cu discretie, din interior.</p>                                                                                                                                             <p>Inchirierea vilei se poate face pentru orice perioada din cursul unei saptamani pentru minim două zile. Din respect pentru confortul dumneavoastră, Vila Franceză se inchiriază exclusiv integral. In interiorul vilei nu se fumeaza! Sunt admise animale de companie.</p>"
       },
       "camere": [
          {
@@ -121,38 +124,38 @@
       ]
    },
    {
-      "name": "Vila Franceza",
+      "name": "Casa Pescarului",
       "slug": "casa-pescarului",
       "listingimages": [
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/casa-pescarilor/1.jpg"
          },
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/casa-pescarilor/2.jpg"
          },
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/casa-pescarilor/3.jpg"
          },
          {
-            "image": "./relimages/listings/casa-pescarilor/camera.jpg"
+            "image": "./relimages/listings/casa-pescarilor/4.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/casa-pescarilor/camera2.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/casa-pescarilor/camera3.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/casa-pescarilor/camera4.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/casa-pescarilor/camera5.jpg"
          },
          {
-            "image": "./relimages/main-page-card-images/vila-franceza.jpg"
+            "image": "./relimages/listings/casa-pescarilor/camera6.jpg"
          }
       ],
-      "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
+      "cardimages": "./relimages/main-page-card-images/casa-pescarului.jpg",
       "names": {
          "en": "French Villa",
          "ro": "Vila Franceza"
