@@ -36,8 +36,8 @@
       ],
       "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
       "names": {
-         "en": "Fishermans house",
-         "ro": "Casa Pescarului"
+         "en": "French Villa",
+         "ro": "Vila Franceza"
       },
       "content": {
          "dotariname": "Dotari",
@@ -157,8 +157,8 @@
       ],
       "cardimages": "./relimages/main-page-card-images/casa-pescarului.jpg",
       "names": {
-         "en": "French Villa",
-         "ro": "Vila Franceza"
+         "en": "Traditional fisherman house",
+         "ro": "Casa Pescarului"
       },
       "content": {
          "dotariname": "Dotari",
@@ -245,7 +245,7 @@
       ]
    },
    {
-      "name": "Vila Franceza",
+      "name": "Apartamente moderne",
       "slug": "apartamente-moderne",
       "listingimages": [
          {
@@ -278,8 +278,8 @@
       ],
       "cardimages": "./relimages/main-page-card-images/vila-franceza.jpg",
       "names": {
-         "en": "French Villa",
-         "ro": "Vila Franceza"
+         "en": "Modern Rooms",
+         "ro": "Apartamente moderne"
       },
       "content": {
          "dotariname": "Dotari",

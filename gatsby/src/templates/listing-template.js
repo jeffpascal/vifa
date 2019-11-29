@@ -17,36 +17,3 @@ export default ({ pageContext, data }) => {
 }
 
 
-export const query =
-  graphql`
-  query listingquery {
-    allDataRoJson {
-      nodes {
-        name
-        dotari
-        slug
-        descriere {
-          page
-        }
-        camere {
-          name
-          amount
-        }
-        names {
-          en
-          ro
-        }
-        listingimages {
-          image {
-            childImageSharp {
-              fluid{
-                src
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  
-    `

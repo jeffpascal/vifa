@@ -1,8 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+
 const ListingsAll = () => {
   const querrydata = useStaticQuery(graphql`
   query query1 {
@@ -80,8 +81,6 @@ const ListingsAll = () => {
 
         querrydata.allDataRoJson.nodes.map((listing, index) => (
           <div key={index} className="col-md-4">
-                    <pre>{JSON.stringify(querrydata.flags,null,2)}</pre>
-
             <div className="card">
               <Img
                 fluid={listing.cardimages.childImageSharp.fluid}
@@ -93,26 +92,35 @@ const ListingsAll = () => {
                 <p className="card-text" dangerouslySetInnerHTML={{ __html: listing.descriere.card }}>
                 </p>
               </div>
-              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}/`}>
-                <div className="img-wrap">
+              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}`}>
+              <div className="row">
+                <div className="col-3" style={{"padding" : 3}}>
                   <Img
+                    fluid={newFlags.ro.node.childImageSharp.fluid}
+                    alt="Logo"
+                    style={{"paddingRight": 10 }}
+                  />
+                  </div>
+                  <div className="col-9" style={{"padding" : 3}}>
+                <h6>{`${listing.names.ro}`}</h6>
+                </div>
+                </div>
+                </Link>
+
+              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}`}>
+              <div className="row">
+                <div className="col-3" style={{"padding" : 3}}>
+                <Img
                     fluid={newFlags.en.node.childImageSharp.fluid}
-                    className="img-fluid"
                     alt="Logo"
                     style={{ "paddingRight": 10 }}
-                  /></div>
-                <h6>{`${listing.names.ro}`}</h6></Link>
-
-              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}/`}>
-                <div className="img-wrap">
-                  
-                  <Img
-                    fluid={newFlags.en.node.childImageSharp.fluid}
-                    className="img-fluid"
-                    alt="Logo"
-                    style={{ "paddingRight": 10, "verticalAlign": "middle" }}
-                  /></div>
-                <h6> {`${listing.names.en}`}</h6></Link>
+                  />
+                </div>
+                <div className="col-9" style={{"padding" : 3}}>
+                  <h1 className="h6" style={{verticalAlign:"middle"}}> {`${listing.names.en}`}</h1>
+                </div>
+                </div>
+              </Link>
 
             </div>
           </div>
