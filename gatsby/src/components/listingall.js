@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-
+import Img from "gatsby-image"
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 const ListingsAll = () => {
   const querrydata = useStaticQuery(graphql`
   query query1 {
@@ -12,8 +13,8 @@ const ListingsAll = () => {
         slug
         cardimages {
           childImageSharp {
-            fluid {
-              src
+            fluid(maxWidth: 450, maxHeight: 350, quality: 90) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -78,11 +79,12 @@ const ListingsAll = () => {
 
 
         querrydata.allDataRoJson.nodes.map((listing, index) => (
-
           <div key={index} className="col-md-4">
+                    <pre>{JSON.stringify(querrydata.flags,null,2)}</pre>
+
             <div className="card">
-              <img
-                src={listing.cardimages.childImageSharp.fluid.src}
+              <Img
+                fluid={listing.cardimages.childImageSharp.fluid}
                 className="card-img-top"
                 alt="Logo"
               />
@@ -91,20 +93,21 @@ const ListingsAll = () => {
                 <p className="card-text" dangerouslySetInnerHTML={{ __html: listing.descriere.card }}>
                 </p>
               </div>
-              <Link type="button" className="btn btn-default btn-sm" to={`/ro/${listing.slug}/`}>
+              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}/`}>
                 <div className="img-wrap">
-                  <img
-                    src={newFlags["ro"].node.childImageSharp.fluid.src}
+                  <Img
+                    fluid={newFlags.en.node.childImageSharp.fluid}
                     className="img-fluid"
                     alt="Logo"
                     style={{ "paddingRight": 10 }}
                   /></div>
                 <h6>{`${listing.names.ro}`}</h6></Link>
 
-              <Link type="button" className="btn btn-default btn-sm" to={`/en/${listing.slug}/`}>
+              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}/`}>
                 <div className="img-wrap">
-                  <img
-                    src={newFlags["en"].node.childImageSharp.fluid.src}
+                  
+                  <Img
+                    fluid={newFlags.en.node.childImageSharp.fluid}
                     className="img-fluid"
                     alt="Logo"
                     style={{ "paddingRight": 10, "verticalAlign": "middle" }}
