@@ -9,13 +9,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 ul{
   padding:0;
 }
 .card {
   margin-bottom: 20px;
   
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .englishMenu{
