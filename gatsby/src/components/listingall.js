@@ -92,7 +92,7 @@ const ListingsAll = () => {
                 <p className="card-text" dangerouslySetInnerHTML={{ __html: listing.descriere.card }}>
                 </p>
               </div>
-              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}`}>
+              <Link type="button" className="btn btn-default btn-sm" to={`/cazare-colibita#${listing.slug}`}>
               <div className="row">
                 <div className="col-3" style={{"padding" : 3}}>
                   <Img
@@ -107,7 +107,7 @@ const ListingsAll = () => {
                 </div>
                 </Link>
 
-              <Link type="button" className="btn btn-default btn-sm" to={`/page-2#${listing.slug}`}>
+              <Link type="button" className="btn btn-default btn-sm" to={`/cazare-colibita#${listing.slug}`}>
               <div className="row">
                 <div className="col-3" style={{"padding" : 3}}>
                 <Img

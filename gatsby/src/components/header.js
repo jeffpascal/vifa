@@ -39,7 +39,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
         marginBottom: `1.45rem`,
       }}
     >
-      <nav className="navbar navbar-expand-lg navbar-dark indigo ">
+      <nav className="sticky-top navbar navbar-expand-lg navbar-dark indigo ">
         <button
           className="navbar-toggler"
           type="button"
@@ -85,7 +85,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
                       <Link
                         className="nav-link"
                         style={{ color: `white` }}
-                        to={`/page-2#${link.link}`}
+                        to={`/cazare-colibita#${link.link}`}
                       >
                         {link.name}
                       </Link>

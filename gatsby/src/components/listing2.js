@@ -13,13 +13,13 @@ const Listing2 = ({ listing}) => {
 
   const getCamere = camere =>
     camere.map((camera, index) => (
-      <div className="row">
+      <div className="row ">
         <i
-          className="far fa-check-square fa-lg"
-          style={{ color: "green", padding: 4}}
-        ></i>{camera.amount}
-        <p>{camera.name}</p>
-      </div>
+          className="fas fa-bed fa-lg"
+          style={{ color: "black", padding: 4}}
+        ></i>
+        {camera.amount + " " + camera.name } 
+        </div>
     ))
 
   const getDotari = dotari =>
@@ -38,6 +38,7 @@ const Listing2 = ({ listing}) => {
 }
   return (
     <div className="container">
+      
       <h1>{listing.name}</h1>
       <Slick galleryImages={filteredlistingimages} />
       
@@ -58,16 +59,18 @@ const Listing2 = ({ listing}) => {
         </div>
         <div className="col-md-6">
 
-          <ul className="list-group ">
+         <div className=" jumbotron jumbotron-fluid">
             <Slick galleryImages={camereImages} />
             <h1>Camere</h1>
+            <div className="container ">
             {//camere
             listing.camere &&
               listing.camere.length > 0 &&
               getCamere(listing.camere)}
-          </ul>
+              </div>
         </div>
         <ul className="list-group"></ul>
+        </div>
         
       </div>
     </div>
