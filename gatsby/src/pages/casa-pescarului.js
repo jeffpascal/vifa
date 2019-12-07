@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { ReactDOM } from 'react'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
@@ -8,10 +8,9 @@ import Slick from "../components/slickgallery"
 import Listing2 from "../components/listing2";
 
 const SecondPage = () => {
-  
   const listingquery = useStaticQuery(
     graphql`
-    query querylistings {
+    query querylistings2 {
       allDataRoJson {
         nodes {
           name
@@ -42,19 +41,23 @@ const SecondPage = () => {
       }
     }
  `)
- const obj = ReactDOM.findDOMNode(this);
- obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+
 
   return (
     <Layout>
-      <div className="iframe-container">
     
-        <iframe src="https://www.beds24.com/booking2.php?ownerid=55588&amp;referer=Website+iframe" style={{"maxWidth":"100%", "border":"none", "overflow":""}}><p><a href="https://www.beds24.com/booking2.php?ownerid=55588&amp;referer=Website+iframe" title="Book Now">Book Now</a></p></iframe>
+    {listingquery.allDataRoJson.nodes.map(currentlisting => (
+      <div id={currentlisting.slug}>
+        <hr></hr>
+        <Listing2 listing = {currentlisting} ></Listing2>
+        <SEO title="Page two" />
+        <Link to="/">Inapoi la pagina principala</Link>
       </div>
+    ))}
     </Layout>
 
   )
-
+  
 
 
 }

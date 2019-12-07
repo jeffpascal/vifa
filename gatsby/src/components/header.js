@@ -36,7 +36,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
     <header
       style={{
         background: `#3333cc`,
-        marginBottom: `1.45rem`,
+        marginBottom: `0rem`,
       }}
     >
       <nav className="sticky-top navbar navbar-expand-lg navbar-dark indigo ">
@@ -129,29 +129,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
         </div>
       </nav>
 
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {local === undefined
-              ? siteTitle
-              : local === "en"
-              ? pageTitle.en
-              : pageTitle.ro}
-          </Link>
-        </h1>
-      </div>
+      
     </header>
   )
 }
