@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `VIFA`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@jeffpascals`,
+    title: `VIFA cazare lac colibita`,
+    description: `Cazare colibita, VIFA numit dupa siteul nostru vila franceza inchiriem case pe marginea lacului in Colibita. Va punem la dispozitie urmatoarele locatii: Vila Franceza, Casa Pescarului, Apartamente modernem, Casa dintre brazi.`,
+    author: `@cazare-colibita`,
     menuLinks: {
       romanian: [
         {
@@ -70,7 +70,12 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

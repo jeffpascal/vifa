@@ -33,104 +33,107 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
   }
 
   return (
+    <>
+    <nav className="sticky-top navbar navbar-expand-lg navbar-dark indigo ">
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <Link className="navbar-brand" to="/">
+        <img
+          src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+          height="30"
+          alt="mdb logo"
+        ></img>
+      </Link>
+      <ul
+        className="navbar-nav mr-auto mt-lg-0"
+        style={{ display: "flex", flex: 1 }}
+      >
+        <div>
+        <div
+          className="romanianMenu col-md-12"
+          style={{ backgroundColor: "teal", marginBottom: 10 }}
+        >
+          <img
+            src={newFlags["ro"].node.childImageSharp.fluid.src}
+            className="img-fluid"
+            alt="Logo"
+            style={{ paddingRight: 10 }}
+          />
+          {menuLinks.romanian.map((link, index) => {
+            return (
+              <button
+                key={index}
+                className="btn btn-primary"
+                type="button"
+              >
+                <li className="nav-item" key={link.name}>
+                  <Link
+                    className="nav-link"
+                    style={{ color: `white` }}
+                    to={`/cazare-colibita#${link.link}`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              </button>
+            )
+          })}
+        </div>
+        <div
+          className="englishMenu col-md-12"
+          style={{ backgroundColor: "teal", marginBottom: 10 }}
+        >
+          <img
+            src={newFlags["en"].node.childImageSharp.fluid.src}
+            className="img-fluid"
+            alt="Logo"
+            style={{ paddingRight: 10 }}
+          />
+          {menuLinks.english.map((link, index) => {
+            return (
+              <button
+                key={index}
+                className="btn align-middle btn-primary"
+                type="button"
+              >
+                <li className="nav-item" key={link.name}>
+                  <Link
+                    className="nav-link"
+                    style={{ color: `white` }}
+                    to={link.link}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              </button>
+            )
+          })}
+        </div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  
     <header
       style={{
         background: `#3333cc`,
         marginBottom: `0rem`,
       }}
     >
-      <nav className="sticky-top navbar navbar-expand-lg navbar-dark indigo ">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <Link className="navbar-brand" to="/">
-            <img
-              src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
-              height="30"
-              alt="mdb logo"
-            ></img>
-          </Link>
-          <ul
-            className="navbar-nav mr-auto mt-lg-0"
-            style={{ display: "flex", flex: 1 }}
-          >
-            <div>
-            <div
-              className="romanianMenu col-md-12"
-              style={{ backgroundColor: "teal", marginBottom: 10 }}
-            >
-              <img
-                src={newFlags["ro"].node.childImageSharp.fluid.src}
-                className="img-fluid"
-                alt="Logo"
-                style={{ paddingRight: 10 }}
-              />
-              {menuLinks.romanian.map((link, index) => {
-                return (
-                  <button
-                    key={index}
-                    className="btn btn-primary"
-                    type="button"
-                  >
-                    <li className="nav-item" key={link.name}>
-                      <Link
-                        className="nav-link"
-                        style={{ color: `white` }}
-                        to={`/cazare-colibita#${link.link}`}
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  </button>
-                )
-              })}
-            </div>
-            <div
-              className="englishMenu col-md-12"
-              style={{ backgroundColor: "teal", marginBottom: 10 }}
-            >
-              <img
-                src={newFlags["en"].node.childImageSharp.fluid.src}
-                className="img-fluid"
-                alt="Logo"
-                style={{ paddingRight: 10 }}
-              />
-              {menuLinks.english.map((link, index) => {
-                return (
-                  <button
-                    key={index}
-                    className="btn align-middle btn-primary"
-                    type="button"
-                  >
-                    <li className="nav-item" key={link.name}>
-                      <Link
-                        className="nav-link"
-                        style={{ color: `white` }}
-                        to={link.link}
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  </button>
-                )
-              })}
-            </div>
-            </div>
-          </ul>
-        </div>
-      </nav>
 
-      
     </header>
+    </>
   )
 }
 
