@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl:"http://www.vifa.ro/",
     title: `VIFA cazare lac colibita`,
     description: `Cazare colibita, VIFA numit dupa siteul nostru vila franceza inchiriem case pe marginea lacului in Colibita. Va punem la dispozitie urmatoarele locatii: Vila Franceza, Casa Pescarului, Apartamente modernem, Casa dintre brazi.`,
     author: `@cazare-colibita`,
@@ -35,6 +36,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-s3`,
       options: {
@@ -74,6 +76,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: ``,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
