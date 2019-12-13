@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "www.vifa.com",
+        bucketName: "vifa.ro",
       },
     },
     `gatsby-plugin-react-helmet`,
