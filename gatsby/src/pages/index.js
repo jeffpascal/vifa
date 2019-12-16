@@ -16,7 +16,7 @@ const IndexPage = () => (
   
   <Layout pageTitle={'VIFA'}>
     
-    <SEO title="Home" />
+    <SEO title="Cazare Colibita" />
     <SlickAll />
       {/* <img src={logo} alt="" /> */}
     <ListingAll />
