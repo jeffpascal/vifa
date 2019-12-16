@@ -14,6 +14,8 @@ export default class SecondPage extends Component {
       <Layout>
         <div className="iframe-container">
           <iframe
+            width="800"
+            height="2000"
             src="https://www.beds24.com/booking2.php?ownerid=55588&amp;referer=Website+iframe"
             style={{ "maxWidth": "100%", "border": "none", "overflow": "auto" }}>
             <p>
