@@ -42,6 +42,8 @@ const Layout = ({ children, currentPageTitle, locale }) => {
       />
       <div
         style={{
+          maxWidth: 1200,
+          padding:`0px 1.0875rem 1.45rem`,
           margin: `0 auto`,
           paddingTop: 0,
         }}

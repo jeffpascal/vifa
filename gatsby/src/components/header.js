@@ -58,68 +58,25 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
         className="navbar-nav mr-auto mt-lg-0"
         style={{ display: "flex", flex: 1 }}
       >
-        <div>
-        <div
-          className="romanianMenu col-md-12"
-          style={{ backgroundColor: "teal", marginBottom: 10 }}
-        >
-          <img
-            src={newFlags["ro"].node.childImageSharp.fluid.src}
-            className="img-fluid"
-            alt="Logo"
-            style={{ paddingRight: 10 }}
-          />
-          {menuLinks.romanian.map((link, index) => {
-            return (
+
               <button
-                key={index}
                 className="btn btn-primary"
                 type="button"
               >
-                <li className="nav-item" key={link.name}>
+                <li className="nav-item">
                   <Link
                     className="nav-link"
                     style={{ color: `white` }}
-                    to={`/cazare-colibita#${link.link}`}
+                    to={`/cazare-colibita`}
                   >
-                    {link.name}
+                    Cazare Colbita
                   </Link>
                 </li>
               </button>
-            )
-          })}
-        </div>
-        <div
-          className="englishMenu col-md-12"
-          style={{ backgroundColor: "teal", marginBottom: 10 }}
-        >
-          <img
-            src={newFlags["en"].node.childImageSharp.fluid.src}
-            className="img-fluid"
-            alt="Logo"
-            style={{ paddingRight: 10 }}
-          />
-          {menuLinks.english.map((link, index) => {
-            return (
-              <button
-                key={index}
-                className="btn align-middle btn-primary"
-                type="button"
-              >
-                <li className="nav-item" key={link.name}>
-                  <Link
-                    className="nav-link"
-                    style={{ color: `white` }}
-                    to={link.link}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              </button>
-            )
-          })}
-        </div>
-        </div>
+            
+     
+        
+        
       </ul>
     </div>
   </nav>
