@@ -51,7 +51,7 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
       <Link className="navbar-brand" to="/">
         <img
           src={logo}
-          height="30"
+          height="55"
           alt="VIFA Logo"
         ></img>
       </Link>
