@@ -12,6 +12,7 @@ export default class SecondPage extends Component {
   render() {
     return (
       <Layout>
+        <SEO title="Cazare Colibita, rezerva acum" />
         <div className="iframe-container">
           <iframe
             width="800"

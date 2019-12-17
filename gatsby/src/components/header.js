@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { useStaticQuery, graphql } from "gatsby"
+import logo from "../images/logo.gif"
 
 const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
   const flag = useStaticQuery(graphql`
@@ -49,9 +50,9 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
       <Link className="navbar-brand" to="/">
         <img
-          src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+          src={logo}
           height="30"
-          alt="mdb logo"
+          alt="VIFA Logo"
         ></img>
       </Link>
       <ul
