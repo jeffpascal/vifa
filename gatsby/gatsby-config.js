@@ -4,6 +4,9 @@ module.exports = {
     title: `VIFA cazare lac colibita`,
     description: `Cazare colibita, VIFA numit dupa siteul nostru vila franceza inchiriem case pe marginea lacului in Colibita. Va punem la dispozitie urmatoarele locatii: Vila Franceza, Casa Pescarului, Apartamente modernem, Casa dintre brazi.`,
     author: `@cazare-colibita`,
+    socialLinks: {
+      facebook: "/vilafranceza",
+    },
     menuLinks: {
       romanian: [
         {
@@ -62,7 +65,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.gif`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-json`,

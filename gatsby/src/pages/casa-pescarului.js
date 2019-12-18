@@ -50,7 +50,7 @@ const SecondPage = () => {
       <div id={currentlisting.slug}>
         <hr></hr>
         <Listing2 listing = {currentlisting} ></Listing2>
-        <SEO title="Page two" />
+        <SEO title="Casa Pescarului" />
         <Link to="/">Inapoi la pagina principala</Link>
       </div>
     ))}
