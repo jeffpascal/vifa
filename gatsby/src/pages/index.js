@@ -16,7 +16,7 @@ const IndexPage = () => (
   
   <Layout pageTitle={'VIFA'}>
     
-    <SEO title="Cazare Colibita" />
+    <SEO title="Cazare Colibita" description="Vila Franceza este destinatia de vacanta pentru cei care cauta maxim de confort, liniste si discretie pe malul lacului Colibita, Transilvania, Romania. "/>
     <SlickAll />
       {/* <img src={logo} alt="" /> */}
     <ListingAll />
