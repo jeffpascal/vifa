@@ -1,0 +1,933 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.vilafranceza.ro" resolutions="1x" timestamp="1582384335706">
+  <folder name="css">
+    <file name="site_global.css" crc="267308445"/>
+    <file name="master_a-master.css" crc="77700265" ref="camere-si-preturi:index:despre-noi:imagini:contact"/>
+    <file name="camere-si-preturi.css" crc="3838026859" ref="camere-si-preturi"/>
+    <file name="iefonts_camere-si-preturi.css" crc="3898499964" ref="camere-si-preturi"/>
+    <file name="index.css" crc="243751526" ref="index"/>
+    <file name="iefonts_index.css" crc="133628896" ref="index"/>
+    <file name="despre-noi.css" crc="237719830" ref="despre-noi"/>
+    <file name="iefonts_despre-noi.css" crc="3883660386" ref="despre-noi"/>
+    <file name="imagini.css" crc="490047973" ref="imagini"/>
+    <file name="iefonts_imagini.css" crc="3883660386" ref="imagini"/>
+    <file name="contact.css" crc="4259165602" ref="contact"/>
+    <file name="iefonts_contact.css" crc="3883660386" ref="contact"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="museutils.js" crc="3939489907" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="museconfig.js" crc="128606099" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="jquery.watch.js" crc="522499760" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="webpro.js" crc="3856315280" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:camere-si-preturi:imagini:contact"/>
+    <file name="musewpdisclosure.js" crc="4294234138" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="phone>index:phone>camere-si-preturi:phone>imagini:tablet>index:tablet>camere-si-preturi:tablet>imagini:index:camere-si-preturi:imagini"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="phone>index:phone>camere-si-preturi:phone>imagini:tablet>index:tablet>camere-si-preturi:tablet>imagini:index:camere-si-preturi:imagini"/>
+    <file name="touchswipe.js" crc="3888935200" ref="phone>index:phone>camere-si-preturi:phone>imagini:tablet>index:tablet>camere-si-preturi:tablet>imagini:index:camere-si-preturi:imagini"/>
+    <file name="html5shiv.js" crc="4241844378" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="require.js" crc="4177726516" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="103191548" ref="phone>index"/>
+    <file name="logo.gif" crc="68754163" seo="true" ref="phone>index:phone>despre-noi:phone>camere-si-preturi:phone>imagini:phone>contact:tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact">
+      <caption webpage="index" alt="Logo Vila Franceza"/>
+      <caption webpage="index" alt="Logo Vila Franceza"/>
+      <caption webpage="index" alt="Logo Vila Franceza"/>
+      <caption webpage="imagini" alt="Logo Vila Franceza"/>
+      <caption webpage="imagini" alt="Logo Vila Franceza"/>
+      <caption webpage="imagini" alt="Logo Vila Franceza"/>
+      <caption webpage="camere-si-preturi" alt="Logo Vila Franceza"/>
+      <caption webpage="camere-si-preturi" alt="Logo Vila Franceza"/>
+      <caption webpage="camere-si-preturi" alt="Logo Vila Franceza"/>
+      <caption webpage="contact" alt="Logo Vila Franceza"/>
+      <caption webpage="contact" alt="Logo Vila Franceza"/>
+      <caption webpage="contact" alt="Logo Vila Franceza"/>
+      <caption webpage="despre-noi" alt="Logo Vila Franceza"/>
+      <caption webpage="despre-noi" alt="Logo Vila Franceza"/>
+      <caption webpage="despre-noi" alt="Logo Vila Franceza"/>
+    </file>
+    <file name="home1720x360.jpg" crc="3782912931" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="phone>index:phone>camere-si-preturi:phone>imagini:tablet>index:tablet>camere-si-preturi:tablet>imagini:index:camere-si-preturi:imagini"/>
+    <file name="home2720x360.jpg" crc="84584430" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="home3720x360.jpg" crc="4127663324" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="home4720x360.jpg" crc="518562040" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="phone>index:phone>camere-si-preturi:phone>imagini:tablet>index:tablet>camere-si-preturi:tablet>imagini:index:camere-si-preturi:imagini"/>
+    <file name="cameresipreturi.jpg" crc="3864332322" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt="Oferta de cazare la Vila Franceza"/>
+      <caption webpage="index" alt="Oferta de cazare la Vila Franceza"/>
+      <caption webpage="index" alt="Oferta de cazare la Vila Franceza"/>
+    </file>
+    <file name="casapescarului.jpg" crc="3942285908" seo="true" ref="phone>index:tablet>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="nou.png" crc="44031509" seo="true" ref="phone>index:phone>camere-si-preturi:tablet>index:tablet>camere-si-preturi:index:camere-si-preturi">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="pe-malul-lacului.jpg" crc="3987668447" seo="true" ref="phone>despre-noi:tablet>despre-noi:despre-noi">
+      <caption webpage="despre-noi" alt="Vila Franceza pe malul lacului Colibita"/>
+      <caption webpage="despre-noi" alt="Vila Franceza pe malul lacului Colibita"/>
+      <caption webpage="despre-noi" alt="Vila Franceza pe malul lacului Colibita"/>
+    </file>
+    <file name="fatada.jpg" crc="4200501814" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere002.jpg" crc="404290877" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere003.jpg" crc="169186481" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere004.jpg" crc="3934210996" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="vip-room.jpg" crc="349125331" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="biliard.jpg" crc="4266685231" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere001.jpg" crc="298413477" seo="true" ref="phone>camere-si-preturi:tablet>camere-si-preturi:camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="fatada63x45.jpg" crc="4175033248" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere00262x45.jpg" crc="339124028" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere00362x45.jpg" crc="350978456" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere00462x45.jpg" crc="4002517851" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="vip-room63x45.jpg" crc="3758831504" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="biliard63x45.jpg" crc="4179552522" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="camere00162x45.jpg" crc="212586850" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec01-crop-u7556.jpg" crc="73897203" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec02-crop-u7548.jpg" crc="3982068644" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec03-crop-u7560.jpg" crc="306623089" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec04-crop-u7564.jpg" crc="204051589" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec05-crop-u7562.jpg" crc="154216778" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec06-crop-u7558.jpg" crc="25930809" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec07-crop-u7550.jpg" crc="4072733657" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec08-crop-u7542.jpg" crc="153971588" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec09-crop-u7554.jpg" crc="4001028209" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec10-crop-u7552.jpg" crc="4057982006" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec11-crop-u7544.jpg" crc="40224821" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec12-crop-u7540.jpg" crc="3839993614" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec13-crop-u7546.jpg" crc="4188473266" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec01-crop-u7535.jpg" crc="2865707" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec02-crop-u7517.jpg" crc="3945750901" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec03-crop-u7537.jpg" crc="357366389" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec04-crop-u7521.jpg" crc="4004288340" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec05-crop-u7529.jpg" crc="3937498042" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec06-crop-u7523.jpg" crc="170014873" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec07-crop-u7515.jpg" crc="493402212" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec08-crop-u7533.jpg" crc="120526473" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec09-crop-u7525.jpg" crc="240766298" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec10-crop-u7531.jpg" crc="79110143" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec11-crop-u7527.jpg" crc="3987049884" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec12-crop-u7513.jpg" crc="7951296" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec13-crop-u7519.jpg" crc="459847759" seo="true" ref="phone>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galerie001.jpg" crc="3832879621" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Lacul Colibita vedere spre vest"/>
+      <caption webpage="imagini" alt="Lacul Colibita vedere spre vest"/>
+      <caption webpage="imagini" alt="Lacul Colibita vedere spre vest"/>
+    </file>
+    <file name="galerie002.jpg" crc="3815523161" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Vila Franceza pe malul lacului Colibita"/>
+      <caption webpage="imagini" alt="Vila Franceza pe malul lacului Colibita"/>
+      <caption webpage="imagini" alt="Vila Franceza pe malul lacului Colibita"/>
+    </file>
+    <file name="galerie003.jpg" crc="4229145781" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Lacul Colibita la apusul soarelui"/>
+      <caption webpage="imagini" alt="Lacul Colibita la apusul soarelui"/>
+      <caption webpage="imagini" alt="Lacul Colibita la apusul soarelui"/>
+    </file>
+    <file name="galerie004.jpg" crc="3874812504" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Croaziera cu velierul pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Croaziera cu velierul pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Croaziera cu velierul pe lacul Colibita"/>
+    </file>
+    <file name="galerie005.jpg" crc="4123697418" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Croaziere pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Croaziere pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Croaziere pe lacul Colibita"/>
+    </file>
+    <file name="galerie006.jpg" crc="410374188" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Plimbare pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Plimbare pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Plimbare pe lacul Colibita"/>
+    </file>
+    <file name="galerie007.jpg" crc="279166889" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Trofeu de pescar la Colibita"/>
+      <caption webpage="imagini" alt="Trofeu de pescar la Colibita"/>
+      <caption webpage="imagini" alt="Trofeu de pescar la Colibita"/>
+    </file>
+    <file name="galerie008.jpg" crc="111794054" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Vila Franceza vazuta de pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Vila Franceza vazuta de pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Vila Franceza vazuta de pe lacul Colibita"/>
+    </file>
+    <file name="galerie009.jpg" crc="327854018" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Vila Franceza vedere nocturna de pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Vila Franceza vedere nocturna de pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Vila Franceza vedere nocturna de pe lacul Colibita"/>
+    </file>
+    <file name="galerie010.jpg" crc="4089791937" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Vila Franceza vazuta din exterior"/>
+      <caption webpage="imagini" alt="Vila Franceza vazuta din exterior"/>
+      <caption webpage="imagini" alt="Vila Franceza vazuta din exterior"/>
+    </file>
+    <file name="galerie011.jpg" crc="176521161" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Muntii Caliman vazuti de pe terasa Vilei Franceze"/>
+      <caption webpage="imagini" alt="Muntii Caliman vazuti de pe terasa Vilei Franceze"/>
+      <caption webpage="imagini" alt="Muntii Caliman vazuti de pe terasa Vilei Franceze"/>
+    </file>
+    <file name="galerie012.jpg" crc="50340103" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Peisaj de iarna la lacul Colibita"/>
+      <caption webpage="imagini" alt="Peisaj de iarna la lacul Colibita"/>
+      <caption webpage="imagini" alt="Peisaj de iarna la lacul Colibita"/>
+    </file>
+    <file name="galerie013.jpg" crc="217127013" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Zona Colibita iarna"/>
+      <caption webpage="imagini" alt="Zona Colibita iarna"/>
+      <caption webpage="imagini" alt="Zona Colibita iarna"/>
+    </file>
+    <file name="galerie014.jpg" crc="4085000719" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Oi la Coilibita"/>
+      <caption webpage="imagini" alt="Oi la Coilibita"/>
+      <caption webpage="imagini" alt="Oi la Coilibita"/>
+    </file>
+    <file name="galerie015.jpg" crc="4073670632" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Masa de biliard din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Masa de biliard din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Masa de biliard din salonul Vilei Franceze"/>
+    </file>
+    <file name="galerie016.jpg" crc="203971896" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Confort si culoare la Vila Franceza"/>
+      <caption webpage="imagini" alt="Confort si culoare la Vila Franceza"/>
+      <caption webpage="imagini" alt="Confort si culoare la Vila Franceza"/>
+    </file>
+    <file name="galerie017.jpg" crc="4159995596" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Confort si relaxare in camera VIP la Vila Franceza"/>
+      <caption webpage="imagini" alt="Confort si relaxare in camera VIP la Vila Franceza"/>
+      <caption webpage="imagini" alt="Confort si relaxare in camera VIP la Vila Franceza"/>
+    </file>
+    <file name="galerie018.jpg" crc="302022052" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Salonul si sala de mese la Vila Franceza"/>
+      <caption webpage="imagini" alt="Salonul si sala de mese la Vila Franceza"/>
+      <caption webpage="imagini" alt="Salonul si sala de mese la Vila Franceza"/>
+    </file>
+    <file name="galerie019.jpg" crc="3879069016" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Vedere din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Vedere din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Vedere din salonul Vilei Franceze"/>
+    </file>
+    <file name="galerie020.jpg" crc="350542359" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Relaxare si arta la Vila Franceza"/>
+      <caption webpage="imagini" alt="Relaxare si arta la Vila Franceza"/>
+      <caption webpage="imagini" alt="Relaxare si arta la Vila Franceza"/>
+    </file>
+    <file name="galerie021.jpg" crc="389010085" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Lacul Colibita vazut din camera VIP al Vilei Franceze"/>
+      <caption webpage="imagini" alt="Lacul Colibita vazut din camera VIP al Vilei Franceze"/>
+      <caption webpage="imagini" alt="Lacul Colibita vazut din camera VIP al Vilei Franceze"/>
+    </file>
+    <file name="galerie022.jpg" crc="69929834" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Dotari moderne la Vila Franceza"/>
+      <caption webpage="imagini" alt="Dotari moderne la Vila Franceza"/>
+      <caption webpage="imagini" alt="Dotari moderne la Vila Franceza"/>
+    </file>
+    <file name="galerie023.jpg" crc="497469243" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Mobilier de gradina pe terasa Vilei Franceze"/>
+      <caption webpage="imagini" alt="Mobilier de gradina pe terasa Vilei Franceze"/>
+      <caption webpage="imagini" alt="Mobilier de gradina pe terasa Vilei Franceze"/>
+    </file>
+    <file name="galerie024.jpg" crc="3903017062" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Ceata pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Ceata pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Ceata pe lacul Colibita"/>
+    </file>
+    <file name="galerie025.jpg" crc="473414726" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Spa cu apa ionizata incalzita"/>
+      <caption webpage="imagini" alt="Spa exterior cu apa ionizata incalzita"/>
+      <caption webpage="imagini" alt="Spa cu apa ionizata incalzita"/>
+    </file>
+    <file name="galerie026.jpg" crc="3796340365" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Sauna exterioara"/>
+      <caption webpage="imagini" alt="Sauna exterioara pe malul lacului Colibita"/>
+      <caption webpage="imagini" alt="Sauna la Vila Franceza Colibita"/>
+    </file>
+    <file name="galerie027.jpg" crc="335769515" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Trambulina pentru copii pe malul lacului Colibita"/>
+      <caption webpage="imagini" alt="Trambulina pentru copii pe malul lacului Colibita"/>
+      <caption webpage="imagini" alt="Trambulina pentru copii pe malul lacului Colibita"/>
+    </file>
+    <file name="galerie028.jpg" crc="381860507" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Peisaj de vara pe lacul Colibita"/>
+      <caption webpage="imagini" alt="Peisaj de vara la Colibita"/>
+      <caption webpage="imagini" alt="Peisaj de vara la Colibita"/>
+    </file>
+    <file name="galerie029.jpg" crc="4142306791" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+    </file>
+    <file name="galerie030.jpg" crc="3809761696" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Vedere din salonul Vilei Franceze"/>
+    </file>
+    <file name="galerie031.jpg" crc="4083243829" seo="true" ref="phone>imagini:tablet>imagini:imagini">
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Imagine din salonul Vilei Franceze"/>
+      <caption webpage="imagini" alt="Vedere din salonul Vilei Franceze"/>
+    </file>
+    <file name="galerie00172x72.jpg" crc="3797327758" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00272x72.jpg" crc="4074084062" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00372x72.jpg" crc="3766172789" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00472x72.jpg" crc="262066068" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00572x72.jpg" crc="183803727" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00672x72.jpg" crc="319077196" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00772x72.jpg" crc="100682264" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00872x72.jpg" crc="3929376556" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00972x72.jpg" crc="422107788" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01072x72.jpg" crc="3825228132" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01172x72.jpg" crc="3961469727" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01272x72.jpg" crc="385587690" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01372x72.jpg" crc="4172334689" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01472x72.jpg" crc="65928026" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01572x72.jpg" crc="3792326276" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01672x72.jpg" crc="208614821" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01772x72.jpg" crc="261986223" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01872x72.jpg" crc="272244071" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01972x72.jpg" crc="96779386" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02072x72.jpg" crc="4146770477" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02172x72.jpg" crc="431430538" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02272x72.jpg" crc="4055765161" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02372x72.jpg" crc="198364935" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02472x72.jpg" crc="535800696" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02572x72.jpg" crc="3847075638" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02672x72.jpg" crc="4281917493" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02772x72.jpg" crc="150866770" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02872x72.jpg" crc="4010387880" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02972x72.jpg" crc="4284507731" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie03072x72.jpg" crc="4180879947" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie03172x72.jpg" crc="4123076908" seo="true" ref="phone>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="captcha.png" crc="362548909" ref="phone>contact"/>
+    <file name="header1.jpg" crc="3811912236" seo="true" ref="tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="imagini" alt=""/>
+      <caption webpage="imagini" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="despre-noi" alt=""/>
+      <caption webpage="despre-noi" alt=""/>
+    </file>
+    <file name="home1.jpg" crc="241947038" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt="Vila franceza imagine de pe lacul Colibita"/>
+      <caption webpage="index" alt="Vila franceza imagine de pe lacul Colibita"/>
+    </file>
+    <file name="home2.jpg" crc="91882818" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt="Vedere spre lacul Colibita din camera VIP"/>
+      <caption webpage="index" alt="Vedere spre lacul Colibita din camera VIP"/>
+    </file>
+    <file name="home3.jpg" crc="118417184" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt="Salonul Vilei Franceze cu locul pentru servirea mesei, bucataria americana, masa de biliard"/>
+      <caption webpage="index" alt="Salonul Vilei Franceze cu locul pentru servirea mesei, bucataria americana, masa de biliard"/>
+    </file>
+    <file name="home4.jpg" crc="8694435" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt="Panorama de pe terasa Vilei Franceze"/>
+      <caption webpage="index" alt="Panorama de pe terasa Vilei Franceze"/>
+    </file>
+    <file name="descoperitivila.jpg" crc="263230254" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt="Galerie de imagini de la Vila Franceza"/>
+      <caption webpage="index" alt="Galerie de imagini de la Vila Franceza"/>
+    </file>
+    <file name="footer1.jpg" crc="331927316" seo="true" ref="tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact:index:despre-noi:camere-si-preturi:imagini:contact">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="imagini" alt=""/>
+      <caption webpage="imagini" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="camere-si-preturi" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="despre-noi" alt=""/>
+      <caption webpage="despre-noi" alt=""/>
+    </file>
+    <file name="u1054.png" crc="4008275106" ref="tablet>index:tablet>despre-noi:tablet>camere-si-preturi:tablet>imagini:tablet>contact"/>
+    <file name="lacul-colibita.jpg" crc="4189262389" seo="true" ref="tablet>despre-noi:despre-noi">
+      <caption webpage="despre-noi" alt="Lacul Colibita vedere spre baraj"/>
+      <caption webpage="despre-noi" alt="Lacul Colibita vedere spre baraj"/>
+    </file>
+    <file name="colibita-iarna.jpg" crc="4292864712" seo="true" ref="tablet>despre-noi:despre-noi">
+      <caption webpage="despre-noi" alt="Peisaj de iarna la Colibita"/>
+      <caption webpage="despre-noi" alt="Peisaj de iarna la Colibita"/>
+    </file>
+    <file name="peisaj-de-iarna.jpg" crc="21369739" seo="true" ref="tablet>despre-noi:despre-noi">
+      <caption webpage="despre-noi" alt="Imprejurimile lacului Colibita iarna"/>
+      <caption webpage="despre-noi" alt="Imprejurimile lacului Colibita iarna"/>
+    </file>
+    <file name="galeriec01-crop-u7194.jpg" crc="73897203" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec02-crop-u7184.jpg" crc="3982068644" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec03-crop-u7188.jpg" crc="306623089" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec04-crop-u7182.jpg" crc="204051589" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec05-crop-u7190.jpg" crc="154216778" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec06-crop-u7180.jpg" crc="25930809" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec07-crop-u7186.jpg" crc="4072733657" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec08-crop-u7178.jpg" crc="153971588" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec09-crop-u7176.jpg" crc="4001028209" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec10-crop-u7170.jpg" crc="4057982006" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec11-crop-u7174.jpg" crc="40224821" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec12-crop-u7172.jpg" crc="3839993614" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec13-crop-u7192.jpg" crc="4188473266" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec01-crop-u7211.jpg" crc="2865707" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec02-crop-u7197.jpg" crc="3945750901" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec03-crop-u7199.jpg" crc="357366389" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec04-crop-u7203.jpg" crc="4004288340" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec05-crop-u7205.jpg" crc="3937498042" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec06-crop-u7215.jpg" crc="170014873" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec07-crop-u7221.jpg" crc="493402212" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec08-crop-u7209.jpg" crc="120526473" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec09-crop-u7219.jpg" crc="240766298" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec10-crop-u7207.jpg" crc="79110143" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec11-crop-u7213.jpg" crc="3987049884" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec12-crop-u7217.jpg" crc="7951296" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec13-crop-u7201.jpg" crc="459847759" seo="true" ref="tablet>camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galerie00171x71.jpg" crc="132601751" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00271x71.jpg" crc="390317474" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00371x71.jpg" crc="253631473" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00471x71.jpg" crc="170632879" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00571x71.jpg" crc="4149642930" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00671x71.jpg" crc="4142597411" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00771x71.jpg" crc="46045657" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00871x71.jpg" crc="3997531719" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00971x71.jpg" crc="3843249898" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01071x71.jpg" crc="3777680247" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01171x71.jpg" crc="3842968010" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01271x71.jpg" crc="309275579" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01371x71.jpg" crc="4128770070" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01471x71.jpg" crc="4157329215" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01571x71.jpg" crc="274047231" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01671x71.jpg" crc="211554088" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01771x71.jpg" crc="398793112" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01871x71.jpg" crc="192208048" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01971x71.jpg" crc="4125603327" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02071x71.jpg" crc="3987458292" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02171x71.jpg" crc="490699900" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02271x71.jpg" crc="3999580489" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02371x71.jpg" crc="97282953" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02471x71.jpg" crc="445286922" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02571x71.jpg" crc="338164658" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02671x71.jpg" crc="374459016" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02771x71.jpg" crc="4118365572" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02871x71.jpg" crc="180627592" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02971x71.jpg" crc="189672976" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie03071x71.jpg" crc="412109465" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie03171x71.jpg" crc="196969892" seo="true" ref="tablet>imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="captcha2.png" crc="362548909" ref="tablet>contact"/>
+    <file name="u133.png" crc="3941942363" ref="index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="u137.png" crc="3941942363" ref="index:despre-noi:camere-si-preturi:imagini:contact"/>
+    <file name="galeriec01-crop-u6173.jpg" crc="73897203" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec02-crop-u6356.jpg" crc="3982068644" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec03-crop-u6382.jpg" crc="306623089" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec04-crop-u6408.jpg" crc="204051589" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec05-crop-u6434.jpg" crc="154216778" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec06-crop-u6460.jpg" crc="25930809" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec07-crop-u6486.jpg" crc="4072733657" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec08-crop-u6512.jpg" crc="153971588" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec09-crop-u6538.jpg" crc="4001028209" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec10-crop-u6564.jpg" crc="4057982006" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec11-crop-u6590.jpg" crc="40224821" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec12-crop-u6616.jpg" crc="3839993614" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec13-crop-u6642.jpg" crc="4188473266" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec01-crop-u6181.jpg" crc="2865707" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec02-crop-u6364.jpg" crc="3945750901" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec03-crop-u6390.jpg" crc="357366389" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec04-crop-u6416.jpg" crc="4004288340" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec05-crop-u6442.jpg" crc="3937498042" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec06-crop-u6468.jpg" crc="170014873" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec07-crop-u6494.jpg" crc="493402212" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec08-crop-u6520.jpg" crc="120526473" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec09-crop-u6546.jpg" crc="240766298" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec10-crop-u6572.jpg" crc="79110143" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec11-crop-u6598.jpg" crc="3987049884" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec12-crop-u6624.jpg" crc="7951296" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galeriec13-crop-u6650.jpg" crc="459847759" seo="true" ref="camere-si-preturi">
+      <caption webpage="camere-si-preturi" alt=""/>
+    </file>
+    <file name="galerie00150x50.jpg" crc="104106010" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00250x50.jpg" crc="3977988308" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00350x50.jpg" crc="4028388895" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00450x50.jpg" crc="3957579583" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00550x50.jpg" crc="3992085704" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00650x50.jpg" crc="4035407221" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00750x50.jpg" crc="4002786652" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00850x50.jpg" crc="323218302" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie00950x50.jpg" crc="3851168127" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01050x50.jpg" crc="40907268" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01150x50.jpg" crc="3965933516" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01250x50.jpg" crc="4227071791" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01350x50.jpg" crc="4096914301" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01450x50.jpg" crc="270549139" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01550x50.jpg" crc="14623224" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01650x50.jpg" crc="4018553726" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01750x50.jpg" crc="468360263" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01850x50.jpg" crc="3946595199" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie01950x50.jpg" crc="355433463" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02050x50.jpg" crc="4177833448" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02150x50.jpg" crc="4232256086" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02250x50.jpg" crc="3923887458" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02350x50.jpg" crc="299218299" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02450x50.jpg" crc="474077104" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02550x50.jpg" crc="506968849" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02650x50.jpg" crc="3864782748" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02750x50.jpg" crc="4072083025" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02850x50.jpg" crc="3778131031" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie02950x50.jpg" crc="463016039" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie03050x50.jpg" crc="490794450" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="galerie03150x50.jpg" crc="231543014" seo="true" ref="imagini">
+      <caption webpage="imagini" alt=""/>
+    </file>
+    <file name="captcha3.png" crc="362548909" ref="contact"/>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="master_a-master.css" crc="4008425870" ref="tablet>contact:tablet>camere-si-preturi:tablet>despre-noi:tablet>imagini:tablet>index"/>
+      <file name="contact.css" crc="94309769" ref="tablet>contact"/>
+      <file name="iefonts_contact.css" crc="56706069" ref="tablet>contact"/>
+      <file name="camere-si-preturi.css" crc="4183108419" ref="tablet>camere-si-preturi"/>
+      <file name="iefonts_camere-si-preturi.css" crc="4049024032" ref="tablet>camere-si-preturi"/>
+      <file name="despre-noi.css" crc="3938291108" ref="tablet>despre-noi"/>
+      <file name="iefonts_despre-noi.css" crc="56706069" ref="tablet>despre-noi"/>
+      <file name="imagini.css" crc="321439370" ref="tablet>imagini"/>
+      <file name="iefonts_imagini.css" crc="56706069" ref="tablet>imagini"/>
+      <file name="index.css" crc="305100547" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="4088805842" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="336454627" seo="true" mt="1582384128999" redirect="true"/>
+    <file name="despre-noi.html" crc="119363382" seo="true" mt="1582384128999" redirect="true"/>
+    <file name="camere-si-preturi.html" crc="88078974" seo="true" mt="1582384128999" redirect="true"/>
+    <file name="imagini.html" crc="4271353912" seo="true" mt="1582384128999" redirect="true"/>
+    <file name="contact.html" crc="4242892822" seo="true" mt="1582384128999" redirect="true"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-master.css" crc="3815093563" ref="phone>camere-si-preturi:phone>imagini:phone>contact:phone>index:phone>despre-noi"/>
+      <file name="camere-si-preturi.css" crc="105004766" ref="phone>camere-si-preturi"/>
+      <file name="iefonts_camere-si-preturi.css" crc="3974903522" ref="phone>camere-si-preturi"/>
+      <file name="imagini.css" crc="4080754843" ref="phone>imagini"/>
+      <file name="iefonts_imagini.css" crc="4279852779" ref="phone>imagini"/>
+      <file name="contact.css" crc="279707252" ref="phone>contact"/>
+      <file name="iefonts_contact.css" crc="4279852779" ref="phone>contact"/>
+      <file name="index.css" crc="56582977" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="4279852779" ref="phone>index"/>
+      <file name="despre-noi.css" crc="394675763" ref="phone>despre-noi"/>
+      <file name="iefonts_despre-noi.css" crc="4279852779" ref="phone>despre-noi"/>
+    </folder>
+    <file name="index.html" crc="366359822" seo="true" mt="1582384128959" redirect="true"/>
+    <file name="despre-noi.html" crc="4047551532" seo="true" mt="1582384128959" redirect="true"/>
+    <file name="camere-si-preturi.html" crc="3864048836" seo="true" mt="1582384128959" redirect="true"/>
+    <file name="imagini.html" crc="236660184" seo="true" mt="1582384128959" redirect="true"/>
+    <file name="contact.html" crc="144481400" seo="true" mt="1582384128959" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="125774266" seo="true" mt="1582384129042" redirect="true"/>
+  <file name="despre-noi.html" crc="155106912" seo="true" mt="1582384129042" redirect="true"/>
+  <file name="camere-si-preturi.html" crc="307833413" seo="true" mt="1582384129042" redirect="true"/>
+  <file name="imagini.html" crc="4128466514" seo="true" mt="1582384129042" redirect="true"/>
+  <file name="contact.html" crc="4062208962" seo="true" mt="1582384129042" redirect="true"/>
+</manifest>
