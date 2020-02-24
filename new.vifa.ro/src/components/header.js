@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { NavHashLink as NavLink } from "react-router-hash-link"
 import { useStaticQuery, graphql } from "gatsby"
 import logo from "../images/logo.gif"
 
@@ -35,62 +35,58 @@ const Header = ({ siteTitle, menuLinks, local, pageTitle }) => {
 
   return (
     <>
-    <nav className="sticky-top navbar navbar-expand-lg navbar-dark indigo ">
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <Link className="navbar-brand" to="/">
-        <img
-          src={logo}
-          height="55"
-          alt="VIFA Logo"
-        ></img>
-      </Link>
-      <ul
-        className="navbar-nav mr-auto mt-lg-0"
-        style={{ display: "flex", flex: 1 }}
-      >
+      <nav className="sticky-top navbar navbar-expand-lg navbar-dark indigo ">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <Link className="navbar-brand" to="/">
+            <img src={logo} height="55" alt="VIFA Logo"></img>
+          </Link>
+          <ul
+            className="navbar-nav mr-auto mt-lg-0"
+            style={{ display: "flex", flex: 1 }}
+          >
+            <button className="btn btn-primary" type="button">
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  style={{ color: `white` }}
+                  to={`/cazare-colibita`}
+                >
+                  Cazare Colbita
+                </Link>
+              </li>
+            </button>
+            <button className="btn btn-primary" type="button">
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  style={{ color: `white` }}
+                  to={`/contact`}
+                >
+                  Contact
+                </Link>
+              </li>
+            </button>
+          </ul>
+        </div>
+      </nav>
 
-              <button
-                className="btn btn-primary"
-                type="button"
-              >
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    style={{ color: `white` }}
-                    to={`/cazare-colibita`}
-                  >
-                    Cazare Colbita
-                  </Link>
-                </li>
-              </button>
-            
-     
-        
-        
-      </ul>
-    </div>
-  </nav>
-
-  
-    <header
-      style={{
-        background: `#3333cc`,
-        marginBottom: `0rem`,
-      }}
-    >
-
-    </header>
+      <header
+        style={{
+          background: `#3333cc`,
+          marginBottom: `0rem`,
+        }}
+      ></header>
     </>
   )
 }
