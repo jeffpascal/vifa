@@ -30,7 +30,7 @@ const Contact = () => {
       phone: phoneNumer,
       desc: description,
     }
-    const response = fetch(url, {
+    fetch(url, {
       method: "POST",
       mode: "cors",
       cache: "no-cache",
@@ -39,7 +39,7 @@ const Contact = () => {
       },
       body: JSON.stringify(data),
     }).then(response => {
-      if (response.status == 200) {
+      if (response.status === 200) {
         setConfirmation("Success")
         alert("success")
       } else {
@@ -53,7 +53,7 @@ const Contact = () => {
     <LayoutNoWidth>
       <div>
         <form>
-          <div className="form-group">
+          <section className="form-group">
             <input
               type="text"
               id="name-input"
@@ -65,12 +65,12 @@ const Contact = () => {
               onChange={handlePhoneChange}
             ></input>
             <input
-              type="text"
+              type="email"
               id="name-input3"
               onChange={handleEmailChange}
             ></input>
             <input
-              type="text"
+              type="textarea"
               id="name-input3"
               onChange={handleDescriptionChange}
             ></input>
@@ -78,7 +78,7 @@ const Contact = () => {
               Click me
             </button>
             <p>{confirmation}</p>
-          </div>
+          </section>
         </form>
       </div>
     </LayoutNoWidth>
