@@ -41,10 +41,8 @@ const Contact = () => {
     }).then(response => {
       if (response.status == 200) {
         setConfirmation("Success")
-        alert("success")
       } else {
         setConfirmation("Fail")
-        alert("something went wrong")
       }
     })
   }
