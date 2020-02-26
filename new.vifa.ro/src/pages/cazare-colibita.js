@@ -1,11 +1,7 @@
 import React, { Component }  from "react"
-import { Link } from "gatsby"
 
 import LayoutNoWidth from "../components/LayoutNoWidth"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
-import Slick from "../components/slickgallery"
-import Listing2 from "../components/listing2";
 import Beds24Iframe from "../components/beds24iframe";
 
 export default class SecondPage extends Component {

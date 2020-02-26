@@ -8,6 +8,7 @@ const Beds24Iframe = ({ iframeWidth, iframeHeight, iframeSrc, iframeLinkHref, li
     return (
         <div className="iframe-container">
           <iframe
+          title="book now"
             width={iframeWidth}
             height={iframeHeight}
             src={iframeSrc}

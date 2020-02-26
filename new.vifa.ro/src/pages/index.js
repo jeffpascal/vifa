@@ -8,7 +8,6 @@ import ListingAll from "../components/listingall"
 import SlickAll from "../components/slickgalleryall"
 
 
-import { useStaticQuery, graphql } from "gatsby"
 
 
 

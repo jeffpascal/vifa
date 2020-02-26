@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
-import Slick from "../components/slickgallery"
 import Listing2 from "../components/listing2";
 
 const SecondPage = () => {
