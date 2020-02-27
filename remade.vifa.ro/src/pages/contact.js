@@ -7,6 +7,7 @@ const Contact = () => {
   const [phoneNumer, setPhoneNumer] = useState("")
   const [description, setDescription] = useState("")
   const [confirmation, setConfirmation] = useState("")
+  const [error, setError] = useState("No errors")
 
   function handleNameChange(event) {
     setName(event.target.value)
@@ -21,13 +22,20 @@ const Contact = () => {
     setDescription(event.target.value)
   }
 
-  function handleCheck(event){
+  function handleCheck(event) {
     console.log(event.target.value)
     console.log(event)
   }
 
   function handleSubmit(event) {
     event.preventDefault()
+    const validateEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/
+
+    if (!validateEmail.test(email)) {
+      setError("E-mail must contain @")
+      return
+    }
+
     const url = `https://iwk820vmz1.execute-api.eu-central-1.amazonaws.com/Prod/contact`
     const data = {
       name: name,
@@ -45,11 +53,12 @@ const Contact = () => {
       body: JSON.stringify(data),
     }).then(response => {
       if (response.status === 200) {
-        setConfirmation("Success")
+        setConfirmation("Mesajul a fost trimis cu succes")
+        setError("")
         alert("success")
       } else {
-        setConfirmation("Fail")
-        alert("something went wrong")
+        setConfirmation("A fost o problema cu mesajul dumneavoastra. Va rog sa ne contactati direct la mailul unic_juridic@yahoo.com")
+        setError("")
       }
     })
   }
@@ -59,7 +68,9 @@ const Contact = () => {
       <div className="col-md-6">
         <form>
           <div className="form-group">
-            <label htmlFor="inputmail" for="inputmail">Adresa de mail</label>
+            <label htmlFor="inputmail" for="inputmail">
+              Adresa de mail
+            </label>
             <input
               type="email"
               className="form-control"
@@ -73,7 +84,9 @@ const Contact = () => {
             </small>
           </div>
           <div className="form-group">
-            <label htmlFor="inputphone" for="inputphone">Numar de Telefon</label>
+            <label htmlFor="inputphone" for="inputphone">
+              Numar de Telefon
+            </label>
             <input
               type="tel"
               className="form-control"
@@ -86,7 +99,9 @@ const Contact = () => {
             </small>
           </div>
           <div className="form-group">
-            <label htmlFor="inputname" for="inputname">Nume intreg</label>
+            <label htmlFor="inputname" for="inputname">
+              Nume intreg
+            </label>
             <input
               type="text"
               className="form-control"
@@ -99,9 +114,17 @@ const Contact = () => {
             </small>
           </div>
           <div className="form-group">
-            <label htmlFor="inputcomment" for="inputcomment">Comment:</label>
-            <textarea id="inputcomment" className="form-control" rows="5"  onChange={handleDescriptionChange}></textarea>
-            <small id="emailHelp" className="form-text text-muted">
+            <label htmlFor="inputcomment" for="inputcomment">
+              Comment:
+            </label>
+            <textarea
+              id="inputcomment"
+              className="form-control"
+              rows="5"
+              onChange={handleDescriptionChange}
+            ></textarea>
+            <small id="emailHelp" className="form-text">
+              <p style={{ color: "red" }}>{error}</p>
               Cu ce va putem ajuta
             </small>
           </div>
@@ -111,22 +134,30 @@ const Contact = () => {
               className="form-check-input"
               id="exampleCheck1"
             />
-            <label htmlFor="exampleCheck1" className="form-check-label" for="exampleCheck1" defaultChecked={handleCheck} onChange={handleCheck}>
+            <label
+              htmlFor="exampleCheck1"
+              className="form-check-label"
+              for="exampleCheck1"
+              defaultChecked={handleCheck}
+              onChange={handleCheck}
+            >
               Sunt de acord cu prelucrarea datelor personale
             </label>
             <small id="exampleCheck1" className="form-text text-muted">
               Nu vom partaja detaliile dumneavoastra cu nimeni altcineva.
             </small>
           </div>
-          <button type="submit" onClick={handleSubmit} className="btn btn-primary">
+          <button
+            type="submit"
+            onClick={handleSubmit}
+            className="btn btn-primary"
+          >
             Submit
           </button>
           <p>{confirmation}</p>
         </form>
       </div>
-      <div>
-        
-      </div>
+      <div></div>
     </Layout>
   )
 }
