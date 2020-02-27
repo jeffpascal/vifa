@@ -12,13 +12,13 @@ exports.createPages = ({ actions }) => {
     const jsonDataEn = require("./src/data/dataEn.json")
     const { createPage } = actions
     
-    jsonDataEn.forEach(item => {
+    jsonDataRo.forEach(item => {
         createPage({
             path: `/${item.slug}/`,
             component: require.resolve('./src/templates/listing-template.js'),
             context:{item,
             slug: item.slug,
-            locale: "en"},
+            },
         })
     })
   }

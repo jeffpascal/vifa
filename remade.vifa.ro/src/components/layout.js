@@ -8,25 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "./css/layout.css"
-import Header from "./header"
 
-const Layout = ({ children, currentPageTitle }) => {
+import Header from "./header"
+import "./layout.css"
+
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
-          menuLinks {
-            english {
-              link
-              name
-            }
-            romanian {
-              link
-              name
-            }
-          }
         }
       }
     }
@@ -34,19 +25,20 @@ const Layout = ({ children, currentPageTitle }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        menuLinks={data.site.siteMetadata.menuLinks}
-        pageTitle={currentPageTitle}
-      />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          maxWidth: 1200,
           margin: `0 auto`,
-          paddingTop: 0,
+          maxWidth: 1200,
+          padding: `0 0.2rem 1.45rem`,
         }}
       >
         <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
       </div>
     </>
   )

@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import Listing2 from "../components/listing2";
 
-const SecondPage = () => {
+const AllListings = () => {
   const listingquery = useStaticQuery(
     graphql`
     query querylistings2 {
@@ -61,4 +61,4 @@ const SecondPage = () => {
 
 }
 
-export default SecondPage
+export default AllListings

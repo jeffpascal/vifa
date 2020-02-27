@@ -1,0 +1,39 @@
+.slick-prev:before {
+  color: white !important;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  color: white !important;
+  font-size: 30px;
+}
+
+.slick-prev {
+  z-index: 10;
+  left: 10px;
+}
+
+.slick-next {
+  right: 20px;
+}
+.slick-dots {
+  background-color:black;
+  bottom: -22px;
+  opacity: 0.6;
+  
+}
+.slick-dots li button:before {
+  color: white;
+  font-size: 12px;
+  line-height: 12px;
+  
+}
+
+.slick-dots li.slick-active button:before {
+  color:white !important;
+}
+
+
+.galleryDiv{
+  padding-bottom: 30px;
+}
