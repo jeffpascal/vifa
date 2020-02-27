@@ -7,20 +7,19 @@ const Header = ({ siteTitle }) => (
     style={{
       marginBottom: `1.45rem`,
     }}
-  >
+  > 
     <nav
-      className="navbar navbar-dark bg-primary"
+      className="navbar navbar-dark bg-dark"
       style={{
         margin: `0 auto`,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <a class="navbar-brand" href="#">
-      <Image></Image>
-        Vila Franceza
+      <a className="navbar-brand" href="/">
+        <Image></Image>
       </a>
-      <h1 style={{ margin: 0 }}>
         <Link
+          className="btn btn-primary"
           to="/"
           style={{
             color: `white`,
@@ -29,7 +28,26 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+        <Link
+          className="btn btn-primary"
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Home
+        </Link>
+        <Link
+          className="btn btn-primary"
+          to="/contact"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Contact
+        </Link>
     </nav>
   </header>
 )

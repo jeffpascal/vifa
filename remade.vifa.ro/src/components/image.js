@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -26,7 +25,7 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <img alt="Vila Franceza" src={data.placeholderImage.childImageSharp.fluid.src} style={{"height":60, "margin":0}} />
 }
 
 export default Image

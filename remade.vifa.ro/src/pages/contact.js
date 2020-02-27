@@ -21,6 +21,11 @@ const Contact = () => {
     setDescription(event.target.value)
   }
 
+  function handleCheck(event){
+    console.log(event.target.value)
+    console.log(event)
+  }
+
   function handleSubmit(event) {
     event.preventDefault()
     const url = `https://iwk820vmz1.execute-api.eu-central-1.amazonaws.com/Prod/contact`
@@ -51,35 +56,76 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div>
+      <div className="col-md-6">
         <form>
-          <section className="form-group">
-            <input
-              type="text"
-              id="name-input"
-              onChange={handleNameChange}
-            ></input>
-            <input
-              type="text"
-              id="name-input2"
-              onChange={handlePhoneChange}
-            ></input>
+          <div className="form-group">
+            <label htmlFor="inputmail" for="inputmail">Adresa de mail</label>
             <input
               type="email"
-              id="name-input3"
+              className="form-control"
+              id="inputmail"
+              aria-describedby="emailHelp"
+              placeholder="exemplu@gmail.com"
               onChange={handleEmailChange}
-            ></input>
+            />
+            <small id="emailHelp" className="form-text text-muted">
+              Nu vom partaja mailul dumneavoastra cu nimeni
+            </small>
+          </div>
+          <div className="form-group">
+            <label htmlFor="inputphone" for="inputphone">Numar de Telefon</label>
             <input
-              type="textarea"
-              id="name-input3"
-              onChange={handleDescriptionChange}
-            ></input>
-            <button type="submit" onClick={handleSubmit}>
-              Click me
-            </button>
-            <p>{confirmation}</p>
-          </section>
+              type="tel"
+              className="form-control"
+              id="inputphone"
+              placeholder="003371128829"
+              onChange={handlePhoneChange}
+            />
+            <small id="emailHelp" className="form-text text-muted">
+              Includeti prefix exemplu: 0040755112151
+            </small>
+          </div>
+          <div className="form-group">
+            <label htmlFor="inputname" for="inputname">Nume intreg</label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputname"
+              placeholder="Maria Silva Cosmina"
+              onChange={handleNameChange}
+            />
+            <small id="emailHelp" class="form-text text-muted">
+              Nume + Prenume complet
+            </small>
+          </div>
+          <div className="form-group">
+            <label htmlFor="inputcomment" for="inputcomment">Comment:</label>
+            <textarea id="inputcomment" className="form-control" rows="5"  onChange={handleDescriptionChange}></textarea>
+            <small id="emailHelp" className="form-text text-muted">
+              Cu ce va putem ajuta
+            </small>
+          </div>
+          <div className="form-check">
+            <input
+              type="checkbox"
+              className="form-check-input"
+              id="exampleCheck1"
+            />
+            <label htmlFor="exampleCheck1" className="form-check-label" for="exampleCheck1" defaultChecked={handleCheck} onChange={handleCheck}>
+              Sunt de acord cu prelucrarea datelor personale
+            </label>
+            <small id="exampleCheck1" className="form-text text-muted">
+              Nu vom partaja detaliile dumneavoastra cu nimeni altcineva.
+            </small>
+          </div>
+          <button type="submit" onClick={handleSubmit} className="btn btn-primary">
+            Submit
+          </button>
+          <p>{confirmation}</p>
         </form>
+      </div>
+      <div>
+        
       </div>
     </Layout>
   )

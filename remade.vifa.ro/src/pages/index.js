@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import SlickAll from "../components/slickgalleryall"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import ListingCard from "../components/listingcard"
@@ -50,6 +48,7 @@ const IndexPage = () => {
       <div className="col-md-12 row">
         {querrydata.allDataRoJson.nodes.map(item => (
           <ListingCard
+            key={item.name}
             title={item.name}
             description={item.descriere.card}
             image={item.cardimages}
