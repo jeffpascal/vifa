@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -23,61 +23,61 @@ const Header = ({ siteTitle }) => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
       <a className="navbar-brand" href="/">
         <Image></Image>
       </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item ">
             <Link
               className="btn btn-primary nav-link btn-lg"
               to="/"
               style={{
                 color: `white`,
                 textDecoration: `none`,
-                marginRight: `10px`,
+                margin: `5px`,
               }}
             >
               {siteTitle}
             </Link>
           </li>
-          <li class="nav-item active">
+          <li className="nav-item active">
             <Link
               className="btn btn-primary nav-link btn-lg"
               to="/despre-noi"
               style={{
                 color: `white`,
                 textDecoration: `none`,
-                marginRight: `10px`,
+                margin: `5px`,
               }}
             >
               Despre Noi
             </Link>
           </li>
-          <li class="nav-item active">
+          <li className="nav-item active">
             <Link
               className="btn btn-primary nav-link btn-lg"
               to="/imagini"
               style={{
                 color: `white`,
                 textDecoration: `none`,
-                marginRight: `10px`,
+                margin: `5px`,
               }}
             >
               Imagini
             </Link>
           </li>
-          <li class="nav-item active">
+          <li className="nav-item active">
             <Link
               className="btn btn-primary nav-link btn-lg"
               to="/contact"
               style={{
                 color: `white`,
                 textDecoration: `none`,
-                marginRight: `10px`,
+                margin: `5px`,
               }}
             >
               Contact

@@ -68,7 +68,7 @@ const Contact = () => {
       <div className="col-md-6">
         <form>
           <div className="form-group">
-            <label htmlFor="inputmail" for="inputmail">
+            <label htmlFor="inputmail">
               Adresa de mail
             </label>
             <input
@@ -84,7 +84,7 @@ const Contact = () => {
             </small>
           </div>
           <div className="form-group">
-            <label htmlFor="inputphone" for="inputphone">
+            <label htmlFor="inputphone">
               Numar de Telefon
             </label>
             <input
@@ -99,7 +99,7 @@ const Contact = () => {
             </small>
           </div>
           <div className="form-group">
-            <label htmlFor="inputname" for="inputname">
+            <label htmlFor="inputname">
               Nume intreg
             </label>
             <input
@@ -109,12 +109,12 @@ const Contact = () => {
               placeholder="Maria Silva Cosmina"
               onChange={handleNameChange}
             />
-            <small id="emailHelp" class="form-text text-muted">
+            <small id="emailHelp" className="form-text text-muted">
               Nume + Prenume complet
             </small>
           </div>
           <div className="form-group">
-            <label htmlFor="inputcomment" for="inputcomment">
+            <label htmlFor="inputcomment">
               Comment:
             </label>
             <textarea
@@ -137,7 +137,6 @@ const Contact = () => {
             <label
               htmlFor="exampleCheck1"
               className="form-check-label"
-              for="exampleCheck1"
               defaultChecked={handleCheck}
               onChange={handleCheck}
             >
