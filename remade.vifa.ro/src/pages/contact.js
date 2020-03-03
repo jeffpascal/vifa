@@ -80,7 +80,7 @@ const Contact = () => {
       <div className="row">
         
         <div className="col-md-7">
-          <h1>Contact</h1>
+          <h1>Contact vila franceza</h1>
           <p>Accesul se face dinspre orasul Bistrita de pe drumul european E58. Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta, se continua pe drumul judetean 173A.</p>
           <p>Accesul dinspre Vatra Dornei se face de pe drumul european E58, la stanga, pe drumul judetean 173D, la intrarea in localitatea Muresenii Bargaului.</p>
           <p>Coordonate GPS: 47°10'29"N si 24°54'44"E</p>
