@@ -1,0 +1,15 @@
+version: 0.1
+phases: 
+  install: 
+    commands:
+      - 'cd remade.vifa.ro'
+      - 'npm install -g gatsby'
+    pre_build:
+      commands:
+      - 'npm install'
+    build:
+      commands:
+      - 'gatsby build'
+    deploy:
+      commands:
+      - 'npm run deploy'
