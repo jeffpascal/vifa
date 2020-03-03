@@ -1,6 +1,8 @@
-import React, { useState} from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
-import Reaptcha from 'reaptcha';
+import Reaptcha from "reaptcha"
+import MyGoogleMap from "../components/googlemap"
+
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -31,16 +33,16 @@ const Contact = () => {
     setCaptcha(false)
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault()
     const validateEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
 
     console.log(email)
-    if ( !validateEmail.test(email)) {
+    if (!validateEmail.test(email)) {
       setError("E-mail must contain @ and not be empty")
       return
     }
-    if(captcha === true){
+    if (captcha === true) {
       setError("Verify captcha")
     }
 
@@ -75,9 +77,23 @@ const Contact = () => {
 
   return (
     <Layout>
-      <>
+      <div className="row">
         
-        <div className="col-md-6">
+        <div className="col-md-7">
+          <h1>Contact</h1>
+          <p>Accesul se face dinspre orasul Bistrita de pe drumul european E58. Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta, se continua pe drumul judetean 173A.</p>
+          <p>Accesul dinspre Vatra Dornei se face de pe drumul european E58, la stanga, pe drumul judetean 173D, la intrarea in localitatea Muresenii Bargaului.</p>
+          <p>Coordonate GPS: 47°10'29"N si 24°54'44"E</p>
+          <MyGoogleMap></MyGoogleMap>
+        </div>
+        <div className="col-md-5">
+          <div class="container">
+          <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
+          <p>E-MAIL: unic_juridic@yahoo.com</p>
+          <p>Va rugam sa includeti in mesaj perioada si numarul de persoane pentru care doriti sa faceti rezervarea .</p>
+          <p>Va multumim!</p>
+          <p>Va vom contacta in cel mai scurt timp.</p>
+          </div>
           <form id="demo-form">
             <div className="form-group">
               <label htmlFor="inputmail">Adresa de mail</label>
@@ -150,7 +166,12 @@ const Contact = () => {
                 Nu vom partaja detaliile dumneavoastra cu nimeni altcineva.
               </small>
             </div>
-            <Reaptcha sitekey="6LccRd4UAAAAADH-A4ZbJFsDwWo_nVs4WIUwt-ld" onVerify={onVerify}  render="explicit" onloadCallback={() => console.log('loaded')}/>
+            <Reaptcha
+              sitekey="6LccRd4UAAAAADH-A4ZbJFsDwWo_nVs4WIUwt-ld"
+              onVerify={onVerify}
+              render="explicit"
+              onloadCallback={() => console.log("loaded")}
+            />
 
             <button
               type="submit"
@@ -163,8 +184,7 @@ const Contact = () => {
             <p>{confirmation}</p>
           </form>
         </div>
-        <div></div>
-      </>
+      </div>
     </Layout>
   )
 }
