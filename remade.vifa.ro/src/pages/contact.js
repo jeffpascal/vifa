@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import Reaptcha from "reaptcha"
 import MyGoogleMap from "../components/googlemap"
+import SEO from "../components/seo"
 
 const Contact = () => {
   const [name, setName] = useState("")
@@ -78,21 +79,36 @@ const Contact = () => {
   return (
     <Layout>
       <div className="row">
-        
+        <SEO
+          title="Contact Vila Franceza Bistrita Nasaud Colibita"
+          description="Pentru rezervari si informatii suplimentare va asteptam la: Va rugam sa includeti in mesaj perioada si numarul de persoane
+          pentru care doriti sa faceti rezervarea ."
+        ></SEO>
         <div className="col-md-7">
           <h1>Contact vila franceza</h1>
-          <p>Accesul se face dinspre orasul Bistrita de pe drumul european E58. Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta, se continua pe drumul judetean 173A.</p>
-          <p>Accesul dinspre Vatra Dornei se face de pe drumul european E58, la stanga, pe drumul judetean 173D, la intrarea in localitatea Muresenii Bargaului.</p>
+          <p>
+            Accesul se face dinspre orasul Bistrita de pe drumul european E58.
+            Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta,
+            se continua pe drumul judetean 173A.
+          </p>
+          <p>
+            Accesul dinspre Vatra Dornei se face de pe drumul european E58, la
+            stanga, pe drumul judetean 173D, la intrarea in localitatea
+            Muresenii Bargaului.
+          </p>
           <p>Coordonate GPS: 47°10'29"N si 24°54'44"E</p>
           <MyGoogleMap></MyGoogleMap>
         </div>
         <div className="col-md-5">
           <div class="container">
-          <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
-          <p>E-MAIL: unic_juridic@yahoo.com</p>
-          <p>Va rugam sa includeti in mesaj perioada si numarul de persoane pentru care doriti sa faceti rezervarea .</p>
-          <p>Va multumim!</p>
-          <p>Va vom contacta in cel mai scurt timp.</p>
+            <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
+            <p>E-MAIL: unic_juridic@yahoo.com</p>
+            <p>
+              Va rugam sa includeti in mesaj perioada si numarul de persoane
+              pentru care doriti sa faceti rezervarea .
+            </p>
+            <p>Va multumim!</p>
+            <p>Va vom contacta in cel mai scurt timp.</p>
           </div>
           <form id="demo-form">
             <div className="form-group">
