@@ -30,19 +30,9 @@ const DespreNoi = () => {
     <Layout>
       <SEO
         title="Despre Vila Franceza - Dormi la Colibita"
-        description="Colibita este un sat al comunei Bistrita Bargaului, judetul
-        Bistrita-Nasaud, Transilvania, Romania. Localitatea este asezata
-        pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani.
-        Vila Franceza este situata pe malul nordic al lacului Colibita, la
-              doar cativa pasi de apa. Locatia noastra va ofera o perspectiva
-              unica asupra lacului si asupra crestelor muntilor din imprejurimi.
-              Confort, liniste si discretie sunt ceea ce va oferim pentru o
-              vacanta, pentru o luna de miere sau doar pentru un weekend, in
-              orice anotimp.
-        Accesul se face din Bistrita pe drumul european care leaga orasul
-              Bistrita, prin Pasul Tihuta, de Vatra Dornei. In Prundul
-              Bargaului, in mijlocul localitatii, exista o intersectie ce duce
-              spre Bistrita Bargaului, apoi spre Colibita."
+        description="Vila Franceza este situata pe malul nordic al lacului Colibita, la
+        doar cativa pasi de apa. Locatia noastra va ofera o perspectiva
+        unica asupra lacului si asupra crestelor muntilor din imprejurimi."
       />
       <div className="row">
         <div className="col-md-6">

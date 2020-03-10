@@ -3,6 +3,7 @@ module.exports = {
     title: `Vila Franceza`,
     description: `Locuinte de inchiriat langa lacul colibita`,
     author: `@jeffpascal`,
+    siteUrl: `http://www.vifa.ro`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -47,6 +48,8 @@ module.exports = {
         trackingId: "UA-154447095-1",
       },
     },
+    //enable sitemap
+    `gatsby-plugin-sitemap`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
