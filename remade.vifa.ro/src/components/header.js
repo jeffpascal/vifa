@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <h3 style={{width:"100%", backgroundColor:"teal", margin:0, textAlign:"center"}}>Siteul www.vifa.ro este in lucru. <em style={{color:"yellow",  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"}}>Pagina de contact este functionala</em>, ne puteti contacta prin pagina de <em>Contact</em> sau prin mail la <em style={{color:"yellow",  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"}}>unic_juridic@yahoo.com</em></h3>
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-dark"
       style={{
@@ -32,9 +33,9 @@ const Header = ({ siteTitle }) => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item ">
-            <Link
+            <a
               className="btn btn-primary nav-link btn-lg"
-              to="/"
+              href="http://www.vilafranceza.ro"
               style={{
                 color: `white`,
                 textDecoration: `none`,
@@ -42,7 +43,7 @@ const Header = ({ siteTitle }) => (
               }}
             >
               {siteTitle}
-            </Link>
+            </a>
           </li>
           <li className="nav-item active">
             <Link
