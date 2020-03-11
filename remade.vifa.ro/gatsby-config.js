@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Vila Franceza`,
+    description: `Locuinte de inchiriat langa lacul colibita`,
+    author: `@jeffpascal`,
+    siteUrl: `http://www.vifa.ro`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,6 +41,15 @@ module.exports = {
         bucketName: "vifa.ro",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-154447095-1",
+      },
+    },
+    //enable sitemap
+    `gatsby-plugin-sitemap`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

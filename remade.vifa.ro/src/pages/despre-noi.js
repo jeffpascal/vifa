@@ -1,13 +1,44 @@
 import React from "react"
 import Layout from "../components/layout"
+import { useStaticQuery, graphql } from "gatsby"
+import SEO from "../components/seo"
 const DespreNoi = () => {
+  const allFile = useStaticQuery(
+    graphql`
+      {
+        allFile(
+          sort: { fields: name, order: DESC }
+          filter: { relativeDirectory: { eq: "despre-noi" } }
+        ) {
+          edges {
+            node {
+              id
+              name
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
   return (
     <Layout>
+      <SEO
+        title="Despre Vila Franceza - Dormi la Colibita"
+        description="Vila Franceza este situata pe malul nordic al lacului Colibita, la
+        doar cativa pasi de apa. Locatia noastra va ofera o perspectiva
+        unica asupra lacului si asupra crestelor muntilor din imprejurimi."
+      />
       <div className="row">
         <div className="col-md-6">
           <h1>Bine ati venit la colibita</h1>
           <img alt="imagine cu vila franceza langa lac"></img>
-
+          <pre>{JSON.stringify(allFile, null, 2)}</pre>
           <article>
             <h2>Lacul Colibita</h2>
             <p>
