@@ -7,7 +7,7 @@ const ListingCard = props => {
       <Img className="card-img-top" fluid={props.image.childImageSharp.fluid} />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
+        <p className="card-text" dangerouslySetInnerHTML={{ __html: props.description }}></p>
         <a href="/cazare-langa-lac" className="btn btn-primary">
           {props.title}
         </a>
