@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
+import IndividualPost from "../components/individualpost"
+import OurTeamDisplay from "../components/OurTeamDisplay"
 const DespreNoi = () => {
   const allFile = useStaticQuery(
     graphql`
@@ -34,6 +36,33 @@ const DespreNoi = () => {
         doar cativa pasi de apa. Locatia noastra va ofera o perspectiva
         unica asupra lacului si asupra crestelor muntilor din imprejurimi."
       />
+
+      <div class="bg-light py-5">
+        <div class="container py-5">
+          <div class="row mb-4">
+            <div class="col-lg-5">
+              <h2 class="display-4 font-weight-light">Our team</h2>
+              <p class="font-italic text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <OurTeamDisplay></OurTeamDisplay>
+            <OurTeamDisplay></OurTeamDisplay>
+          </div>
+        </div>
+      </div>
+
+      <IndividualPost
+        imageSource={allFile.allFile.edges[0].node.childImageSharp.fluid.src}
+        title="Lacul Colibita"
+        description="Colibita este un sat al comunei Bistrita Bargaului, judetul
+        Bistrita-Nasaud, Transilvania, Romania. Localitatea este asezata
+        pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani."
+      ></IndividualPost>
+
       <div className="row">
         <div className="col-md-6">
           <h1>Bine ati venit la colibita</h1>
