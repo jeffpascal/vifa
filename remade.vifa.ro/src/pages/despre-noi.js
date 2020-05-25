@@ -7,10 +7,26 @@ import OurTeamDisplay from "../components/OurTeamDisplay"
 const DespreNoi = () => {
   const allFile = useStaticQuery(
     graphql`
-      {
+      query images {
         allFile(
           sort: { fields: name, order: DESC }
           filter: { relativeDirectory: { eq: "despre-noi" } }
+        ) {
+          edges {
+            node {
+              id
+              name
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
+          }
+        }
+        staff: allFile(
+          sort: { fields: name, order: DESC }
+          filter: { relativeDirectory: { eq: "despre-noi/staff-images" } }
         ) {
           edges {
             node {
@@ -28,6 +44,35 @@ const DespreNoi = () => {
     `
   )
 
+  const EchipaNoastra = () => (
+    <div class="bg-light py-5">
+      <div class="container py-5">
+        <div class="row mb-4">
+          <div class="col-lg-5">
+            <h2 class="display-4 font-weight-light">Echipa Noastra</h2>
+            <p class="font-italic text-muted">
+              Echipa noastra va sta la dispozitie oricand pentru rezervari sau
+              intrebari
+            </p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <OurTeamDisplay
+            name="Gabriela Pascal"
+            job="Asigurator conditii"
+            imageLink={allFile.staff.edges[1].node.childImageSharp.fluid.src}
+          ></OurTeamDisplay>
+          <OurTeamDisplay
+            name="Dorina"
+            job="Zana magica"
+            imageLink={allFile.staff.edges[0].node.childImageSharp.fluid.src}
+          ></OurTeamDisplay>
+        </div>
+      </div>
+    </div>
+  )
+
   return (
     <Layout>
       <SEO
@@ -37,30 +82,16 @@ const DespreNoi = () => {
         unica asupra lacului si asupra crestelor muntilor din imprejurimi."
       />
 
-      <div class="bg-light py-5">
-        <div class="container py-5">
-          <div class="row mb-4">
-            <div class="col-lg-5">
-              <h2 class="display-4 font-weight-light">Our team</h2>
-              <p class="font-italic text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <OurTeamDisplay></OurTeamDisplay>
-            <OurTeamDisplay></OurTeamDisplay>
-          </div>
-        </div>
-      </div>
-
       <IndividualPost
         imageSource={allFile.allFile.edges[0].node.childImageSharp.fluid.src}
+        imageSourceAlt="Image description"
         title="Lacul Colibita"
         description="Colibita este un sat al comunei Bistrita Bargaului, judetul
         Bistrita-Nasaud, Transilvania, Romania. Localitatea este asezata
-        pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani."
+        pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani. "
+        needButton="false"
+        buttonText="Need less"
+        imageLocation="right"
       ></IndividualPost>
 
       <div className="row">
@@ -158,6 +189,7 @@ const DespreNoi = () => {
           <img alt="imagine zapada"></img>
         </div>
       </div>
+      <EchipaNoastra></EchipaNoastra>
     </Layout>
   )
 }

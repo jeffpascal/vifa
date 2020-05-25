@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Reaptcha from "reaptcha"
 import MyGoogleMap from "../components/googlemap"
 import SEO from "../components/seo"
+import OpeningHours from "../components/OpeningHours"
 
 const Contact = () => {
   const [name, setName] = useState("")
@@ -66,7 +67,7 @@ const Contact = () => {
       if (response.status === 200) {
         setConfirmation("Mesajul a fost trimis cu succes")
         setError("")
-        alert("success")
+        alert("Mesajul a fost trimis cu succes")
       } else {
         setConfirmation(
           "A fost o problema cu mesajul dumneavoastra. Va rog sa ne contactati direct la mailul unic_juridic@yahoo.com"
@@ -85,19 +86,22 @@ const Contact = () => {
           pentru care doriti sa faceti rezervarea ."
         ></SEO>
         <div className="col-md-5 col-sm-12">
-        <h1>Contact vila franceza</h1>
+          <h1>Contact vila franceza</h1>
 
-          <div className="container">
-            <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
-            <p>E-MAIL: unic_juridic@yahoo.com</p>
-            <p>
-              Va rugam sa includeti in mesaj perioada si numarul de persoane
-              pentru care doriti sa faceti rezervarea .
-            </p>
-            <p>Va multumim!</p>
-            <p>Va vom contacta in cel mai scurt timp.</p>
+          <div class="bg-light py-5">
+            <div class="container py-5">
+              <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
+              <p>E-MAIL: unic_juridic@yahoo.com</p>
+              <p>
+                Va rugam sa includeti in mesaj perioada si numarul de persoane
+                pentru care doriti sa faceti rezervarea .
+              </p>
+              <p>Va multumim!</p>
+              <p>Va vom contacta in cel mai scurt timp.</p>
+            </div>
           </div>
-          <form id="demo-form" style={{padding:10}}>
+          <OpeningHours></OpeningHours>
+          <form id="demo-form" style={{ padding: 10 }}>
             <div className="form-group">
               <label htmlFor="inputmail">Adresa de mail</label>
               <input
@@ -188,7 +192,6 @@ const Contact = () => {
           </form>
         </div>
         <div className="col-md-7 col-sm-12">
-
           <p>
             Accesul se face dinspre orasul Bistrita de pe drumul european E58.
             Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta,
