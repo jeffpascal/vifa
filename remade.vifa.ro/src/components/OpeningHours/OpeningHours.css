@@ -1,6 +1,6 @@
 .demo-bg {
   background: #ffac0c;
-  margin-top: 60px;
+  margin-top: 15px;
 }
 .business-hours {
   background: #222;
@@ -8,17 +8,7 @@
   margin-top: -15px;
   position: relative;
 }
-.business-hours:before {
-  content: "";
-  width: 23px;
-  height: 23px;
-  background: #111;
-  position: absolute;
-  top: 5px;
-  left: -12px;
-  transform: rotate(-45deg);
-  z-index: -1;
-}
+
 .business-hours .title {
   font-size: 20px;
   color: #bbb;

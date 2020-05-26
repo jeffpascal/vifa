@@ -87,20 +87,6 @@ const Contact = () => {
         ></SEO>
         <div className="col-md-5 col-sm-12">
           <h1>Contact vila franceza</h1>
-
-          <div className="bg-light py-5">
-            <div className="container py-5">
-              <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
-              <p>E-MAIL: unic_juridic@yahoo.com</p>
-              <p>
-                Va rugam sa includeti in mesaj perioada si numarul de persoane
-                pentru care doriti sa faceti rezervarea .
-              </p>
-              <p>Va multumim!</p>
-              <p>Va vom contacta in cel mai scurt timp.</p>
-            </div>
-          </div>
-          <OpeningHours></OpeningHours>
           <form id="demo-form" style={{ padding: 10 }}>
             <div className="form-group">
               <label htmlFor="inputmail">Adresa de mail</label>
@@ -192,6 +178,25 @@ const Contact = () => {
           </form>
         </div>
         <div className="col-md-7 col-sm-12">
+          <div className="row">
+            <div className="col-6 py-3">
+              <div className="">
+                <p>
+                  Pentru rezervari si informatii suplimentare va asteptam la:
+                </p>
+                <p>E-MAIL: unic_juridic@yahoo.com</p>
+                <p>
+                  Va rugam sa includeti in mesaj perioada si numarul de persoane
+                  pentru care doriti sa faceti rezervarea .
+                </p>
+                <p>Va multumim!</p>
+                <p>Va vom contacta in cel mai scurt timp.</p>
+              </div>
+            </div>
+            <div className="col-6 ">
+              <OpeningHours></OpeningHours>
+            </div>
+          </div>
           <p>
             Accesul se face dinspre orasul Bistrita de pe drumul european E58.
             Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta,

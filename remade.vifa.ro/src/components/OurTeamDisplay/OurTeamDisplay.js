@@ -18,7 +18,7 @@ const OurTeamDisplay = props => {
         <h5 className="mb-0">{props.name}</h5>
         <span className="small text-uppercase text-muted">{props.job}</span>
         <ul className="social mb-0 list-inline mt-3">
-          <li className="list-inline-item">
+          {/* <li className="list-inline-item">
             <a href="#" className="social-link">
               <i className="fa fa-facebook-f"></i>
             </a>
@@ -37,7 +37,7 @@ const OurTeamDisplay = props => {
             <a href="#" className="social-link">
               <i className="fa fa-linkedin"></i>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

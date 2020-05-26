@@ -98,10 +98,9 @@ const DespreNoi = () => {
         <div className="col-md-6">
           <h1>Bine ati venit la colibita</h1>
           <img alt="imagine cu vila franceza langa lac"></img>
-          <pre>{JSON.stringify(allFile, null, 2)}</pre>
           <article>
             <h2>Lacul Colibita</h2>
-            <p>
+            <p className="font-italic text-muted mb-4">
               Colibita este un sat al comunei Bistrita Bargaului, judetul
               Bistrita-Nasaud, Transilvania, Romania. Localitatea este asezata
               pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani.

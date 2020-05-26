@@ -19,7 +19,9 @@ function LeftAlignImage(props) {
       <div className="col-lg-6">
         <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
         <h2 className="font-weight-light">{props.details.title}</h2>
-        <p className="font-italic text-muted mb-4">{props.details.description}</p>
+        <p className="font-italic text-muted mb-4">
+          {props.details.description}
+        </p>
 
         {props.details.needButton === "true" && (
           <a
@@ -40,7 +42,9 @@ function RightAlignImage(props) {
       <div className="col-lg-6">
         <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
         <h2 className="font-weight-light">{props.details.title}</h2>
-        <p className="font-italic text-muted mb-4">{props.details.description}</p>
+        <p className="font-italic text-muted mb-4">
+          {props.details.description}
+        </p>
 
         {props.details.needButton === "true" && (
           <a
