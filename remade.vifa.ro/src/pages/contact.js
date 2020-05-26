@@ -88,8 +88,8 @@ const Contact = () => {
         <div className="col-md-5 col-sm-12">
           <h1>Contact vila franceza</h1>
 
-          <div class="bg-light py-5">
-            <div class="container py-5">
+          <div className="bg-light py-5">
+            <div className="container py-5">
               <p>Pentru rezervari si informatii suplimentare va asteptam la:</p>
               <p>E-MAIL: unic_juridic@yahoo.com</p>
               <p>

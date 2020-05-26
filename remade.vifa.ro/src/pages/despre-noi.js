@@ -45,19 +45,19 @@ const DespreNoi = () => {
   )
 
   const EchipaNoastra = () => (
-    <div class="bg-light py-5">
-      <div class="container py-5">
-        <div class="row mb-4">
-          <div class="col-lg-5">
-            <h2 class="display-4 font-weight-light">Echipa Noastra</h2>
-            <p class="font-italic text-muted">
+    <div className="bg-light py-5">
+      <div className="container py-5">
+        <div className="row mb-4">
+          <div className="col-lg-5">
+            <h2 className="display-4 font-weight-light">Echipa Noastra</h2>
+            <p className="font-italic text-muted">
               Echipa noastra va sta la dispozitie oricand pentru rezervari sau
               intrebari
             </p>
           </div>
         </div>
 
-        <div class="row text-center">
+        <div className="row text-center">
           <OurTeamDisplay
             name="Gabriela Pascal"
             job="Asigurator conditii"

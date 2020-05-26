@@ -18,27 +18,25 @@ const OpeningHours = () => {
   const numberDaysOfWeek = [1, 2, 3, 4, 5, 6, 7]
 
   return (
-    <div class="container demo-bg">
-      <div class="row">
-        <div class="col-sm-8">
-          <MyGoogleMap></MyGoogleMap>
-        </div>
-        <div class="col-sm-4">
-          <div class="business-hours">
-            <h2 class="title">Opening Hours</h2>
-            <ul class="list-unstyled opening-hours">
+    <div className="container demo-bg">
+      <div className="row">
+        <div className="col-sm-12">
+          <div className="business-hours">
+            <h2 className="title">Opening Hours</h2>
+            <ul className="list-unstyled opening-hours">
               {numberDaysOfWeek.map((day, index) => {
                 if (currentDay === day) {
                   return (
-                    <li className="active">
+                    <li key={index} className="active">
                       {daysOfWeek[day]}
-                      <span class="pull-right">3:00-24:00</span>
+                      <span className="pull-right">3:00-24:00</span>
                     </li>
                   )
                 }
                 return (
-                  <li>
-                    {daysOfWeek[day]} <span class="pull-right">3:00-24:00</span>
+                  <li key={index}>
+                    {daysOfWeek[day]}{" "}
+                    <span className="pull-right">3:00-24:00</span>
                   </li>
                 )
               })}
