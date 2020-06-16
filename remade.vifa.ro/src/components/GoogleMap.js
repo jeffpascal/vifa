@@ -25,11 +25,11 @@ const positions = [
     lng: 24.923518,
   },
 ]
-const onLoad = marker => {
+const onLoad = (marker) => {
   console.log("marker: ", marker)
 }
 
-const MyGoogleMapColi = props => {
+const MyGoogleMapColi = (props) => {
   return (
     <LoadScript googleMapsApiKey="AIzaSyCTTduBC1YUDGO5gLKi9edM76J0WPoB6EE">
       <GoogleMap

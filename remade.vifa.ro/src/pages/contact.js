@@ -35,7 +35,7 @@ const Contact = () => {
     setCaptcha(false)
   }
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault()
     const validateEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
 
@@ -63,7 +63,7 @@ const Contact = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then(response => {
+    }).then((response) => {
       if (response.status === 200) {
         setConfirmation("Mesajul a fost trimis cu succes")
         setError("")
@@ -97,6 +97,7 @@ const Contact = () => {
                 aria-describedby="emailHelp"
                 placeholder="exemplu@gmail.com"
                 onChange={handleEmailChange}
+                aria-label="Enter e-mail address"
               />
               <small id="emailHelp" className="form-text text-muted">
                 Nu vom partaja mailul dumneavoastra cu nimeni
@@ -110,6 +111,7 @@ const Contact = () => {
                 id="inputphone"
                 placeholder="003371128829"
                 onChange={handlePhoneChange}
+                aria-label="Enter phone number"
               />
               <small id="emailHelp" className="form-text text-muted">
                 Includeti prefix exemplu: 0040755112151
@@ -123,6 +125,7 @@ const Contact = () => {
                 id="inputname"
                 placeholder="Maria Silva Cosmina"
                 onChange={handleNameChange}
+                aria-label="Enter full name"
               />
               <small id="emailHelp" className="form-text text-muted">
                 Nume + Prenume complet
@@ -135,6 +138,7 @@ const Contact = () => {
                 className="form-control"
                 rows="5"
                 onChange={handleDescriptionChange}
+                aria-label="Enter comment"
               ></textarea>
               <small id="emailHelp" className="form-text">
                 Cu ce va putem ajuta
@@ -146,6 +150,7 @@ const Contact = () => {
                 type="checkbox"
                 className="form-check-input"
                 id="exampleCheck1"
+                aria-label="Check"
               />
               <label
                 htmlFor="exampleCheck1"

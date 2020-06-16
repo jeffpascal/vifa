@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "./OpeningHours.css"
-import MyGoogleMap from "../../components/GoogleMap"
 
 const OpeningHours = () => {
   const [currentDay, setCurrentDay] = useState(new Date().getDay())
