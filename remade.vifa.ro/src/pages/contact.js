@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import Reaptcha from "reaptcha"
-import MyGoogleMap from "../components/googlemap"
+import MyGoogleMap from "../components/GoogleMap"
 import SEO from "../components/seo"
 import OpeningHours from "../components/OpeningHours"
 

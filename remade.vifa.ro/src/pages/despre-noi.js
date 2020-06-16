@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
-import IndividualPost from "../components/individualpost"
+import IndividualPost from "../components/IndividualPost"
 import OurTeamDisplay from "../components/OurTeamDisplay"
 const DespreNoi = () => {
   const allFile = useStaticQuery(
