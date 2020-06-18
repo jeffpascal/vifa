@@ -27,7 +27,8 @@
     "react-helmet": "^6.0.0",
     "react-slick": "^0.25.2",
     "reaptcha": "^1.7.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "survey-react": "^1.7.12"
   },
   "devDependencies": {
     "@hot-loader/react-dom": "^16.12.0",
