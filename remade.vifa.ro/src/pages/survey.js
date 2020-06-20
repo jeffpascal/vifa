@@ -2,7 +2,6 @@ import React from "react"
 import { useState } from "react"
 import * as Survey from "survey-react"
 import "survey-react/survey.css"
-import { useStaticQuery, graphql } from "gatsby"
 
 import ImageSelector from "../components/Survey/ImageSelector"
 import InformationCollection from "../components/Survey/InformationCollection"
@@ -71,7 +70,9 @@ const SurveyPage = () => {
     <>
 
       <InformationCollection phoneNumber={number}></InformationCollection>
-      <ImageSelector/>
+      <ImageSelector send={(prop) => {
+      console.log(prop)
+   }}/>
 
       <MainSurvey survey={chosenSurvey}></MainSurvey>
     </>

@@ -4,7 +4,7 @@ import "./ImageSelector.css"
 import { useStaticQuery, graphql } from "gatsby"
 
 
-const ImageSelector = () => {
+const ImageSelector = (props) => {
   const surveyImages = useStaticQuery(
     graphql`
       query surveyimages {
@@ -27,8 +27,11 @@ const ImageSelector = () => {
       }
     `
   )
-  function setSurvey(){
-    
+
+  const {send} = props;
+
+  function setSurvey(event){
+    send(event.target.src)
   }
   return (
     <div>
