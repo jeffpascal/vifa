@@ -8,13 +8,10 @@ import InformationCollection from "../components/Survey/InformationCollection"
 import * as questions from "../components/Survey/questions"
 
 const SurveyPage = () => {
-
   const MainSurvey = (props) => {
     let model = new Survey.Model(props.survey)
     return <Survey.Survey model={model} onComplete={onComplete} />
   }
-
-  
 
   // function useInput({ type /*...*/ }) {
   //   const [value, setValue] = useState("")
@@ -35,8 +32,6 @@ const SurveyPage = () => {
   //         {userInput} -> {username} <br />
   //         {passwordInput} -> {password}
   //       </>)
-
-
 
   function onComplete(survey, options) {
     //Write survey results into database
@@ -60,19 +55,22 @@ const SurveyPage = () => {
     console.log(selectedSurvey.target.getAttribute("src"))
   }
 
-  const [number, setNumber] = useState(
-    new URLSearchParams(window.location.search).get("telefon")
-  )
+  const [number, setNumber] = useState(() => {
+    if (typeof window !== `undefined`) {
+      return new URLSearchParams(window.location.search).get("telefon")
+    }
+  })
   const [chosenSurvey, setChosenSurvey] = useState(null)
   const [wasInformationCollected, setWasInformationCollected] = useState(false)
 
   return (
     <>
-
       <InformationCollection phoneNumber={number}></InformationCollection>
-      <ImageSelector send={(prop) => {
-      console.log(prop)
-   }}/>
+      <ImageSelector
+        send={(prop) => {
+          console.log(prop)
+        }}
+      />
 
       <MainSurvey survey={chosenSurvey}></MainSurvey>
     </>
