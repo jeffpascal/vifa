@@ -1,13 +1,27 @@
-import React from "react"
-import {useState} from "react"
+import React, { useEffect } from "react"
+import { useState } from "react"
 import "./InformationCollection.css"
 
 const InformationCollection = (props) => {
+  const [email, setEmail] = useState()
   const [collectedEmail, setCollectedEmail] = useState(1)
 
-  function handleEmail(event) {
-    console.log(event.target.value)
-    setCollectedEmail(event.target.value)
+  useEffect(() => {
+    let timeout = setTimeout(() => {
+      setCollectedEmail(email)
+    }, 1000)
+    return () => {
+      clearTimeout(timeout)
+    }
+  }, [email])
+
+  useEffect(() => {
+    //fetch()
+    console.log(collectedEmail)
+  }, [collectedEmail])
+
+  function handleEmail() {
+    console.log(collectedEmail)
   }
   console.log("what?")
   if (props.phoneNumber) {
@@ -15,14 +29,16 @@ const InformationCollection = (props) => {
       //number is in link
       <form className="container jumbotron">
         <div className="form-group">
-          <label htmlFor="inputmail">Adresa de mail</label>
+          <label htmlFor="inputmail">Adresa de mail {collectedEmail}</label>
           <input
             type="email"
             className="form-control"
             id="inputmail"
             aria-describedby="emailHelp"
             placeholder="exemplu@gmail.com"
-            onChange={handleEmail}
+            onChange={(e) => {
+              setEmail(e.target.value)
+            }}
             aria-label="Enter e-mail address"
           />
           <small id="emailHelp" className="form-text text-muted">
