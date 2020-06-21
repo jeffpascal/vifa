@@ -17,6 +17,7 @@ const InformationCollection = (props) => {
 
   useEffect(() => {
     //fetch()
+    //unnecessary, why not use the first useEffect hook?
     console.log(collectedEmail)
   }, [collectedEmail])
 
