@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import PropTypes from "prop-types";
+import Fade from "react-reveal/Fade";
 
-import Box from '@pagerland/common/src/components/Box';
-import Container from '@pagerland/common/src/components/Container';
-import Typography from '@pagerland/common/src/components/Typography';
-import Slider from '@pagerland/common/src/components/Slider';
+import Box from "packages/common/src/components/Box";
+import Container from "packages/common/src/components/Container";
+import Typography from "packages/common/src/components/Typography";
+import Slider from "packages/common/src/components/Slider";
 
-import Img from '@pagerland/common/src/components/Img';
-import data from '../../data';
+import Img from "packages/common/src/components/Img";
+import data from "../../data";
 
-import { Wrapper } from './styled.components';
+import { Wrapper } from "./styled.components";
 
 const Interior = ({
   name,
@@ -55,7 +55,7 @@ Interior.propTypes = {
       slides: PropTypes.arrayOf(PropTypes.object),
       title: PropTypes.node,
       text: PropTypes.node,
-    }),
+    })
   ),
   WrapperProps: PropTypes.object,
   ContainerProps: PropTypes.object,
@@ -82,18 +82,18 @@ Interior.defaultProps = {
   },
   SectionProps: {
     flexBox: true,
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    justifyContent: "space-between",
+    alignItems: "center",
     flexDirection: {
-      _: 'column',
-      lg: 'row',
+      _: "column",
+      lg: "row",
     },
   },
   CaptionProps: {
     flexGrow: 0,
     flexShrink: 0,
     maxWidth: {
-      _: 'none',
+      _: "none",
       lg: 448,
     },
     mb: {
@@ -102,19 +102,19 @@ Interior.defaultProps = {
     },
   },
   TitleProps: {
-    as: 'h3',
-    variant: 'h3',
-    color: 'gray.0',
+    as: "h3",
+    variant: "h3",
+    color: "gray.0",
     mb: 3,
   },
   TextProps: {
-    color: 'gray.1',
+    color: "gray.1",
   },
   SliderProps: {
-    variant: 'a',
+    variant: "a",
     minHeight: 0,
     maxWidth: 608,
-    width: '100%',
+    width: "100%",
     flexGrow: 0,
     flexShrink: 0,
     options: {
@@ -127,13 +127,13 @@ Interior.defaultProps = {
   },
   SliderOddProps: {
     order: {
-      _: '1',
-      lg: '-1',
+      _: "1",
+      lg: "-1",
     },
-    variant: 'b',
+    variant: "b",
   },
   ImgProps: {
-    width: '100%',
+    width: "100%",
   },
   ...data.interior,
 };

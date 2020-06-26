@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useRef, useState } from "react";
+import styled from "styled-components";
 
-import Img from '@pagerland/common/src/components/Img';
+import Img from "packages/common/src/components/Img";
 
 const Wrapper = styled.div`
   position: absolute;
@@ -18,9 +18,9 @@ const StyledImg = styled(Img)`
   user-select: none;
 `;
 
-const calc = o => `translateY(${o * 0.1}px)`;
+const calc = (o) => `translateY(${o * 0.1}px)`;
 
-const ParallaxBackground = props => {
+const ParallaxBackground = (props) => {
   const ref = useRef();
   const [offset, setOffset] = useState(0);
 
@@ -31,10 +31,10 @@ const ParallaxBackground = props => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

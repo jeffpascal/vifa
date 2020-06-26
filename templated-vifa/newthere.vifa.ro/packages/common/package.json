@@ -1,5 +1,5 @@
 {
-  "name": "@pagerland/common",
+  "name": "packages/common",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Pagerland Team",

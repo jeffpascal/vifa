@@ -1,15 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { base } from '@pagerland/common/src/utils';
-import { colors } from '../../styles';
+import { base } from "packages/common/src/utils";
+import { colors } from "../../styles";
 
 const Svg = styled.svg`
   display: block;
   ${base};
 `;
 
-const Logo = props => (
+const Logo = (props) => (
   <Svg
     width="153"
     height="40"

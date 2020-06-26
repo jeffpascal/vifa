@@ -1,21 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
+import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
 
-import { smoothLinkProps } from '@pagerland/common/src/utils';
+import { smoothLinkProps } from "packages/common/src/utils";
 
-import Box from '@pagerland/common/src/components/Box';
-import Container from '@pagerland/common/src/components/Container';
+import Box from "packages/common/src/components/Box";
+import Container from "packages/common/src/components/Container";
 
-import Typography from '@pagerland/common/src/components/Typography';
-import Button from '@pagerland/common/src/components/Button';
-import Grid from '@pagerland/common/src/components/Grid';
-import Icon from '@pagerland/common/src/components/Icon';
-import ParallaxBackground from '../../components/ParallaxBackground';
+import Typography from "packages/common/src/components/Typography";
+import Button from "packages/common/src/components/Button";
+import Grid from "packages/common/src/components/Grid";
+import Icon from "packages/common/src/components/Icon";
+import ParallaxBackground from "../../components/ParallaxBackground";
 
-import data from '../../data';
+import data from "../../data";
 
 const Welcome = ({
   name,
@@ -48,7 +48,9 @@ const Welcome = ({
               {features.map((feature, i) => (
                 <Box {...FeatureProps} key={i}>
                   <Icon {...FeatureIconProps} {...feature.IconProps} />
-                  <Typography {...FeatureTitleProps}>{feature.title}</Typography>
+                  <Typography {...FeatureTitleProps}>
+                    {feature.title}
+                  </Typography>
                 </Box>
               ))}
             </Grid>
@@ -80,7 +82,7 @@ Welcome.propTypes = {
     PropTypes.shape({
       IconProps: PropTypes.object,
       title: PropTypes.node,
-    }),
+    })
   ),
   cta: PropTypes.object,
 };
@@ -88,12 +90,12 @@ Welcome.propTypes = {
 Welcome.defaultProps = {
   WrapperProps: {
     pt: {
-      _: '0',
-      lg: '50%',
+      _: "0",
+      lg: "50%",
     },
-    position: 'relative',
+    position: "relative",
     zIndex: 1,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   InnerProps: {
     pt: {
@@ -105,59 +107,59 @@ Welcome.defaultProps = {
       lg: 0,
     },
     position: {
-      _: 'relative',
-      lg: 'absolute',
+      _: "relative",
+      lg: "absolute",
     },
     left: 0,
     top: 0,
-    width: '100%',
-    height: '100%',
-    bg: 'rgba(0, 0, 0, 0.5)',
+    width: "100%",
+    height: "100%",
+    bg: "rgba(0, 0, 0, 0.5)",
     zIndex: 2,
   },
   ContainerProps: {
-    display: 'flex',
-    alignItems: 'center',
-    height: '100%',
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
   },
   CaptionProps: {
     maxWidth: 544,
   },
   TitleProps: {
-    as: 'h1',
-    variant: 'h1',
-    color: 'gray.6',
+    as: "h1",
+    variant: "h1",
+    color: "gray.6",
   },
   PriceProps: {
-    variant: 'h1',
-    color: 'brand',
+    variant: "h1",
+    color: "brand",
   },
   CtaProps: {
     as: Link,
     ...smoothLinkProps,
     mt: 4,
-    variant: 'brand',
-    size: 'large',
+    variant: "brand",
+    size: "large",
   },
   GridProps: {
     mt: 4,
     maxWidth: 320,
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gridColumnGap: '32px',
-    gridRowGap: '8px',
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gridColumnGap: "32px",
+    gridRowGap: "8px",
   },
   FeatureProps: {
     flexBox: true,
-    alignItems: 'center',
+    alignItems: "center",
   },
   FeatureIconProps: {
     fontSize: 24,
-    color: 'gray.6',
+    color: "gray.6",
     mr: 2,
   },
   FeatureTitleProps: {
-    variant: 'h4',
-    color: 'gray.6',
+    variant: "h4",
+    color: "gray.6",
   },
   ...data.welcome,
 };

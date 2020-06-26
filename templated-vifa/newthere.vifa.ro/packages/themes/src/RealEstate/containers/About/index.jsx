@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
-import Box from '@pagerland/common/src/components/Box';
-import Container from '@pagerland/common/src/components/Container';
+import Box from "packages/common/src/components/Box";
+import Container from "packages/common/src/components/Container";
 
-import Typography from '@pagerland/common/src/components/Typography';
-import Grid from '@pagerland/common/src/components/Grid';
-import Gallery from '@pagerland/common/src/components/Gallery';
+import Typography from "packages/common/src/components/Typography";
+import Grid from "packages/common/src/components/Grid";
+import Gallery from "packages/common/src/components/Gallery";
 
-import { StyledImg } from './styled.components';
-import data from '../../data';
+import { StyledImg } from "./styled.components";
+import data from "../../data";
 
 const About = ({
   name,
@@ -38,7 +38,12 @@ const About = ({
             images={gallery}
             renderItem={(item, i, onClick) => (
               <Fade key={i} bottom cascade duration={600} delay={i * 100}>
-                <StyledImg onClick={onClick} {...ImgProps} key={i} {...item.ImgProps} />
+                <StyledImg
+                  onClick={onClick}
+                  {...ImgProps}
+                  key={i}
+                  {...item.ImgProps}
+                />
               </Fade>
             )}
           />
@@ -56,7 +61,7 @@ About.propTypes = {
     PropTypes.shape({
       source: PropTypes.string.isRequired,
       ImgProps: PropTypes.object,
-    }),
+    })
   ),
   WrapperProps: PropTypes.object,
   ContainerProps: PropTypes.object,
@@ -77,26 +82,26 @@ About.defaultProps = {
   },
   CaptionProps: {
     maxWidth: 736,
-    mx: 'auto',
+    mx: "auto",
   },
   TitleProps: {
-    accent: 'before',
-    as: 'h2',
-    variant: 'h2',
+    accent: "before",
+    as: "h2",
+    variant: "h2",
     mb: 4,
   },
   TextProps: {
-    variant: 'body1',
+    variant: "body1",
     mb: 48,
-    color: 'gray.1',
+    color: "gray.1",
   },
   GridProps: {
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gridGap: '1px',
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gridGap: "1px",
   },
   ImgProps: {
-    display: 'block',
-    width: '100%',
+    display: "block",
+    width: "100%",
   },
   ...data.about,
 };

@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
-import Theme, { theme } from '@pagerland/themes/src/RealEstate';
+import Theme, { theme } from "packages/themes/src/RealEstate";
 import {
   Navbar,
   Welcome,
@@ -16,11 +16,11 @@ import {
   Contact,
   SimilarProperties,
   Footer,
-} from '@pagerland/themes/src/RealEstate/containers';
+} from "packages/themes/src/RealEstate/containers";
 
-import preview from '@pagerland/themes/src/RealEstate/assets/preview.jpg';
+import preview from "packages/themes/src/RealEstate/assets/preview.jpg";
 
-import SEO from '../components/SEO';
+import SEO from "../components/SEO";
 
 const RealEstate = ({ url }) => (
   <Theme>
@@ -50,7 +50,7 @@ RealEstate.propTypes = {
 };
 
 RealEstate.defaultProps = {
-  url: 'https://mypags.app/gatsby/',
+  url: "https://mypags.app/gatsby/",
 };
 
 export default RealEstate;

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Box from '@pagerland/common/src/components/Box';
-import { breakpoints } from '../../styles';
+import styled from "styled-components";
+import Box from "packages/common/src/components/Box";
+import { breakpoints } from "../../styles";
 
 export const Wrapper = styled(Box)`
   & + & {

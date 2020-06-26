@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import Grid from '@pagerland/common/src/components/Grid';
-import Img from '@pagerland/common/src/components/Img';
-import { breakpoints } from '../../styles';
+import Grid from "packages/common/src/components/Grid";
+import Img from "packages/common/src/components/Img";
+import { breakpoints } from "../../styles";
 
 export const StyledGrid = styled(Grid)`
   @media (min-width: ${breakpoints.lg}) {
     &::before {
       width: 0;
       padding-bottom: 100%;
-      content: '';
+      content: "";
       grid-row: 1 / 1;
       grid-column: 1 / 1;
     }

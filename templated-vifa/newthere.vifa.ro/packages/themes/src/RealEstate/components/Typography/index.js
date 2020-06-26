@@ -1,6 +1,6 @@
-import { css } from 'styled-components';
-import { variant } from '@pagerland/common/src/utils';
-import { body, colors } from '../../styles';
+import { css } from "styled-components";
+import { variant } from "packages/common/src/utils";
+import { body, colors } from "../../styles";
 
 export default {
   main: css`
@@ -19,8 +19,8 @@ export default {
     }
 
     ${variant({
-      prop: 'accent',
-      scale: 'Typography.accents',
+      prop: "accent",
+      scale: "Typography.accents",
     })}
   `,
   variants: {
@@ -78,7 +78,7 @@ export default {
     },
     button: {
       fontSize: 18,
-      lineHeight: '24px',
+      lineHeight: "24px",
       fontWeight: 500,
     },
     label: {
@@ -99,7 +99,7 @@ export default {
         display: block;
         width: 256px;
         height: 256px;
-        content: '';
+        content: "";
         background-color: ${colors.brand};
       }
     `,
@@ -114,7 +114,7 @@ export default {
         display: block;
         width: 256px;
         height: 256px;
-        content: '';
+        content: "";
         background-color: ${colors.brand};
       }
     `,

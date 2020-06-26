@@ -1,5 +1,5 @@
 {
-  "name": "@pagerland/themes",
+  "name": "packages/themes",
   "version": "1.0.0",
   "description": "Pagerland Team",
   "main": "src/index.js",

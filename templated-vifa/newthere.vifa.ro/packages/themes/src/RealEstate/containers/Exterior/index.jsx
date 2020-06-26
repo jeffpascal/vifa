@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import PropTypes from "prop-types";
+import Fade from "react-reveal/Fade";
 
-import Box from '@pagerland/common/src/components/Box';
-import Container from '@pagerland/common/src/components/Container';
-import Typography from '@pagerland/common/src/components/Typography';
-import { StyledImg } from './styled.components';
+import Box from "packages/common/src/components/Box";
+import Container from "packages/common/src/components/Container";
+import Typography from "packages/common/src/components/Typography";
+import { StyledImg } from "./styled.components";
 
-import data from '../../data';
+import data from "../../data";
 
 const Exterior = ({
   name,
@@ -25,7 +25,11 @@ const Exterior = ({
   <Box name={name} {...WrapperProps}>
     {sections.map((section, i) => (
       <Box {...SectionProps} key={i}>
-        <StyledImg {...ImgProps} {...(i % 2 !== 0 && OddImgProps)} {...section.ImgProps} />
+        <StyledImg
+          {...ImgProps}
+          {...(i % 2 !== 0 && OddImgProps)}
+          {...section.ImgProps}
+        />
         <Container {...ContainerProps} {...(i % 2 !== 0 && OddContainerProps)}>
           <Box {...CaptionProps}>
             <Fade bottom cascade duration={600}>
@@ -46,7 +50,7 @@ Exterior.propTypes = {
       ImgProps: PropTypes.object,
       title: PropTypes.node,
       text: PropTypes.node,
-    }),
+    })
   ),
   WrapperProps: PropTypes.object,
   SectionProps: PropTypes.object,
@@ -61,14 +65,14 @@ Exterior.propTypes = {
 
 Exterior.defaultProps = {
   SectionProps: {
-    position: 'relative',
-    bg: 'gray.0',
+    position: "relative",
+    bg: "gray.0",
     minHeight: 600,
     flexBox: true,
-    alignItems: 'center',
+    alignItems: "center",
     flexDirection: {
-      _: 'column',
-      lg: 'row',
+      _: "column",
+      lg: "row",
     },
   },
   ContainerProps: {
@@ -83,17 +87,17 @@ Exterior.defaultProps = {
   },
   ImgProps: {
     position: {
-      lg: 'absolute',
+      lg: "absolute",
     },
     height: {
-      lg: '100%',
+      lg: "100%",
     },
     width: {
-      _: '100%',
-      lg: '50%',
+      _: "100%",
+      lg: "50%",
     },
-    left: '50%',
-    objectFit: 'cover',
+    left: "50%",
+    objectFit: "cover",
   },
   OddImgProps: {
     left: undefined,
@@ -105,25 +109,25 @@ Exterior.defaultProps = {
       lg: 160,
     },
     maxWidth: {
-      _: 'none',
+      _: "none",
       lg: 448,
     },
   },
   OddContainerProps: {
-    display: 'flex',
-    flexDirection: 'row-reverse',
+    display: "flex",
+    flexDirection: "row-reverse",
   },
   TitleProps: {
-    as: 'h2',
-    variant: 'h2',
-    color: 'gray.6',
+    as: "h2",
+    variant: "h2",
+    color: "gray.6",
     mb: {
       _: 3,
       md: 4,
     },
   },
   TextProps: {
-    color: 'gray.6',
+    color: "gray.6",
   },
   ...data.exterior,
 };

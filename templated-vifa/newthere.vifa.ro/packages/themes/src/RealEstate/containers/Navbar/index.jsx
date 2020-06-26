@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
 
-import { Link } from 'react-scroll';
-import { smoothLinkProps } from '@pagerland/common/src/utils';
+import { Link } from "react-scroll";
+import { smoothLinkProps } from "packages/common/src/utils";
 
-import Container from '@pagerland/common/src/components/Container';
-import Box from '@pagerland/common/src/components/Box';
-import List from '@pagerland/common/src/components/List';
-import Button from '@pagerland/common/src/components/Button';
-import NavbarWrapper from '@pagerland/common/src/components/Navbar';
+import Container from "packages/common/src/components/Container";
+import Box from "packages/common/src/components/Box";
+import List from "packages/common/src/components/List";
+import Button from "packages/common/src/components/Button";
+import NavbarWrapper from "packages/common/src/components/Navbar";
 
-import useActiveIndicator from '@pagerland/common/src/hooks/useActiveIndicator';
-import useIsWindowScrollMoreThan from '@pagerland/common/src/hooks/useIsWindowScrollMoreThan';
+import useActiveIndicator from "packages/common/src/hooks/useActiveIndicator";
+import useIsWindowScrollMoreThan from "packages/common/src/hooks/useIsWindowScrollMoreThan";
 
-import LanderPagerLogo from '../../components/Logo';
+import LanderPagerLogo from "../../components/Logo";
 
-import data from '../../data';
+import data from "../../data";
 import {
   LogoWrapper,
   MobileWrapper,
@@ -24,8 +24,8 @@ import {
   NavIndicator,
   ToggleButton,
   Wrapper,
-} from './styled.components';
-import { zIndex } from '../../styles';
+} from "./styled.components";
+import { zIndex } from "../../styles";
 
 const Navbar = ({
   WrapperProps,
@@ -44,16 +44,26 @@ const Navbar = ({
   links,
   actions,
 }) => {
-  const { ref, setActiveMenu, indicatorWidth, indicatorLeft } = useActiveIndicator();
+  const {
+    ref,
+    setActiveMenu,
+    indicatorWidth,
+    indicatorLeft,
+  } = useActiveIndicator();
   const isNavbarSticky = useIsWindowScrollMoreThan(0);
 
-  const menu = onClick => (
+  const menu = (onClick) => (
     <>
       {links && (
         <List {...LinksWrapperProps}>
           {links.map(({ label, ...link }, i) => (
             <List.Item key={i}>
-              <NavbarLink onSetActive={setActiveMenu} {...LinkProps} onClick={onClick} {...link}>
+              <NavbarLink
+                onSetActive={setActiveMenu}
+                {...LinkProps}
+                onClick={onClick}
+                {...link}
+              >
                 {label}
               </NavbarLink>
             </List.Item>
@@ -76,7 +86,11 @@ const Navbar = ({
     <NavbarWrapper
       rwdMenu={({ onToggle, isOpen, onClose }) => (
         <MobileWrapper isActive={isOpen} {...MobileMenuProps}>
-          <ToggleButton isActive={isOpen} toggleButton={onToggle} {...MobileMenuToggleProps} />
+          <ToggleButton
+            isActive={isOpen}
+            toggleButton={onToggle}
+            {...MobileMenuToggleProps}
+          />
           {menu(onClose)}
         </MobileWrapper>
       )}
@@ -105,7 +119,11 @@ const Navbar = ({
                 />
                 {menu(onClose)}
               </Box>
-              <ToggleButton isActive={isOpen} toggleButton={onToggle} {...ToggleButtonProps} />
+              <ToggleButton
+                isActive={isOpen}
+                toggleButton={onToggle}
+                {...ToggleButtonProps}
+              />
             </Box>
           </Container>
         </Wrapper>
@@ -133,55 +151,55 @@ Navbar.propTypes = {
       as: PropTypes.elementType,
       to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
       label: PropTypes.node.isRequired,
-    }),
+    })
   ),
   actions: PropTypes.arrayOf(
     PropTypes.shape({
       as: PropTypes.elementType,
       to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
       label: PropTypes.node.isRequired,
-    }),
+    })
   ),
 };
 
 Navbar.defaultProps = {
   WrapperProps: {
-    color: 'gray.6',
-    stickyBgColor: 'gray.6',
-    stickyColor: 'gray.0',
+    color: "gray.6",
+    stickyBgColor: "gray.6",
+    stickyColor: "gray.0",
   },
   ContainerProps: {
     py: 24,
   },
   MenuItemsListProps: {
     display: {
-      _: 'none',
-      lg: 'flex',
+      _: "none",
+      lg: "flex",
     },
-    alignItems: 'center',
-    width: '100%',
+    alignItems: "center",
+    width: "100%",
   },
   LogoProps: {
     as: Link,
-    to: '',
+    to: "",
     ...smoothLinkProps,
     mx: {
-      _: 'auto',
-      md: '0',
+      _: "auto",
+      md: "0",
     },
   },
   LinksWrapperProps: {
-    display: 'flex',
+    display: "flex",
     flexDirection: {
-      _: 'column',
-      lg: 'row',
+      _: "column",
+      lg: "row",
     },
-    alignItems: 'center',
+    alignItems: "center",
     mr: {
-      _: 'auto',
-      lg: '0',
+      _: "auto",
+      lg: "0",
     },
-    ml: 'auto',
+    ml: "auto",
   },
   LinkProps: {
     mx: {
@@ -197,42 +215,42 @@ Navbar.defaultProps = {
   },
   ToggleButtonProps: {
     buttonWidth: 24,
-    position: 'absolute',
+    position: "absolute",
     right: 3,
     display: {
-      lg: 'none',
+      lg: "none",
     },
   },
   MobileMenuProps: {
     display: {
-      _: 'flex',
-      lg: 'none',
+      _: "flex",
+      lg: "none",
     },
-    position: 'fixed',
-    backgroundColor: 'gray.6',
+    position: "fixed",
+    backgroundColor: "gray.6",
     left: 0,
     top: 0,
     bottom: 0,
     right: 0,
     zIndex: zIndex.menuNav,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
   },
   MobileMenuToggleProps: {
     buttonWidth: 24,
-    color: 'primary',
-    position: 'absolute',
+    color: "primary",
+    position: "absolute",
     right: 3,
     top: 3,
   },
   ActiveIndicatorProps: {
-    bg: 'brand',
+    bg: "brand",
     height: 4,
   },
   ActionProps: {
-    variant: 'brand',
-    size: 'small',
+    variant: "brand",
+    size: "small",
     py: 12,
     px: 24,
     ml: 3,

@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Form, Formik } from 'formik';
+import React from "react";
+import PropTypes from "prop-types";
+import { Form, Formik } from "formik";
 
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
-import Box from '@pagerland/common/src/components/Box';
-import Grid from '@pagerland/common/src/components/Grid';
-import Container from '@pagerland/common/src/components/Container';
-import Typography from '@pagerland/common/src/components/Typography';
-import Img from '@pagerland/common/src/components/Img';
-import Icon from '@pagerland/common/src/components/Icon';
-import Button from '@pagerland/common/src/components/Button';
-import ArrowRight from '@pagerland/icons/src/line/ArrowRight';
+import Box from "packages/common/src/components/Box";
+import Grid from "packages/common/src/components/Grid";
+import Container from "packages/common/src/components/Container";
+import Typography from "packages/common/src/components/Typography";
+import Img from "packages/common/src/components/Img";
+import Icon from "packages/common/src/components/Icon";
+import Button from "packages/common/src/components/Button";
+import ArrowRight from "packages/icons/src/line/ArrowRight";
 
-import Input from '@pagerland/common/src/components/Formik/Input';
-import data from '../../data';
+import Input from "packages/common/src/components/Formik/Input";
+import data from "../../data";
 
-import { ImgWrapper } from './styled.components';
+import { ImgWrapper } from "./styled.components";
 
 const Contact = ({
   name,
@@ -64,8 +64,19 @@ const Contact = ({
           </Fade>
           <Box {...SocialLinksProps}>
             {details.socialLinks?.map((socialLink, key) => (
-              <Fade left duration={600} key={socialLink.title} distance="10px" delay={100 * key}>
-                <Button as="a" href={socialLink.href} title={socialLink.title} {...SocialLinkProps}>
+              <Fade
+                left
+                duration={600}
+                key={socialLink.title}
+                distance="10px"
+                delay={100 * key}
+              >
+                <Button
+                  as="a"
+                  href={socialLink.href}
+                  title={socialLink.title}
+                  {...SocialLinkProps}
+                >
                   <Icon icon={socialLink.icon} />
                 </Button>
               </Fade>
@@ -81,14 +92,14 @@ const Contact = ({
                 ...acc,
                 [field.name]: field.initialValue,
               }),
-              {},
+              {}
             )}
           >
             <Form>
               <Fade cascade bottom duration={600}>
                 <Typography {...FormTitleProps}>{form.title}</Typography>
                 <div>
-                  {form.fields.map(field => (
+                  {form.fields.map((field) => (
                     <Input key={field.name} {...field} />
                   ))}
                   <Button type="submit" {...FormButtonProps}>
@@ -115,14 +126,14 @@ Contact.propTypes = {
       PropTypes.shape({
         icon: PropTypes.elementType,
         text: PropTypes.node,
-      }),
+      })
     ),
     socialLinks: PropTypes.arrayOf(
       PropTypes.shape({
         icon: PropTypes.elementType,
         title: PropTypes.string,
         href: PropTypes.string,
-      }),
+      })
     ),
   }),
   form: PropTypes.shape({
@@ -162,8 +173,8 @@ Contact.defaultProps = {
     },
   },
   TitleProps: {
-    as: 'h2',
-    variant: 'h2',
+    as: "h2",
+    variant: "h2",
     mb: {
       _: 3,
       md: 4,
@@ -172,18 +183,18 @@ Contact.defaultProps = {
   },
   GridProps: {
     gridTemplateColumns: {
-      _: '1fr',
-      md: '1fr 1fr',
-      lg: '320px 320px 1fr',
+      _: "1fr",
+      md: "1fr 1fr",
+      lg: "320px 320px 1fr",
     },
-    gridGap: '64px',
+    gridGap: "64px",
   },
   ImgProps: {
-    width: '100%',
+    width: "100%",
   },
   DetailsTitleProps: {
-    as: 'h3',
-    variant: 'h3',
+    as: "h3",
+    variant: "h3",
     mb: {
       _: 3,
       md: 4,
@@ -191,44 +202,44 @@ Contact.defaultProps = {
     },
   },
   DetailsTextProps: {
-    color: 'gray.1',
+    color: "gray.1",
     mb: 4,
   },
   DetailsInfoItemProps: {
     flexBox: true,
-    alignItems: 'flex-start',
+    alignItems: "flex-start",
     mb: 3,
   },
   DetailsIconProps: {
     fontSize: 24,
     mr: 3,
-    mt: '2px',
+    mt: "2px",
   },
   SocialLinksProps: {
     mt: 4,
     flexBox: true,
   },
   SocialLinkProps: {
-    bg: 'brand',
-    color: 'gray.0',
+    bg: "brand",
+    color: "gray.0",
     p: 0,
     mr: 2,
     width: 48,
     height: 48,
-    lineHeight: '54px',
-    textAlign: 'center',
+    lineHeight: "54px",
+    textAlign: "center",
     fontSize: 24,
-    borderRadius: '50%',
+    borderRadius: "50%",
   },
   FormProps: {
     gridColumn: {
-      md: '1 / 3',
-      lg: 'auto',
+      md: "1 / 3",
+      lg: "auto",
     },
   },
   FormTitleProps: {
-    as: 'h3',
-    variant: 'h3',
+    as: "h3",
+    variant: "h3",
     mb: {
       _: 3,
       md: 4,
@@ -236,7 +247,7 @@ Contact.defaultProps = {
     },
   },
   FormButtonProps: {
-    variant: 'brand',
+    variant: "brand",
     mt: 24,
     icon: ArrowRight,
   },

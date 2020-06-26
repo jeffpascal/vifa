@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
-import Box from '@pagerland/common/src/components/Box';
-import Typography from '@pagerland/common/src/components/Typography';
+import Box from "packages/common/src/components/Box";
+import Typography from "packages/common/src/components/Typography";
 
-import Button from '@pagerland/common/src/components/Button';
-import ArrowRight from '@pagerland/icons/src/line/ArrowRight';
-import data from '../../data';
-import { StyledGrid, StyledImg } from './styled.components';
+import Button from "packages/common/src/components/Button";
+import ArrowRight from "packages/icons/src/line/ArrowRight";
+import data from "../../data";
+import { StyledGrid, StyledImg } from "./styled.components";
 
 const Surroundings = ({
   name,
@@ -49,7 +49,7 @@ Surroundings.propTypes = {
       ImgProps: PropTypes.object,
       title: PropTypes.node,
       text: PropTypes.node,
-    }),
+    })
   ),
   WrapperProps: PropTypes.object,
   GridProps: PropTypes.object,
@@ -63,49 +63,49 @@ Surroundings.propTypes = {
 Surroundings.defaultProps = {
   GridProps: {
     gridTemplateColumns: {
-      _: '1fr',
-      md: 'repeat(2, 1fr)',
-      lg: 'repeat(3, 1fr)',
+      _: "1fr",
+      md: "repeat(2, 1fr)",
+      lg: "repeat(3, 1fr)",
     },
     gridTemplateRows: {
-      _: 'auto',
-      lg: 'repeat(2, 1fr)',
+      _: "auto",
+      lg: "repeat(2, 1fr)",
     },
     gridAutoFlow: {
-      _: 'row',
-      lg: 'column',
+      _: "row",
+      lg: "column",
     },
   },
   ImgProps: {
-    width: '100%',
+    width: "100%",
     height: {
-      _: 'auto',
-      md: '100%',
+      _: "auto",
+      md: "100%",
     },
   },
   CaptionProps: {
-    bg: 'gray.0',
+    bg: "gray.0",
     p: {
       _: 4,
       lg: 5,
     },
     flexBox: true,
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-    flexDirection: 'column',
+    alignItems: "flex-start",
+    justifyContent: "center",
+    flexDirection: "column",
   },
   TitleProps: {
-    as: 'h3',
-    variant: 'h3',
-    color: 'gray.6',
+    as: "h3",
+    variant: "h3",
+    color: "gray.6",
     mb: 4,
   },
   TextProps: {
-    color: 'gray.3',
+    color: "gray.3",
     mb: 4,
   },
   CtaProps: {
-    variant: 'link',
+    variant: "link",
     icon: ArrowRight,
   },
   ...data.surroundings,

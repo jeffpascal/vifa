@@ -1,12 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
 
-import { Collapse } from 'react-collapse';
+import { Collapse } from "react-collapse";
 
-import Check from '@pagerland/icons/src/line/Check'
+import Check from "packages/icons/src/line/Check";
 
-import { Indicator, Input, Label, Wrapper, ErrorMessage } from './styled.components';
+import {
+  Indicator,
+  Input,
+  Label,
+  Wrapper,
+  ErrorMessage,
+} from "./styled.components";
 
 /**
  * Checkboxes allow the user to select one or more items from a set.
@@ -29,7 +35,12 @@ const Checkbox = ({
       })}
       {...rest}
     >
-      <Input type="checkbox" onChange={onToggle} checked={checked} {...InputProps} />
+      <Input
+        type="checkbox"
+        onChange={onToggle}
+        checked={checked}
+        {...InputProps}
+      />
       <Indicator {...IndicatorProps}>
         <Check />
       </Indicator>

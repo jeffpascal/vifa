@@ -1,8 +1,8 @@
-import { css } from 'styled-components';
-import { variant } from '@pagerland/common/src/utils';
+import { css } from "styled-components";
+import { variant } from "packages/common/src/utils";
 
-import { colors, transition } from '../../styles';
-import Typography from '../Typography';
+import { colors, transition } from "../../styles";
+import Typography from "../Typography";
 
 export default {
   main: css`
@@ -14,12 +14,12 @@ export default {
     transition: ${transition.all};
 
     ${variant({
-      prop: 'variant',
-      scale: 'Button.variants',
+      prop: "variant",
+      scale: "Button.variants",
     })}
     ${variant({
-      prop: 'size',
-      scale: 'Button.sizes',
+      prop: "size",
+      scale: "Button.sizes",
     })}
   `,
   variants: {
@@ -80,8 +80,8 @@ export default {
       vertical-align: text-top;
 
       ${variant({
-        prop: 'placement',
-        scale: 'Button.Icon.placements',
+        prop: "placement",
+        scale: "Button.Icon.placements",
       })}
     `,
     placements: {
