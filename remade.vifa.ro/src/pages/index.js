@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import ListingCard from "../components/listingcard"
-import "../components/_scss/styles.scss"
+
 const IndexPage = () => {
   const querrydata = useStaticQuery(graphql`
     query MyQuery {

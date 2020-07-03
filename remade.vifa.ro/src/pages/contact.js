@@ -37,7 +37,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    const validateEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+    const validateEmail = /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/
 
     console.log(email)
     if (!validateEmail.test(email)) {
