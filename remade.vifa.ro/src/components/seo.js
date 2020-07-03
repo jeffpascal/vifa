@@ -25,11 +25,14 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  const themes = ["theme-dark", "theme-light"]
+
   const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
       htmlAttributes={{
+        class: themes[1],
         lang,
       }}
       title={title}

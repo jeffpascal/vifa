@@ -5,7 +5,7 @@ import "./OurTeamDisplay.css"
 // text
 // learn more button text
 // learn more button link
-const OurTeamDisplay = props => {
+const OurTeamDisplay = (props) => {
   return (
     <div className="col-xl-3 col-sm-6 mb-5">
       <div className="bg-white rounded shadow-sm py-5 px-4">
@@ -17,8 +17,8 @@ const OurTeamDisplay = props => {
         />
         <h5 className="mb-0">{props.name}</h5>
         <span className="small text-uppercase text-muted">{props.job}</span>
-        <ul className="social mb-0 list-inline mt-3">
-          {/* <li className="list-inline-item">
+        {/* <ul className="social mb-0 list-inline mt-3">
+          <li className="list-inline-item">
             <a href="#" className="social-link">
               <i className="fa fa-facebook-f"></i>
             </a>
@@ -37,8 +37,8 @@ const OurTeamDisplay = props => {
             <a href="#" className="social-link">
               <i className="fa fa-linkedin"></i>
             </a>
-          </li> */}
-        </ul>
+          </li>
+        </ul> */}
       </div>
     </div>
   )

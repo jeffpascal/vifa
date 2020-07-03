@@ -17,23 +17,20 @@
   right: 20px;
 }
 .slick-dots {
-  background-color:black;
+  background-color: black;
   bottom: -22px;
   opacity: 0.6;
-  
 }
 .slick-dots li button:before {
   color: white;
   font-size: 12px;
   line-height: 12px;
-  
 }
 
 .slick-dots li.slick-active button:before {
-  color:white !important;
+  color: white !important;
 }
 
-
-.galleryDiv{
+.galleryDiv {
   padding-bottom: 30px;
 }

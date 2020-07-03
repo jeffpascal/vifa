@@ -1,5 +1,5 @@
 import React from "react"
-import SlickAll from "../components/slickgalleryall"
+import SlickAll from "../components/Slickgalleryall"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"

@@ -88,34 +88,36 @@ const Contact = () => {
         <div className="col-md-5 col-sm-12">
           <h1>Contact vila franceza</h1>
           <form id="demo-form" style={{ padding: 10 }}>
-            <div className="form-group">
-              <label htmlFor="inputmail">Adresa de mail</label>
-              <input
-                type="email"
-                className="form-control"
-                id="inputmail"
-                aria-describedby="emailHelp"
-                placeholder="exemplu@gmail.com"
-                onChange={handleEmailChange}
-                aria-label="Enter e-mail address"
-              />
-              <small id="emailHelp" className="form-text text-muted">
-                Nu vom partaja mailul dumneavoastra cu nimeni
-              </small>
-            </div>
-            <div className="form-group">
-              <label htmlFor="inputphone">Numar de Telefon</label>
-              <input
-                type="tel"
-                className="form-control"
-                id="inputphone"
-                placeholder="003371128829"
-                onChange={handlePhoneChange}
-                aria-label="Enter phone number"
-              />
-              <small id="emailHelp" className="form-text text-muted">
-                Includeti prefix exemplu: 0040755112151
-              </small>
+            <div className="row">
+              <div className="col-6 form-group">
+                <label htmlFor="inputmail">Adresa de mail</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="inputmail"
+                  aria-describedby="emailHelp"
+                  placeholder="exemplu@gmail.com"
+                  onChange={handleEmailChange}
+                  aria-label="Enter e-mail address"
+                />
+                <small id="emailHelp" className="form-text text-muted">
+                  Nu vom partaja mailul dumneavoastra cu nimeni
+                </small>
+              </div>
+              <div className="col-6 form-group">
+                <label htmlFor="inputphone">Numar de Telefon</label>
+                <input
+                  type="tel"
+                  className="form-control"
+                  id="inputphone"
+                  placeholder="003371128829"
+                  onChange={handlePhoneChange}
+                  aria-label="Enter phone number"
+                />
+                <small id="emailHelp" className="form-text text-muted">
+                  Includeti prefix exemplu: 0040755112151
+                </small>
+              </div>
             </div>
             <div className="form-group">
               <label htmlFor="inputname">Nume intreg</label>
@@ -164,17 +166,20 @@ const Contact = () => {
                 Nu vom partaja detaliile dumneavoastra cu nimeni altcineva.
               </small>
             </div>
-            <Reaptcha
-              sitekey="6LccRd4UAAAAADH-A4ZbJFsDwWo_nVs4WIUwt-ld"
-              onVerify={onVerify}
-              render="explicit"
-              onloadCallback={() => console.log("loaded")}
-            />
+
+            <div>
+              <Reaptcha
+                sitekey="6LccRd4UAAAAADH-A4ZbJFsDwWo_nVs4WIUwt-ld"
+                onVerify={onVerify}
+                render="explicit"
+                onloadCallback={() => console.log("loaded")}
+              />
+            </div>
 
             <button
               type="submit"
               onClick={handleSubmit}
-              className="btn btn-primary"
+              className="btn btn-primary btn-lg"
               disabled={captcha}
             >
               Submit
@@ -189,7 +194,7 @@ const Contact = () => {
                 <p>
                   Pentru rezervari si informatii suplimentare va asteptam la:
                 </p>
-                <p>E-MAIL: unic_juridic@yahoo.com</p>
+                <p className="center">E-MAIL: unic_juridic@yahoo.com</p>
                 <p>
                   Va rugam sa includeti in mesaj perioada si numarul de persoane
                   pentru care doriti sa faceti rezervarea .
@@ -207,7 +212,7 @@ const Contact = () => {
             Din localitatea Prundu Bargaului (vizavi de biserica), la dreapta,
             se continua pe drumul judetean 173A.
           </p>
-          <p>
+          <p className="">
             Accesul dinspre Vatra Dornei se face de pe drumul european E58, la
             stanga, pe drumul judetean 173D, la intrarea in localitatea
             Muresenii Bargaului.

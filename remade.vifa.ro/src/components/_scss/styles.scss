@@ -1,0 +1,18 @@
+// Get the color-background property from the active theme map and apply its value to the "background" css property
+@import "_mixins.scss";
+
+body {
+  @include theme-aware("background-color", "color-background");
+}
+
+p {
+  @include theme-aware("color", "color-text");
+}
+
+.center {
+  text-align: center;
+}
+
+nav {
+  @include theme-aware("background-color", "color-navigation");
+}

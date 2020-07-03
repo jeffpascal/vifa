@@ -1,10 +1,10 @@
 import React from "react"
-import SlickAll from "../components/slickgalleryall"
+import Slickgalleryall from "../components/Slickgalleryall"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import ListingCard from "../components/listingcard"
-
+import "../components/_scss/styles.scss"
 const IndexPage = () => {
   const querrydata = useStaticQuery(graphql`
     query MyQuery {
@@ -44,9 +44,9 @@ const IndexPage = () => {
         title="Cazare Colibita"
         description="Vila Franceza este destinatia de vacanta pentru cei care cauta maxim de confort, liniste si discretie pe malul lacului Colibita, Transilvania, Romania. "
       />
-      <SlickAll />
+      <Slickgalleryall />
       <div className="col-md-12 row">
-        {querrydata.allDataRoJson.nodes.map(item => (
+        {querrydata.allDataRoJson.nodes.map((item) => (
           <ListingCard
             key={item.name}
             title={item.name}
