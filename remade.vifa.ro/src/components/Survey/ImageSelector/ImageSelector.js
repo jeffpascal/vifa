@@ -1,5 +1,4 @@
 import React from "react"
-import { useState } from "react"
 import "./ImageSelector.css"
 import Img from "gatsby-image"
 

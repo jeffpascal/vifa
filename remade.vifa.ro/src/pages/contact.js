@@ -184,7 +184,9 @@ const Contact = () => {
             >
               Submit
             </button>
-            <p>{confirmation}</p>
+            <p>
+              <em>{confirmation}</em>
+            </p>
           </form>
         </div>
         <div className="col-md-7 col-sm-12">
@@ -194,7 +196,9 @@ const Contact = () => {
                 <p>
                   Pentru rezervari si informatii suplimentare va asteptam la:
                 </p>
-                <p className="center">E-MAIL: unic_juridic@yahoo.com</p>
+                <p className="center">
+                  <strong>E-MAIL: unic_juridic@yahoo.com</strong>
+                </p>
                 <p>
                   Va rugam sa includeti in mesaj perioada si numarul de persoane
                   pentru care doriti sa faceti rezervarea .

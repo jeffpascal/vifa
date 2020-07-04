@@ -3,6 +3,9 @@
 
 body {
   @include theme-aware("background-color", "color-background");
+  font-family: "Lato";
+  font-size: large;
+  text-align: justify;
 }
 
 p {

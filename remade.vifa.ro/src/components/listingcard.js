@@ -6,7 +6,7 @@ const ListingCard = (props) => {
     <div className="card" style={{ width: 20 + "rem", marginRight: 20 }}>
       <Img className="card-img-top" fluid={props.image.childImageSharp.fluid} />
       <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
+        <h3 className="center card-title">{props.title}</h3>
         <div
           className="card-text"
           dangerouslySetInnerHTML={{ __html: props.description }}
