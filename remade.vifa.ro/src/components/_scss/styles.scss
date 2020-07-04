@@ -19,3 +19,10 @@ p {
 nav {
   @include theme-aware("background-color", "color-navigation");
 }
+.fa {
+  font-size: 40px;
+}
+
+button {
+  background-color: red;
+}

@@ -11,9 +11,17 @@ const ListingCard = (props) => {
           className="card-text"
           dangerouslySetInnerHTML={{ __html: props.description }}
         ></div>
-        <a href="/cazare-langa-lac" className="btn btn-primary">
-          {props.title}
-        </a>
+
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button href="/cazare-langa-lac" className="btn btn-danger">
+            <strong>{props.title}</strong>
+          </button>
+
+          <button href="/cazare-langa-lac" className="btn btn-success ">
+            <i className="fa fa-calendar col-6 float-right" aria-hidden=""></i>
+            <strong>Rezerva acum</strong>
+          </button>
+        </div>
       </div>
     </div>
   )
