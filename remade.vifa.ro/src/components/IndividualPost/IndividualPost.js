@@ -66,10 +66,38 @@ function RightAlignImage(props) {
   )
 }
 
+function ParallaxImage(props) {
+
+  return (
+    <div className="row align-items-center parallax" style={{backgroundImage: `url(${props.details.imageSource})`}}>
+      <div className="text-center" style={{backgroundColor: props.details.textBackground}}>
+        <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
+        <h2 className="font-weight-light text-white">{props.details.title}</h2>
+        <p className="font-italic text-white mb-4">
+          {props.details.description}
+        </p>
+
+        {props.details.needButton === "true" && (
+          <a
+            href={props.details.redirectionLink}
+            className="btn btn-light px-5 rounded-pill shadow-sm"
+          >
+            {props.details.buttonText}
+          </a>
+        )}
+      </div>
+    </div>
+  )
+}
+
 const IndividualPost = props => {
   if (props.imageLocation === "left")
     return <LeftAlignImage details={props}></LeftAlignImage>
-  else return <RightAlignImage details={props}></RightAlignImage>
+  else if (props.imageLocation === "right")
+    return <RightAlignImage details={props}></RightAlignImage>
+  else {
+    return <ParallaxImage details={props}></ParallaxImage>
+  }
 }
 
 export default IndividualPost

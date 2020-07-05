@@ -82,16 +82,18 @@ const DespreNoi = () => {
         unica asupra lacului si asupra crestelor muntilor din imprejurimi."
       />
 
+      
       <IndividualPost
         imageSource={allFile.allFile.edges[0].node.childImageSharp.fluid.src}
         imageSourceAlt="Image description"
-        title="Lacul Colibita"
+        title="Lacul"
         description="Colibita este un sat al comunei Bistrita Bargaului, judetul
         Bistrita-Nasaud, Transilvania, Romania. Localitatea este asezata
         pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani. "
         needButton="false"
         buttonText="Need less"
-        imageLocation="right"
+        imageLocation="parallax"
+        textBackground = "#010c42"
       ></IndividualPost>
 
       <div className="row">
