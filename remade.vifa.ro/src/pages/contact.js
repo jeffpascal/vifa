@@ -4,7 +4,7 @@ import Reaptcha from "reaptcha"
 import MyGoogleMap from "../components/GoogleMap"
 import SEO from "../components/seo"
 import OpeningHours from "../components/OpeningHours"
-
+import { FaFacebookSquare } from "react-icons/fa"
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -87,6 +87,18 @@ const Contact = () => {
         ></SEO>
         <div className="col-md-5 col-sm-12">
           <h1>Contact vila franceza</h1>
+          <a
+            href="https://www.facebook.com/vilafranceza/"
+            className="center"
+            style={{ color: "blue" }}
+          >
+            <h6>
+              <small>
+                Ne puteti contacta si pe <FaFacebookSquare></FaFacebookSquare>{" "}
+                (raspundem mai repede)
+              </small>
+            </h6>
+          </a>
           <form id="demo-form" style={{ padding: 10 }}>
             <div className="row">
               <div className="col-6 form-group">
@@ -191,14 +203,25 @@ const Contact = () => {
         </div>
         <div className="col-md-7 col-sm-12">
           <div className="row">
-            <div className="col-6 py-3">
-              <div className="">
+            <div className="col-12 py-3 jumbotron">
+              <div className="center">
                 <p>
                   Pentru rezervari si informatii suplimentare va asteptam la:
                 </p>
                 <p className="center">
                   <strong>E-MAIL: unic_juridic@yahoo.com</strong>
                 </p>
+                <a
+                  href="https://www.facebook.com/vilafranceza/"
+                  className="center btn btn-danger"
+                  style={{ color: "white" }}
+                >
+                  <strong>
+                    Raspundem mai repede pe facebook ! {"  "}
+                    <FaFacebookSquare></FaFacebookSquare>
+                  </strong>
+                </a>
+
                 <p>
                   Va rugam sa includeti in mesaj perioada si numarul de persoane
                   pentru care doriti sa faceti rezervarea .
@@ -207,9 +230,7 @@ const Contact = () => {
                 <p>Va vom contacta in cel mai scurt timp.</p>
               </div>
             </div>
-            <div className="col-6 ">
-              <OpeningHours></OpeningHours>
-            </div>
+            <div className="col-6 ">{/* <OpeningHours></OpeningHours> */}</div>
           </div>
           <p>
             Accesul se face dinspre orasul Bistrita de pe drumul european E58.

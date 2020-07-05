@@ -188,7 +188,7 @@ const DespreNoi = () => {
           <img alt="imagine zapada"></img>
         </div>
       </div>
-      <EchipaNoastra></EchipaNoastra>
+      {/* <EchipaNoastra></EchipaNoastra> */}
     </Layout>
   )
 }
