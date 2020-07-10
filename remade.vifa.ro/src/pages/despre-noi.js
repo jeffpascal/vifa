@@ -3,7 +3,10 @@ import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 import IndividualPost from "../components/IndividualPost"
+import ParallaxImage from "../components/ParallaxImage"
+
 import OurTeamDisplay from "../components/OurTeamDisplay"
+
 const DespreNoi = () => {
   const allFile = useStaticQuery(
     graphql`
@@ -82,7 +85,6 @@ const DespreNoi = () => {
         unica asupra lacului si asupra crestelor muntilor din imprejurimi."
       />
 
-      
       <IndividualPost
         imageSource={allFile.allFile.edges[0].node.childImageSharp.fluid.src}
         imageSourceAlt="Image description"
@@ -92,8 +94,7 @@ const DespreNoi = () => {
         pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani. "
         needButton="false"
         buttonText="Need less"
-        imageLocation="parallax"
-        textBackground = "#010c42"
+        imageLocation="left"
       ></IndividualPost>
 
       <div className="row">
@@ -190,6 +191,16 @@ const DespreNoi = () => {
           <img alt="imagine zapada"></img>
         </div>
       </div>
+      <ParallaxImage
+        imageSource={allFile.allFile.edges[0].node.childImageSharp.fluid.src}
+        imageSourceAlt="Image description"
+        title="Lacul"
+        description="Colibita este un sat al comunei Bistrita Bargaului, judetul
+        Bistrita-Nasaud, Transilvania, Romania. Localitatea este asezata
+        pe Valea Bistritei, intre Muntii Bargau si Muntii Calimani. "
+        needButton="false"
+        buttonText="Need less"
+      ></ParallaxImage>
       {/* <EchipaNoastra></EchipaNoastra> */}
     </Layout>
   )

@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import ListingCard from "../components/listingcard"
-import RoundedCard from "../components/RoundedCard"
-import CoolFact from "../components/CoolFact"
 
 const IndexPage = () => {
   const querrydata = useStaticQuery(graphql`
@@ -60,16 +58,6 @@ const IndexPage = () => {
           />
         ))}
       </div>
-
-      {querrydata.allDataRoJson.nodes.map((item) => (
-        <RoundedCard
-          key={item.name}
-          title={item.name}
-          description={item.descriere.card}
-          image={item.cardimages}
-          calendarLink={item.calendarlink}
-        />
-      ))}
     </Layout>
   )
 }

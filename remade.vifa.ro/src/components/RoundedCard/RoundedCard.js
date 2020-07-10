@@ -1,8 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
 import "./RoundedCard.css"
+import { FcCalendar } from "react-icons/fc"
 
-const LCard = (props) => {
+const RoundedCard = (props) => {
   return (
     // Card
     <div className="listingCard">
@@ -27,9 +28,11 @@ const LCard = (props) => {
           <h4>{props.title}</h4>
           <div dangerouslySetInnerHTML={{ __html: props.description }}></div>
         </div>
+
+        {/* Call to action button */}
       </div>
     </div>
   )
 }
 
-export default LCard
+export default RoundedCard
