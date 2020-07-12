@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./styles.css"
 import Image from "../image"
 import { FaBars, FaChevronDown } from "react-icons/fa"
@@ -491,6 +491,18 @@ const SquareSpaceNav = ({ siteTitle }) => {
     event.preventDefault()
     setOpen(!open)
   }
+
+  useEffect(() => {
+    const header = document.querySelector("header")
+
+    window.onscroll = function () {
+      if (window.pageYOffset > header.scrollTop) {
+        header.classList.add("scrolled")
+      } else {
+        header.classList.remove("scrolled")
+      }
+    }
+  })
   return (
     <header
       style={{
