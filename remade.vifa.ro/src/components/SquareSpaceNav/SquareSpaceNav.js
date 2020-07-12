@@ -5,7 +5,7 @@ import "./styles.css"
 import Image from "../image"
 import { FaBars, FaChevronDown } from "react-icons/fa"
 
-const DropDownComponentLinks = () => {
+const MobileDropDownComponentLinks = () => {
   const [dropDownClassName, setDropDownClassName] = useState(
     "mobile-dropdown-container"
   )
@@ -52,14 +52,14 @@ const DropDownComponentLinks = () => {
   )
 }
 
-const DropDownComponentList = () => {
-  const [dropDownClassName, setDropDownClassName] = useState(
+const MobileDropDownComponentList = () => {
+  const [mobileDropDownClassName, setMobileDropDownClassName] = useState(
     "mobile-dropdown-container"
   )
   const changeDropDownClassName = (e) => {
-    if (dropDownClassName.includes("open"))
-      setDropDownClassName(dropDownClassName.replace("open", ""))
-    else setDropDownClassName(dropDownClassName + " open")
+    if (mobileDropDownClassName.includes("open"))
+      setMobileDropDownClassName(mobileDropDownClassName.replace("open", ""))
+    else setMobileDropDownClassName(mobileDropDownClassName + " open")
     e.stopPropagation()
   }
 
@@ -73,7 +73,7 @@ const DropDownComponentList = () => {
       >
         Products <FaChevronDown></FaChevronDown>
       </a>
-      <div className={dropDownClassName}>
+      <div className={mobileDropDownClassName}>
         <div className="content-wrapper">
           <div className="customRow no-gutters">
             <div className="col-md-6 col-lg-3">
@@ -211,13 +211,13 @@ const SquareMobileMenu = () => {
         >
           <div className="mobile-nav-links-wrapper">
             <ul>
-              <DropDownComponentList></DropDownComponentList>
+              <MobileDropDownComponentList></MobileDropDownComponentList>
               <li>
                 <a href="#" className="nav-link">
                   Templates
                 </a>
               </li>
-              <DropDownComponentLinks></DropDownComponentLinks>
+              <MobileDropDownComponentLinks></MobileDropDownComponentLinks>
             </ul>
           </div>
           <div className="mobile-buttons-wrapper">
@@ -240,6 +240,211 @@ const SquareMobileMenu = () => {
   )
 }
 
+const DesktopDropDownComponentList = () => {
+  const [dropDownClassName, setDropDownClassName] = useState(
+    "dropdown-container"
+  )
+  const changeDropDownClassName = (e) => {
+    setDropDownClassName(dropDownClassName + " open")
+  }
+
+  const changeDropDownClassNameOpen = (e) => {
+    setDropDownClassName(dropDownClassName.replace("open", ""))
+  }
+
+  return (
+    <li>
+      <a
+        href="#"
+        class="nav-link has-dropdown"
+        onMouseOver={changeDropDownClassName}
+        onMouseLeave={changeDropDownClassNameOpen}
+      >
+        Products <FaChevronDown></FaChevronDown>
+      </a>
+      <div class={dropDownClassName}>
+        <div class="content-wrapper">
+          <div class="customRow no-gutters">
+            <div class="col-lg-3">
+              <h6>Create a website</h6>
+              <ul class="sec-links-container">
+                <li>
+                  <a href="#" class="sec-link">
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Blogging
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Website Analytics
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Hire an Expert
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h6>Create a website</h6>
+              <ul class="sec-links-container">
+                <li>
+                  <a href="#" class="sec-link">
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Blogging
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Website Analytics
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Hire an Expert
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h6>Create a website</h6>
+              <ul class="sec-links-container">
+                <li>
+                  <a href="#" class="sec-link">
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Blogging
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Website Analytics
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Hire an Expert
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h6>Create a website</h6>
+              <ul class="sec-links-container">
+                <li>
+                  <a href="#" class="sec-link">
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Blogging
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Website Analytics
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sec-link">
+                    Hire an Expert
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  )
+}
+
+const DesktopDropDownComponentLinksCards = () => {
+  const [dropDownClassName, setDropDownClassName] = useState(
+    "dropdown-container"
+  )
+  const changeDropDownClassName = (e) => {
+    setDropDownClassName(dropDownClassName + " open")
+  }
+
+  const changeDropDownClassNameOpen = (e) => {
+    setDropDownClassName(dropDownClassName.replace("open", ""))
+  }
+  return (
+    <li>
+      <a
+        href="#"
+        className="nav-link has-dropdown"
+        onMouseOver={changeDropDownClassName}
+        onMouseLeave={changeDropDownClassNameOpen}
+      >
+        Resources <FaChevronDown></FaChevronDown>
+      </a>
+      <div className={dropDownClassName}>
+        <div className="customRow">
+          <div className="col-lg-3">
+            <a href="#" className="res-link">
+              <h4>Squarespace Blog</h4>
+              <p>Stories and solutions for the modern entrepreneur</p>
+              <img
+                src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/blog-2-500w.jpg"
+                alt=""
+                className="res-img"
+              />
+            </a>
+          </div>
+          <div className="col-lg-3">
+            <a href="#" className="res-link">
+              <h4>Squarespace Blog</h4>
+              <p>Stories and solutions for the modern entrepreneur</p>
+              <img
+                src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/help-2-500w.jpg"
+                alt=""
+                className="res-img"
+              />
+            </a>
+          </div>
+          <div className="col-lg-3">
+            <a href="#" className="res-link">
+              <h4>Squarespace Blog</h4>
+              <p>Stories and solutions for the modern entrepreneur</p>
+              <img
+                src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/forum-2-500w.jpg"
+                alt=""
+                className="res-img"
+              />
+            </a>
+          </div>
+          <div className="col-lg-3">
+            <a href="#" className="res-link">
+              <h4>Squarespace Blog</h4>
+              <p>Stories and solutions for the modern entrepreneur</p>
+              <img
+                src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/help-2-500w.jpg"
+                alt=""
+                className="res-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+  )
+}
+
 const SquareDesktopMenu = () => {
   return (
     <div className="desktop-nav">
@@ -251,175 +456,13 @@ const SquareDesktopMenu = () => {
 
       <div className="menu-bar">
         <ul>
-          <li>
-            <a href="#" className="nav-link has-dropdown">
-              Products <FaChevronDown></FaChevronDown>
-            </a>
-            <div className="dropdown-container">
-              <div className="content-wrapper">
-                <div className="customRow no-gutters">
-                  <div className="col-lg-3">
-                    <h6>Create a website</h6>
-                    <ul className="sec-links-container">
-                      <li>
-                        <a href="#" className="sec-link">
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Blogging
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Website Analytics
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Hire an Expert
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-3">
-                    <h6>Create a website</h6>
-                    <ul className="sec-links-container">
-                      <li>
-                        <a href="#" className="sec-link">
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Blogging
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Website Analytics
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Hire an Expert
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-3">
-                    <h6>Create a website</h6>
-                    <ul className="sec-links-container">
-                      <li>
-                        <a href="#" className="sec-link">
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Blogging
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Website Analytics
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Hire an Expert
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-3">
-                    <h6>Create a website</h6>
-                    <ul className="sec-links-container">
-                      <li>
-                        <a href="#" className="sec-link">
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Blogging
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Website Analytics
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="sec-link">
-                          Hire an Expert
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+          <DesktopDropDownComponentList></DesktopDropDownComponentList>
           <li>
             <a href="#" className="nav-link">
               Templates
             </a>
           </li>
-          <li>
-            <a href="#" className="nav-link has-dropdown">
-              Resources <FaChevronDown></FaChevronDown>
-            </a>
-            <div className="dropdown-container">
-              <div className="customRow">
-                <div className="col-lg-3">
-                  <a href="#" className="res-link">
-                    <h4>Squarespace Blog</h4>
-                    <p>Stories and solutions for the modern entrepreneur</p>
-                    <img
-                      src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/blog-2-500w.jpg"
-                      alt=""
-                      className="res-img"
-                    />
-                  </a>
-                </div>
-                <div className="col-lg-3">
-                  <a href="#" className="res-link">
-                    <h4>Squarespace Blog</h4>
-                    <p>Stories and solutions for the modern entrepreneur</p>
-                    <img
-                      src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/help-2-500w.jpg"
-                      alt=""
-                      className="res-img"
-                    />
-                  </a>
-                </div>
-                <div className="col-lg-3">
-                  <a href="#" className="res-link">
-                    <h4>Squarespace Blog</h4>
-                    <p>Stories and solutions for the modern entrepreneur</p>
-                    <img
-                      src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/forum-2-500w.jpg"
-                      alt=""
-                      className="res-img"
-                    />
-                  </a>
-                </div>
-                <div className="col-lg-3">
-                  <a href="#" className="res-link">
-                    <h4>Squarespace Blog</h4>
-                    <p>Stories and solutions for the modern entrepreneur</p>
-                    <img
-                      src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10223/assets/images/site-navigation/help-2-500w.jpg"
-                      alt=""
-                      className="res-img"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
+          <DesktopDropDownComponentLinksCards></DesktopDropDownComponentLinksCards>
         </ul>
       </div>
 
