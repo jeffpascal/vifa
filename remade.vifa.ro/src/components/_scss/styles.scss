@@ -1,0 +1,28 @@
+// Get the color-background property from the active theme map and apply its value to the "background" css property
+@import "_mixins.scss";
+
+body {
+  @include theme-aware("background-color", "color-background");
+  font-family: "Lato";
+  font-size: large;
+  text-align: justify;
+}
+
+p {
+  @include theme-aware("color", "color-text");
+}
+
+.center {
+  text-align: center;
+}
+
+nav {
+  @include theme-aware("background-color", "color-navigation");
+}
+.fa {
+  font-size: 40px;
+}
+
+button {
+  background-color: red;
+}

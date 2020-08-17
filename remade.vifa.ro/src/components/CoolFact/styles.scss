@@ -1,0 +1,36 @@
+@import "../_scss/mixins";
+@import "../_scss/responsive";
+.single-cool-fact {
+  position: relative;
+  z-index: 1;
+  .scf-icon {
+    position: relative;
+    i {
+      font-size: 45px;
+    }
+  }
+  .scf-text {
+    h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: blue;
+      font-weight: 600;
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0;
+      color: blue;
+      line-height: 1;
+    }
+  }
+  &.white {
+    .scf-icon i,
+    .scf-text h2,
+    .scf-text p {
+      color: blue;
+    }
+  }
+}
